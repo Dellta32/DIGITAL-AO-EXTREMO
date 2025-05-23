@@ -91,8 +91,11 @@ function tabhorario() {
 
 function tabelinha() {
 
+
+    var main = document.geteElementById("main")
     var divTable = document.getElementById("table-conteiner")
     divTable.classList.add("table-conteiner")
+    main.appendeChild(divTable)
 
     var table = document.createElement("table")
     table.classList.add("tabela-horario")
