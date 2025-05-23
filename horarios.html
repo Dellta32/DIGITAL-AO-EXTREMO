@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=0, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="JS.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav id="nav">
+
+            <div class="burguer" onclick="menu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <img src="" class="logo">
+
+        </nav>
+
+    </header>
+
+    <div class="selectors-conteiner" id="select-cont">
+        <select name="Turma" id="Turma" class="seletor">
+            <option value="" disabled selected>TURMA</option>
+            <option value="1AI">1º A INFORMÁTICA</option>
+            <option value="1BI">1º B INFORMÁTICA</option>
+            <option value="1CI">1º C INFORMÁTICA</option>
+            <option value="1AA">1º A ADMINISTRAÇÃO</option>
+            <option value="1BA">1º B ADMINISTRAÇÃO</option>
+            <option value="2AI">2º A INFORMÁTICA</option>
+            <option value="2AA">2º A ADMINISTRAÇÃO</option>
+            <option value="2BA">2º B ADMINISTRAÇÃO</option>
+            <option value="3AI">3º A INFORMÁTICA</option>
+            <option value="3BI">3º B INFORMÁTICA</option>
+            <option value="3AA">3º A ADMINISTRAÇÃO</option>
+            <option value="3BA">3º B ADMINISTRAÇÃO</option>
+        </select>
+
+        <select name="DIA DA SEMANA" id="dia" class="seletor">
+            <option value="" disabled selected> DIA DA SEMANA</option>
+            <option value="SEG"> SEGUNDA-FEIRA</option>
+            <option value="TER"> TERÇA-FEIRA</option>
+            <option value="QUA"> QUARTA-FEIRA</option>
+            <option value="QUI"> QUINTA-FEIRA</option>
+            <option value="SEX"> SEXTA-FEIRA</option>
+        </select>
+        <button onclick="tabhorario()" class="botao-confirm">CONFIRMAR</button>
+    </div>
+
+    <div id="table-conteiner"></div>
+</body>
+
+</html>
