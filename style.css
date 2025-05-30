@@ -10,6 +10,7 @@ a {
     text-transform: uppercase;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     letter-spacing: 4px;
+    text-decoration: none;
 }
 
 #nav {
@@ -23,42 +24,54 @@ a {
 
 .nav-list {
     list-style: none;
-    display: flex;
     align-items: center;
     flex-direction: column;
     display: flex;
     padding: 10px;
     justify-content: space-around;
     text-transform: uppercase;
+    width: 300px;
+    overflow: hidden;
 }
 
 .nav-list li {
 
     background-color: #122333;
-    width: 20px;
+    width: 250px;
     transition: 0.7s;
     color: #fff;
     letter-spacing: 4px;
     gap: 10px;
     margin: 1px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-right: 15px;
+    padding: 40px 15px 40px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    width: 100%;
-
-
 
 }
 
 .nav-list li:hover {
-    color: #122333;
+
     background-color: #fff;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-right: 20px;
+    padding: 47px 15px 40px;
+    border-radius: 7px;
 }
 
+.nav-list li a {
+    color: #fff;
+    font-size: 20px;
+    height: 100%;
+}
+
+.nav-list li:hover a {
+    color: #122333;
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+}
+
+.nav-list li a:hover {
+    font-size: 30px;
+    transition: 0.5s ease;
+}
 
 .burguer {
 
@@ -150,7 +163,7 @@ body {
     }
 
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-20%);
         opacity: 0;
     }
 
@@ -170,19 +183,7 @@ body {
 
 }
 
-.selectors-conteiner {
-    display: flex;
-    flex-direction: column;
-    width: 700px;
-    height: 500px;
-    background-color: #122333;
-    margin: auto;
-    margin-top: 40px;
-    border: solid #2a3e52;
-    border-radius: 9px;
-   float: right;
 
-}
 
 .seletor {
 
@@ -203,25 +204,140 @@ body {
 
 }
 
-.table-conteiner{
 
-    position: absolute;
-    right: 240px;
-    top: 120px;
-    width: 700px;
-    height: 100%;
-    background-color: #122333;
-    border: solid #2a3e52;
-    border-radius: 9px;
-    
-}
-.tabela-horario{
-
-    margin-top: 40px;
+.tabela-horario {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
     margin-left: 90px;
     width: 350px;
-    height: 700px;
     background-color: #fff;
     border: solid #2a3e52;
     border-radius: 9px;
+    align-items: center;
+
+}
+
+.tabela-horario td {
+    text-align:center  ;
+    height: 80px;
+    width: 150px;
+    border: solid 1px #2a3e52
+}
+
+.flexconteiner {
+    display: flex;
+    gap: 0px; 
+    height: 93vh;
+    flex-direction: row;
+    align-items: flex-start;
+    transition: 0.7;
+
+}
+.table-conteiner {
+    width: 700px;
+    margin-top: 40px;
+    height: 1100PX;
+    background-color: #122333;
+    border: solid #2a3e52;
+    border-radius: 9px;
+    float: right;
+    margin-right: 40px;
+}
+.selectors-conteiner {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 700px;
+    height: 500px;
+    background-color: #122333;
+    margin-right: 0;
+    margin-left: 550px;
+    margin-top: 40px;
+    border: solid #2a3e52;
+    border-radius: 9px;
+    align-self: flex-start;
+
+}
+
+
+.Lucas{
+    background-color: #cccab4;
+}
+
+.Mariana{
+background-color: #ae91cf;
+
+}
+
+.Manuela{
+    background-color: #7bbd86;
+}
+.Leonardo{
+    background-color: #913737;
+}
+.Daniel{
+    background-color: #001ea3;
+    color: #fff;
+}
+.Marcela{
+    background-color: #dd3bdd;
+    
+}
+.Iara{
+    background-color: #89699b;
+}
+.JavaScriptMan{
+    background-color: #bd9a00;
+}
+.Chico{
+    background-color: #929292;
+}
+.Gaspar{
+    background-color: #6aa3da;
+}
+.Paulo{
+    background-color: #ac6203;
+}
+.Ranaildo{
+    background-color: #5900be;
+}
+.Marcelo{
+    background-color: #d4d1a4;
+}
+.Eber{
+    background-color: #d9ff00;
+}
+.Rute{
+    background-color: #7a4949;
+}
+.Rosa{
+    background-color: #af0000;
+}
+.Sorvetinho{
+    background-color: #496885;
+}
+.Lula{
+    background-color: #048004;
+}
+.AnaG{
+    background-color: #eee1c5;
+}
+.Linduberg{
+    background-color: #3c5b79;
+}
+.Oficina{
+    background-color: #122333;
+}
+.EletivaO{
+    background-color: #122333;
+}
+.Trilhasgay{
+    background-color: #122333;
+}
+.Eletiva{
+    background-color: #122333;
+}
+.Praticas {
+    background-color: #c5e4e0;
 }
