@@ -19,7 +19,8 @@ a {
     justify-content: space-around;
     background-color: #122333;
     height: 8vh;
-
+    border-bottom: groove   #490b2d;
+   
 }
 
 .nav-list {
@@ -32,6 +33,8 @@ a {
     text-transform: uppercase;
     width: 300px;
     overflow: hidden;
+    
+
 }
 
 .nav-list li {
@@ -66,11 +69,14 @@ a {
     text-decoration: none;
     display: flex;
     width: 100%;
+    background-color: #f6f8fa;
+    transition: 0.5s ease;
 }
 
 .nav-list li a:hover {
     font-size: 30px;
     transition: 0.5s ease;
+    
 }
 
 .burguer {
@@ -99,10 +105,6 @@ a {
     top: 0;
     left: 0;
     animation: fade 0.5s ease-in-out forwards;
-
-
-
-
 }
 
 .menu li:hover {
@@ -111,8 +113,7 @@ a {
 }
 
 body {
-
-    background-color: #490b2d;
+    background-color: #c2c2c2;
 }
 
 .menu-close {
@@ -326,16 +327,7 @@ background-color: #ae91cf;
 .Linduberg{
     background-color: #3c5b79;
 }
-.Oficina{
-    background-color: #122333;
-}
-.EletivaO{
-    background-color: #122333;
-}
-.Trilhasgay{
-    background-color: #122333;
-}
-.Eletiva{
+.Eletrilha{
     background-color: #122333;
 }
 .Praticas {
