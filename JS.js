@@ -283,4 +283,92 @@ function tabelinha() {
         td12.classList.add("Nancy")
         td11.classList.add("Nancy")
 
-}}
+}
+
+else if(Turma == "1AI" && Dia == "SEX"){
+    td1.innerText = "PORTUGUÊS - ANA GUERRA"
+    td2.innerText = "PORTUGUÊS - ANA GUERRA"
+    td3.innerText = "INFORMÁTICA BÁSICA - MARCELO"
+    
+    td5.innerText = "ARQUITETURA E ORGANIZAÇÃO DE COMPUTADORES - LINDEMBERG"
+    td6.innerText = "ARQUITETURA E ORGANIZAÇÃO DE COMPUTADORES - LINDEMBERG"
+
+    td8.innerText = "FSICA - SEM PROFESSOR"
+    td9.innerText = "FILOSOFIA - SEM PROFESSOR"
+
+    td11.innerText = "ORIENTAÇÃO ACADÊMICA - SEM PROFESSOR"
+    td12.innerText = "ORIENTAÇÃO ACADÊMICA - SEM PROFESSOR"
+
+    td1.classList.add("AnaG")
+    td2.classList.add("AnaG")
+    td3.classList.add("Marcelo")
+    
+    td5.classList.add("Linduberg")
+    td6.classList.add("Linduberg")
+
+    td8.classList.add("")
+    td9.classList.add("")
+    
+    td12.classList.add("")
+    td11.classList.add("")
+
+}
+
+else if(Turma == "1BI" && Dia == "SEG"){
+    td1.innerText = "BIOLOGIA - MANUELA"
+    td2.innerText = "GEOGRAFIA - PAULO"
+    td3.innerText = "ED.FÍSICA - DANIEL"
+    
+    td5.innerText = "INGLÊS - LUCAS"
+    td6.innerText = "HISTÓRIA - FRANCISCO"
+
+    td8.innerText = "ELETIVA ORIENTADA - LEONARDO"
+    td9.innerText = "ELETIVA ORIENTADA - LEONARDO"
+
+    td11.innerText = "PRÁTICAS EXPERIMENTAIS (1)"
+    td12.innerText = "MATEMÁTICA - JOELSON"
+
+    td1.classList.add("Manuela")
+    td2.classList.add("Paulo")
+    td3.classList.add("Daniel")
+    
+    td5.classList.add("Lucas")
+    td6.classList.add("Chico")
+
+    td8.classList.add("Leonardo")
+    td9.classList.add("Leonardo")
+    
+    td12.classList.add("Praticas")
+    td11.classList.add("Sorvetinho")
+
+}
+
+else if(Turma == "1BI" && Dia == "TER"){
+    td1.innerText = "ED.FÍSICA - DANIEL"
+    td2.innerText = "GEOGRAFIA - PAULO"
+    td3.innerText = "ED.FÍSICA - DANIEL"
+    
+    td5.innerText = "INGLÊS - LUCAS"
+    td6.innerText = "HISTÓRIA - FRANCISCO"
+
+    td8.innerText = "ELETIVA ORIENTADA - LEONARDO"
+    td9.innerText = "ELETIVA ORIENTADA - LEONARDO"
+
+    td11.innerText = "PRÁTICAS EXPERIMENTAIS (1)"
+    td12.innerText = "MATEMÁTICA - JOELSON"
+
+    td1.classList.add("Manuela")
+    td2.classList.add("Paulo")
+    td3.classList.add("Daniel")
+    
+    td5.classList.add("Lucas")
+    td6.classList.add("Chico")
+
+    td8.classList.add("Leonardo")
+    td9.classList.add("Leonardo")
+    
+    td12.classList.add("Praticas")
+    td11.classList.add("Sorvetinho")
+
+}
+}
