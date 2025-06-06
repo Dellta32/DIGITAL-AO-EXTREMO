@@ -142,13 +142,12 @@ function tabelinha() {
     td1.innerText = "EXEMPLO"
     td2.innerText = "balabalba"
     td3.innerText = "balabalba"
-    td4.innerText = "-"
-    td5.innerText = "balabalba"
-    td6.innerText = "balabalba"
+    td4.innerText = "lanche - 10:00h - 10:20h"
+    td6.innerText = ""
     td7.innerText = "ALMOÇO"
-    td8.innerText = "balabalba"
-    td9.innerText = "balabalba"
-    td10.innerText = "-"
+    td8.innerText = ""
+    td9.innerText = ""
+    td10.innerText = "LAnche- 15:00h - 15:20h"
     td11.innerText = "balabalba"
     td12.innerText = "balabalba"
 
@@ -180,7 +179,7 @@ function tabelinha() {
     table.appendChild(tr12)
 
 
-    ///condição seletor para tabela///
+                           ///condição seletor para tabela///
 
 
     var Turma = document.getElementById("Turma").value;
@@ -190,13 +189,13 @@ function tabelinha() {
         td1.innerText = "INGLÊS - LUCAS"
         td2.innerText = "SOCIOLOGIA - MARIANA"
         td3.innerText = "BIOLOGIA - MANUELA"
-        td4.innerText = "-"
+       
         td5.innerText = " ED. FISICA - DANIEL"
         td6.innerText = "QUÍMICA - MARCELA"
-        td7.innerText = "Almoço"
+       
         td8.innerText = "PROJETO DE VIDA - IARA"
         td9.innerText = "PROJETO DE VIDA - IARA"
-        td10.innerText = "-"
+        
         td11.innerText = "NOÇÕES DE ELETRÔNICA E ELETRICIDADE - NANCY"
         td12.innerText = "NOÇÕES DE ELETRÔNICA E ELETRICIDADE - NANCY"
 
@@ -225,7 +224,7 @@ function tabelinha() {
 
         td8.innerText = "MATEMÁTICA - JOELSON"
         td9.innerText = "MATEMÁTICA - JOELSON"
-        td10.innerText = "-"
+        
         td11.innerText = "ED. FISICA - DANIEL"
         td12.innerText = "GEOGRAFIA - PAULO"
 

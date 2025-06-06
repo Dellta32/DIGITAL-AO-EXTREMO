@@ -19,8 +19,8 @@ a {
     justify-content: space-around;
     background-color: #122333;
     height: 8vh;
-    border-bottom: groove   #490b2d;
-   
+    border-bottom: groove #490b2d;
+
 }
 
 .nav-list {
@@ -33,7 +33,7 @@ a {
     text-transform: uppercase;
     width: 300px;
     overflow: hidden;
-    
+
 
 }
 
@@ -76,7 +76,7 @@ a {
 .nav-list li a:hover {
     font-size: 30px;
     transition: 0.5s ease;
-    
+
 }
 
 .burguer {
@@ -202,9 +202,7 @@ body {
     height: 30px;
     border-radius: 5px;
     border-color: transparent;
-
 }
-
 
 .tabela-horario {
     display: flex;
@@ -216,25 +214,27 @@ body {
     border: solid #2a3e52;
     border-radius: 9px;
     align-items: center;
-
 }
 
 .tabela-horario td {
-    text-align:center  ;
+    text-align: center;
     height: 80px;
     width: 150px;
-    border: solid 1px #2a3e52
+    border: solid 1px #2a3e52;
+    font-weight: bold;
 }
 
 .flexconteiner {
     display: flex;
-    gap: 0px; 
+    gap: 0px;
     height: 93vh;
     flex-direction: row;
     align-items: flex-start;
     transition: 0.7;
+    text-transform: uppercase;
 
 }
+
 .table-conteiner {
     width: 700px;
     margin-top: 40px;
@@ -245,6 +245,7 @@ body {
     float: right;
     margin-right: 40px;
 }
+
 .selectors-conteiner {
     display: flex;
     flex-direction: column;
@@ -261,75 +262,127 @@ body {
 
 }
 
+.tabelaCardapio{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 90px;
+    background-color: #fff;
+    border: solid #2a3e52;
+    border-radius: 9px;
+    align-items: center;
+}
 
-.Lucas{
+.tabelaCardapio td {
+    text-align: center;
+    height: 80px;
+    width: 150px;
+    border: solid 1px #2a3e52;
+    font-weight: bold;
+}
+
+
+.Lucas {
     background-color: #cccab4;
 }
 
-.Mariana{
-background-color: #ae91cf;
+.Mariana {
+    background-color: #ae91cf;
 
 }
 
-.Manuela{
+.Manuela {
     background-color: #7bbd86;
 }
-.Leonardo{
+
+.Leonardo {
     background-color: #913737;
 }
-.Daniel{
+
+.Daniel {
     background-color: #001ea3;
     color: #fff;
 }
-.Marcela{
+
+.Marcela {
     background-color: #dd3bdd;
-    
+
 }
-.Iara{
+
+.Iara {
     background-color: #89699b;
 }
-.JavaScriptMan{
+
+.JavaScriptMan {
     background-color: #bd9a00;
 }
-.Chico{
+
+.Chico {
     background-color: #929292;
 }
-.Gaspar{
+
+.Gaspar {
     background-color: #6aa3da;
 }
-.Paulo{
+
+.Paulo {
     background-color: #ac6203;
 }
-.Ranaildo{
+
+.Ranaildo {
     background-color: #5900be;
 }
-.Marcelo{
+
+.Marcelo {
     background-color: #d4d1a4;
 }
-.Eber{
+
+.Eber {
     background-color: #d9ff00;
 }
-.Rute{
+
+.Rute {
     background-color: #7a4949;
 }
-.Rosa{
+
+.Rosa {
     background-color: #af0000;
 }
-.Sorvetinho{
+
+.Sorvetinho {
     background-color: #496885;
 }
-.Lula{
+
+.Lula {
     background-color: #048004;
 }
-.AnaG{
+
+.AnaG {
     background-color: #eee1c5;
 }
-.Linduberg{
+
+.Linduberg {
     background-color: #3c5b79;
 }
-.Eletrilha{
+
+.Eletrilha {
     background-color: #122333;
 }
+
 .Praticas {
     background-color: #c5e4e0;
+}
+
+/*cardapio*/
+
+
+.lanche{
+
+    background-color: #e2c256;
+   
+}
+
+.almoco{
+
+    background-image: linear-gradients(to right, orange,white);
 }
