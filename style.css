@@ -262,7 +262,7 @@ body {
 
 }
 
-.tabelaCardapio{
+.tabelaCardapio {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
@@ -271,6 +271,16 @@ body {
     border: solid #2a3e52;
     border-radius: 9px;
     align-items: center;
+    width: 1080px;
+    justify-self: center;
+
+}
+
+.tabelaCardapio table {
+    margin: 20px;
+    border: 1px solid #2a3e52;
+   
+
 }
 
 .tabelaCardapio td {
@@ -376,13 +386,27 @@ body {
 /*cardapio*/
 
 
-.lanche{
+.lanche {
 
-    background-color: #e2c256;
-   
+    background: #FFAB24;
+    background: linear-gradient(180deg, #96cfe0 1%, #ffffff 96%);
+
 }
 
-.almoco{
+.almoco {
 
-    background-image: linear-gradients(to right, orange,white);
+    background: #FFAB24;
+    background: linear-gradient(180deg, #ffab24 1%, #ffffff 96%);
+}
+
+.tituloCardapio {
+
+    font-weight: bold;
+    margin-top: 33px;
+}
+.diasSemanaCardapio{
+
+    background: #dddddd;
+    background: linear-gradient(180deg, #818181 1%, #ffffff 96%);
+
 }
