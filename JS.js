@@ -1,4 +1,12 @@
 function menu() {
+    var overlay = document.createElement("div");
+    overlay.classList.add("overlay");
+    document.body.appendChild(overlay);
+
+    overlay.style.display = "block"; // Exibe o overlay
+    overlay.style.animation = "fadein 0.5s ease forwards"
+
+
     var itens = document.createElement("div");
     var nav = document.getElementById("nav").appendChild(itens);
 
@@ -6,8 +14,8 @@ function menu() {
 
     var ul = document.createElement("ul");
     ul.classList.add("nav-list");
-  
-                                               ///Adicionado link0 para a pagina index///
+
+    ///Adicionado link0 para a pagina index///
 
     var li0 = document.createElement("li");
     var li1 = document.createElement("li");
@@ -36,19 +44,19 @@ function menu() {
 
 
     link0.innerText = "Home";
-     link0.href = "index.html";
+    link0.href = "index.html";
 
     link1.innerText = "sobre";
-        link1.href = "sobre.html";
+    link1.href = "sobre.html";
 
     link2.innerText = "Horários";
-        link2.href = "horarios.html";
+    link2.href = "horarios.html";
 
     link3.innerText = "Cardápio";
-        link3.href = "cardapio.html";
+    link3.href = "cardapio.html";
 
     link4.innerText = "area de estudo";
-     link4.href = "areaestudo.html";
+    link4.href = "areaestudo.html";
 
     itens.appendChild(ul);
 
@@ -64,11 +72,15 @@ function menu() {
     closebotao.innerText = "X";
     closebotao.classList.add("menu-close");
 
+
     closebotao.onclick = function () {
         var menu = document.querySelector(".menu");
 
-        itens.style.animation = "fade-out 0.5s ease forwards";
-        setTimeout(() => { menu.remove(); }, 500);
+        itens.style.animation = "slide-out 0.5s ease forwards";
+        overlay.style.animation = "fadeOut 0.5s ease forwards";
+        setTimeout(() => { menu.remove();  overlay.remove();}, 500);
+       
+        
     }
 
     itens.appendChild(closebotao);
@@ -85,14 +97,16 @@ function menu() {
         var burguer = document.querySelector(".burguer");
 
         if (menu && !menu.contains(event.target) && !burguer.contains(event.target)) {
-            menu.style.animation = "fade-out 0.5s ease forwards";
-            setTimeout(() => { menu.remove(); }, 500);
+            menu.style.animation = "slide-out 0.5s ease forwards";
+            overlay.style.animation = "fadeOut 0.5s ease forwards";
+            setTimeout(() => { menu.remove(); overlay.remove()}, 500);
         }
 
     }
     )
 
 }
+
 
 
 
@@ -108,6 +122,7 @@ function tabelinha() {
     var flexcont = document.getElementsByClassName("flexconteiner")
     var divTable = document.getElementById("table-conteiner")
     divTable.classList.add("table-conteiner")
+    divTable.innerHTML = ""
 
     var table = document.createElement("table")
     table.classList.add("tabela-horario")
@@ -179,7 +194,7 @@ function tabelinha() {
     table.appendChild(tr12)
 
 
-                           ///condição seletor para tabela///
+    ///condição seletor para tabela///
 
 
     var Turma = document.getElementById("Turma").value;
@@ -189,13 +204,13 @@ function tabelinha() {
         td1.innerText = "INGLÊS - LUCAS"
         td2.innerText = "SOCIOLOGIA - MARIANA"
         td3.innerText = "BIOLOGIA - MANUELA"
-       
+
         td5.innerText = " ED. FISICA - DANIEL"
         td6.innerText = "QUÍMICA - MARCELA"
-       
+
         td8.innerText = "PROJETO DE VIDA - IARA"
         td9.innerText = "PROJETO DE VIDA - IARA"
-        
+
         td11.innerText = "NOÇÕES DE ELETRÔNICA E ELETRICIDADE - NANCY"
         td12.innerText = "NOÇÕES DE ELETRÔNICA E ELETRICIDADE - NANCY"
 
@@ -224,7 +239,7 @@ function tabelinha() {
 
         td8.innerText = "MATEMÁTICA - JOELSON"
         td9.innerText = "MATEMÁTICA - JOELSON"
-        
+
         td11.innerText = "ED. FISICA - DANIEL"
         td12.innerText = "GEOGRAFIA - PAULO"
 
@@ -634,7 +649,7 @@ function tabelinha() {
         td11.classList.add("")
 
     }
-    
 
-    
+
+
 }

@@ -13,6 +13,46 @@ a {
     text-decoration: none;
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Escurece com transparência */
+    z-index: 9;
+    /* Deve estar abaixo do menu */
+    display: none;
+    /* Inicialmente escondido */
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 1;
+
+    }
+
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+
+    }
+
+    to {
+        opacity: 0;
+
+    }
+
+}
+
 #nav {
     display: flex;
     align-items: center;
@@ -104,7 +144,8 @@ a {
     transition: 0.7s;
     top: 0;
     left: 0;
-    animation: fade 0.5s ease-in-out forwards;
+    animation: slide-in 0.5s ease-in-out forwards;
+    z-index: 10;
 }
 
 .menu li:hover {
@@ -142,7 +183,7 @@ body {
 }
 
 
-@keyframes fade {
+@keyframes slide-in {
 
     from {
         transform: translateX(-100%);
@@ -156,7 +197,7 @@ body {
 
 }
 
-@keyframes fade-out {
+@keyframes slide-out {
 
     0% {
         transform: translateX(0);
@@ -259,6 +300,7 @@ body {
     border: solid #2a3e52;
     border-radius: 9px;
     align-self: flex-start;
+    z-index: 1;
 
 }
 
@@ -279,7 +321,7 @@ body {
 .tabelaCardapio table {
     margin: 20px;
     border: 1px solid #2a3e52;
-   
+
 
 }
 
@@ -375,6 +417,7 @@ body {
     background-color: #3c5b79;
 }
 
+
 .Eletrilha {
     background-color: #122333;
 }
@@ -383,20 +426,25 @@ body {
     background-color: #c5e4e0;
 }
 
+.Nancy {
+
+    background-color: #00EEEE;
+}
+
 /*cardapio*/
 
 
 .lanche {
 
     background: #FFAB24;
-    background: linear-gradient(180deg, #96cfe0 1%, #ffffff 96%);
+    background: linear-gradient(180deg, #5272b6 1%, #ffffff 96%);
 
 }
 
 .almoco {
 
     background: #FFAB24;
-    background: linear-gradient(180deg, #ffab24 1%, #ffffff 96%);
+    background: linear-gradient(180deg, #abd1ec 1%, #ffffff 96%);
 }
 
 .tituloCardapio {
@@ -404,9 +452,192 @@ body {
     font-weight: bold;
     margin-top: 33px;
 }
-.diasSemanaCardapio{
+
+.titulodaFila {
+
+    font-weight: bold;
+    display: block;
+   align-self: center;
+    
+   
+
+}
+
+.diasSemanaCardapio {
 
     background: #dddddd;
     background: linear-gradient(180deg, #818181 1%, #ffffff 96%);
 
+}
+
+/*FILA DO LANCHE/*/
+
+.filaTabela {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 90px;
+    background-color: #fff;
+    border: solid #2a3e52;
+    border-radius: 9px;
+    align-items: center;
+    width: 1080px;
+    justify-self: center;
+}
+
+.filaTabela table {
+    margin: 20px;
+    border: 1px solid #2a3e52;
+    height: 440px;
+    width: 100%;
+    border-spacing: 0;
+
+
+}
+
+.filaTabela td {
+    text-align: center;
+    height: 40px;
+    width: 80px;
+    border: solid 1px #2a3e52;
+    font-weight: bold;
+    text-size-adjust: 30px;
+    table-layout: fixed;
+
+
+}
+
+
+
+
+/*//Responzívidaddy//*/
+
+@media (max-width: 999px) {
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #122333;
+        height: 8dvh;
+        border-bottom: groove #490b2d;
+
+    }
+
+    .nav-list {
+        list-style: none;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        padding: 2px;
+        justify-content: space-around;
+        text-transform: uppercase;
+        width: 100px;
+        overflow: hidden;
+
+
+    }
+
+    .nav-list li {
+
+        background-color: #122333;
+        width: 250px;
+        transition: 0.7s;
+        color: #fff;
+        letter-spacing: 4px;
+        gap: 10px;
+        margin: 1px;
+        padding: 40px 15px 40px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+
+    .nav-list li:hover {
+
+        background-color: #fff;
+        padding: 47px 15px 40px;
+        border-radius: 7px;
+    }
+
+    .nav-list li a {
+        color: #fff;
+        font-size: 20px;
+        height: 100%;
+    }
+
+    .nav-list li:hover a {
+        color: #122333;
+        text-decoration: none;
+        display: flex;
+        width: 100%;
+        background-color: #f6f8fa;
+        transition: 0.5s ease;
+    }
+
+    .nav-list li a:hover {
+        font-size: 30px;
+        transition: 0.5s ease;
+
+    }
+
+    .burguer {
+
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    .burguer div {
+
+        width: 32px;
+        height: 2px;
+        background: #fff;
+        margin: 8px;
+        transition: 0.7s;
+    }
+
+    .menu {
+        background-color: #122333;
+        width: 300px;
+        height: 100%;
+        position: absolute;
+        transition: 0.7s;
+        top: 0;
+        left: 0;
+        animation: fade 0.5s ease-in-out forwards;
+    }
+
+    .menu li:hover {
+        color: #122333;
+        background-color: #fff;
+    }
+
+    body {
+        background-color: #c2c2c2;
+    }
+
+    .menu-close {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+        background-color: #490b2d;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        font-weight: bold;
+
+
+    }
+
+    .close-conteiner {
+        width: 300px;
+        height: 8vh;
+
+    }
 }
