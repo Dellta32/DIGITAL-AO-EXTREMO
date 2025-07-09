@@ -19,9 +19,12 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);           /* Escurece com transparência */
-    z-index: 9;                                      /* Deve estar abaixo do menu */
-    display: none;                                  /* Inicialmente escondido */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Escurece com transparência */
+    z-index: 9;
+    /* Deve estar abaixo do menu */
+    display: none;
+    /* Inicialmente escondido */
 }
 
 @keyframes fadein {
@@ -57,8 +60,8 @@ a {
     flex-direction: row;
     background-color: #f7f7f7;
     height: 8vh;
-    border-bottom-color:  #a80909;
-    border-bottom-style: groove  ;
+    border-bottom-color: #a80909;
+    border-bottom-style: groove;
     position: relative;
 
 
@@ -129,7 +132,7 @@ a {
     position: absolute;
     top: 10px;
     left: 10px;
-   
+
 }
 
 .burguer div {
@@ -142,7 +145,7 @@ a {
 
 .burguer div:nth-child(1) {
     background: #f10f10
-    /* Cor 1 baseada na logo */
+        /* Cor 1 baseada na logo */
 }
 
 .burguer div:nth-child(2) {
@@ -198,7 +201,7 @@ body {
 
 
 .menutext {
-    
+
     font-weight: bold;
     color: #0b40bd;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -213,35 +216,51 @@ body {
 .pesquisa {
 
     align-self: center;
-    margin-left: 10px;                                               /* Espaço entre a logo e o campo de pesquisa */
+    margin-left: 10px;
+    /* Espaço entre a logo e o campo de pesquisa */
     height: 30px;
     border-radius: 5px;
     padding: 5px;
     font-size: 16px;
-    flex-shrink: 0;                                            /* Impede que o campo de pesquisa encolha */
+    flex-shrink: 0;
+    /* Impede que o campo de pesquisa encolha */
     position: absolute;
-    right: 15%;                                              /* Ajuste para posicionar ao lado da logo */
-    width: 80px;                                            /* Largura inicial */
+    right: 15%;
+    /* Ajuste para posicionar ao lado da logo */
+    width: 80px;
+    /* Largura inicial */
     height: 30px;
     border: 2px solid #ccc;
     border-radius: 5px;
     padding: 5px;
     font-size: 16px;
     outline: none;
-    transition: all 0.3s ease;                     /* Transição suave para todas as propriedades */
+    transition: all 0.3s ease;
+    /* Transição suave para todas as propriedades */
 
 }
 
 .pesquisa:focus {
-    width: 300px;                                      /* Largura ao ganhar foco */
-    border-color: #5272b6;                          /* Cor da borda ao ganhar foco */
-    box-shadow: 0 0 10px rgba(82, 114, 182, 0.5);  /* Sombra ao redor */
-    background-color: #f9f9f9;                    /* Cor de fundo ao ganhar foco */
+    width: 300px;
+    /* Largura ao ganhar foco */
+    border-color: #5272b6;
+    /* Cor da borda ao ganhar foco */
+    box-shadow: 0 0 10px rgba(82, 114, 182, 0.5);
+    /* Sombra ao redor */
+    background-color: #f9f9f9;
+    /* Cor de fundo ao ganhar foco */
 }
 
-.blackthemetransitor{
+.blacktheme-label {
+    width: 100px;
+    height: 30px;
+    position: relative;
+    display: block;
+    background: #ebebeb;
+    border-radius: 200px;
 
-    
+
+
 }
 
 
@@ -712,3 +731,175 @@ body {
 
     }
 }
+
+/* TEMA ESCURO*/
+
+.theme-toggle-container {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.theme-toggle {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.theme-toggle-container label {
+    font-size: 14px;
+    color: #122333;
+    cursor: pointer;
+}
+
+/* Tema escuro */
+body.dark-theme {
+    background-color: #122333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Tema escuro para nav */
+nav.dark-theme {
+    background-color: #121212;
+    /* Cor escura */
+    border-bottom: groove #333;
+    /* Borda escura */
+}
+
+/* Tema escuro para o menu */
+.menu.dark-theme {
+    background-color: #121212;
+    /* Cor escura */
+    color: #ffffff;
+    /* Texto claro */
+}
+
+/* Tema escuro para os itens do menu */
+.menu.dark-theme .nav-list li {
+    background-color: #1e1e1e;
+    /* Cor escura para os itens */
+    color: #ffffff;
+    /* Texto claro */
+}
+
+.menu.dark-theme .nav-list li:hover {
+    background-color: #333;
+    /* Cor mais clara ao passar o mouse */
+}
+
+.menu-close.dark-theme {
+    background-color: #333;
+    /* Botão de fechar escuro */
+    color: #ffffff;
+    /* Texto claro */
+}
+
+header.dark-theme {
+    background-color: #121212;
+    /* Cor escura */
+    color: #ffffff;
+    /* Texto claro */
+    border-bottom: groove #333;
+    /* Borda escura */
+}
+
+/*botao de transição*/
+.theme-toggle-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.theme-toggle {
+    display: none;
+    /* Esconde o checkbox padrão */
+}
+
+.theme-toggle-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.sun,
+.moon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.sun {
+    background-color: #f0c419;
+    /* Cor do sol */
+    box-shadow: 0 0 10px #f0c419;
+    opacity: 1;
+}
+
+.moon {
+    background-color: #4a90e2;
+    /* Cor da lua */
+    box-shadow: inset 10px 0 10px rgba(0, 0, 0, 0.5);
+    /* Lua minguante */
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.moon .star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    top: 10px;
+    left: 15px;
+}
+
+.moon .star.small {
+    width: 3px;
+    height: 3px;
+    top: 20px;
+    left: 25px;
+}
+
+.theme-toggle:checked+.theme-toggle-label .sun {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.theme-toggle:checked+.theme-toggle-label .moon {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
+.theme-text {
+    font-size: 16px;
+    color: #122333;
+    font-weight: bold;
+}
+.theme-toggle:checked +.theme-toggle-label .theme-text {
+    color: #f7f7f7; /* Cor para o tema escuro */
+}
+
+nav.dark-theme {
+    background-color: #121212; /* Cor escura */
+    border-bottom: groove #333; /* Borda escura */
+    color: #ffffff; /* Texto claro */
+}
+
+
+
+
