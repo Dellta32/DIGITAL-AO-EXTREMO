@@ -1,3 +1,6 @@
+
+
+
 function menu() {
     var overlay = document.createElement("div");
     overlay.classList.add("overlay");
@@ -7,13 +10,23 @@ function menu() {
     overlay.style.animation = "fadein 0.5s ease forwards"
 
 
+
     var itens = document.createElement("div");
     var nav = document.getElementById("nav").appendChild(itens);
 
     itens.classList.add("menu");
 
+
     var ul = document.createElement("ul");
     ul.classList.add("nav-list");
+
+
+
+    ///VERIFICAÇÂO FODONA///
+    if (document.body.classList.contains("dark-theme")) {
+        itens.classList.add("dark-theme");
+    }
+
 
     ///Adicionado link0 para a pagina index///
 
@@ -22,12 +35,17 @@ function menu() {
     var li2 = document.createElement("li");
     var li3 = document.createElement("li");
     var li4 = document.createElement("li");
+    var li5 = document.createElement("li");
+    var li6 = document.createElement("li");
 
     var link0 = document.createElement("a");
     var link1 = document.createElement("a");
     var link2 = document.createElement("a");
     var link3 = document.createElement("a");
     var link4 = document.createElement("a");
+    var link5 = document.createElement("a");
+    var link6 = document.createElement("a");
+
 
 
     ul.appendChild(li0);
@@ -35,15 +53,20 @@ function menu() {
     ul.appendChild(li2);
     ul.appendChild(li3);
     ul.appendChild(li4);
+    ul.appendChild(li5);
+    ul.appendChild(li6);
 
     li0.appendChild(link0);
     li1.appendChild(link1);
     li2.appendChild(link2);
     li3.appendChild(link3);
     li4.appendChild(link4);
+    li5.appendChild(link5);
+    li6.appendChild(link6);
 
 
-    link0.innerText = "Home";
+
+    link0.innerText = "Início";
     link0.href = "index.html";
 
     link1.innerText = "sobre";
@@ -58,7 +81,17 @@ function menu() {
     link4.innerText = "area de estudo";
     link4.href = "areaestudo.html";
 
+    link5.innerText = "Gestão e Professores";
+    link5.href = "gestao.html";
+
+    link6.innerText = "Guia Para O Enem";
+    link6.href = "guiaTreineiro.html";
+
     itens.appendChild(ul);
+
+
+
+
 
 
     var conteinerclosebotao = document.createElement("div");
@@ -107,57 +140,63 @@ function menu() {
 
     var toggleContainer = document.createElement("div");
     toggleContainer.classList.add("theme-toggle-container");
-    
+
     var toggleInput = document.createElement("input");
     toggleInput.type = "checkbox";
     toggleInput.id = "theme-toggle";
     toggleInput.classList.add("theme-toggle");
-    
+
     var toggleLabel = document.createElement("label");
     toggleLabel.setAttribute("for", "theme-toggle");
     toggleLabel.classList.add("theme-toggle-label");
-    
+
     var iconeSol = document.createElement("div");
     iconeSol.classList.add("sun");
-    
+
     var iconeLua = document.createElement("div");
     iconeLua.classList.add("moon");
     var star1 = document.createElement("div");
     star1.classList.add("star");
     var star2 = document.createElement("div");
     star2.classList.add("star", "small");
-    
+
     iconeLua.appendChild(star1);
     iconeLua.appendChild(star2);
-    
+
     toggleLabel.appendChild(iconeSol);
     toggleLabel.appendChild(iconeLua);
-    
+
     var themeText = document.createElement("span");
     themeText.classList.add("theme-text");
     themeText.innerText = "Tema";
-    
+
     toggleContainer.appendChild(toggleInput);
     toggleContainer.appendChild(toggleLabel);
     toggleContainer.appendChild(themeText);
     toggleContainer.style.position = "absolute";
     toggleContainer.style.bottom = "20px";
     toggleContainer.style.right = "20px";
-    
+
     itens.appendChild(toggleContainer);
 
     toggleInput.addEventListener("change", function () {
         document.body.classList.toggle("dark-theme");
+
         var nav = document.getElementById("nav");
-        nav.classList.toggle("dark-theme");
+        nav.classList.toggle("dark-theme");         // Apenas adiciona ou remove a classe 'dark-theme'
+
         var header = document.querySelector("header");
         header.classList.toggle("dark-theme");
-    
+
         var menu = document.querySelector(".menu");
         if (menu) {
             menu.classList.toggle("dark-theme");
         }
+
+
     });
+
+
     const sun = document.querySelector('.sun')
     const moon = document.querySelector('.moon')
     const button = document.querySelector('.container')
@@ -167,8 +206,12 @@ function menu() {
         moon.classList.toggle('visible')
     })
 
-  
+
 }
+
+
+
+
 
 
 

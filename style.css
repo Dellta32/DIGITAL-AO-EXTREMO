@@ -1,4 +1,5 @@
 * {
+    transition: 0.7s;
     padding: 0;
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -64,7 +65,6 @@ a {
     border-bottom-style: groove;
     position: relative;
 
-
 }
 
 .nav-list {
@@ -81,6 +81,21 @@ a {
 
 
 }
+
+.nav-list li:nth-child(5):hover {
+    padding: 40px 15px;
+    /* Mantém o tamanho consistente */
+    border-radius: 7px;
+    background-color: #122333;
+    /* Cor de fundo no hover */
+    color: #f7f7f7;
+    /* Cor do texto no hover */
+    font-size: 16px;
+    /* Tamanho do texto consistente */
+    transition: all 0.3s ease;
+    /* Transição suave */
+}
+
 
 .nav-list li {
 
@@ -422,7 +437,7 @@ body {
     font-weight: bold;
 }
 
-
+/*CORES DOS PROFESSORES NA TABELA DE HORARIO*/
 .Lucas {
     background-color: #cccab4;
 }
@@ -757,7 +772,9 @@ body {
 
 /* Tema escuro */
 body.dark-theme {
-    background-color: #122333;
+    background: linear-gradient(to right, #121212, #333);
+    background-size: 200% 100%;
+    animation: theme-transition 0.5s ease forwards;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -802,7 +819,7 @@ header.dark-theme {
     /* Cor escura */
     color: #ffffff;
     /* Texto claro */
-    border-bottom: groove #333;
+
     /* Borda escura */
 }
 
@@ -885,21 +902,70 @@ header.dark-theme {
 
 
 
+/* Estilo padrão para theme-text */
 .theme-text {
     font-size: 16px;
     color: #122333;
+    /* Cor padrão para tema claro */
     font-weight: bold;
+    transition: color 0.3s ease;
 }
-.theme-toggle:checked +.theme-toggle-label .theme-text {
-    color: #f7f7f7; /* Cor para o tema escuro */
+
+/* Estilo padrão para theme-text */
+.theme-text {
+    font-size: 16px;
+    color: #122333;
+    /* Cor padrão para tema claro */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Links no tema escuro */
+body.dark-theme a {
+    color: #f7f7f7;
+    /* Cor clara para tema escuro */
+}
+
+/* theme-text no tema escuro */
+body.dark-theme .theme-text {
+    color: #f7f7f7;
+    /* Cor clara para tema escuro */
 }
 
 nav.dark-theme {
-    background-color: #121212; /* Cor escura */
-    border-bottom: groove #333; /* Borda escura */
-    color: #ffffff; /* Texto claro */
+    transition: 0.7s;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height: 8vh;
+    position: relative;
+    background-color: #121212 !important;
+    /* Cor escura */
+    border-bottom: groove #333;
+    /* Borda escura */
+    color: #ffffff;
+    /* Texto claro */
+    box-shadow: 0px 4px 10px 0px #a80909, 0px -4px 10px 0px rgba(255, 0, 0, 0.5);
+    /* Efeito de luz */
+
+}
+
+.menu.dark-theme .nav-list li:hover {
+    color: #ffffff;
+    background: linear-gradient(to right, #121212, #333);
+    background-size: 200% 100%;
+    animation: theme-transition 0.5s ease forwards;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 
+@keyframes theme-transition {
+    from {
+        background-position: 100% 0;
+    }
 
-
+    to {
+        background-position: 0 0;
+    }
+}
