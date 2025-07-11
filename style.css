@@ -969,3 +969,25 @@ nav.dark-theme {
         background-position: 0 0;
     }
 }
+
+.sugestao {
+    position: absolute;
+    top: 50px;
+    left: 15%;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.sugestao-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.sugestao-item:hover {
+    background-color: #f0f0f0;
+}

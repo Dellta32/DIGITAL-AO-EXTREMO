@@ -1984,3 +1984,74 @@ function tabelinha() {
 
     }
 }
+
+
+const paginas = [
+    { title: "Início", url: "index.html" },
+    { title: "Sobre", url: "sobre.html" },
+    { title: "Horários", url: "horarios.html" },
+    { title: "Cardápio", url: "cardapio.html" },
+    { title: "Área de Estudo", url: "areaestudo.html" },
+    { title: "Gestão e Professores", url: "gestao.html" },
+    { title: "Guia Para O Enem", url: "guiaTreineiro.html" }
+];
+
+const professores = [
+    { nome: "Lucas", disciplina: "Inglês", cor: "#cccab4", url: "gestao.html#lucas" },
+    { nome: "Mariana", disciplina: "Sociologia", cor: "#ae91cf", url: "gestao.html#mariana" },
+    { nome: "Manuela", disciplina: "Biologia", cor: "#7bbd86", url: "gestao.html#manuela" },
+    { nome: "Leonardo", disciplina: "Matemática", cor: "#913737", url: "gestao.html#leonardo" },
+    { nome: "Daniel", disciplina: "Ed. Física", cor: "#001ea3", url: "gestao.html#daniel" },
+    { nome: "Marcela", disciplina: "Química", cor: "#dd3bdd", url: "gestao.html#marcela" },
+    { nome: "Iara", disciplina: "Projeto de Vida", cor: "#89699b", url: "gestao.html#iara" },
+    { nome: "Nancy", disciplina: "Noções de Eletrônica e Eletricidade", cor: "#00EEEE", url: "gestao.html#nancy" },
+    { nome: "Chico", disciplina: "História", cor: "#929292", url: "gestao.html#chico" },
+    { nome: "Gaspar", disciplina: "Direito Empresarial", cor: "#6aa3da", url: "gestao.html#gaspar" },
+    { nome: "Paulo", disciplina: "Geografia", cor: "#ac6203", url: "gestao.html#paulo" },
+    { nome: "Ranaildo", disciplina: "Empreendedorismo", cor: "#5900be", url: "gestao.html#ranaildo" },
+    { nome: "Marcelo", disciplina: "Informática Básica", cor: "#d4d1a4", url: "gestao.html#marcelo" },
+    { nome: "Eber", disciplina: "Português", cor: "#d9ff00", url: "gestao.html#eber" },
+    { nome: "Rute", disciplina: "Marketing e Serviços", cor: "#7a4949", url: "gestao.html#rute" },
+    { nome: "Rosa", disciplina: "Contabilidade Geral", cor: "#af0000", url: "gestao.html#rosa" },
+    { nome: "Joelson", disciplina: "Matemática", cor: "#496885", url: "gestao.html#joelson" },
+    { nome: "Lula", disciplina: "Arte", cor: "#048004", url: "gestao.html#lula" },
+    { nome: "AnaG", disciplina: "Português", cor: "#eee1c5", url: "gestao.html#anag" },
+    { nome: "Linduberg", disciplina: "Arquitetura e Organização de Computadores", cor: "#3c5b79", url: "gestao.html#linduberg" },
+    { nome: "Eletrilha", disciplina: "Eletivas", cor: "#122333", url: "gestao.html#eletrilha" },
+    { nome: "Praticas", disciplina: "Práticas Experimentais", cor: "#c5e4e0", url: "gestao.html#praticas" },
+    { nome: "JavaScriptMan", disciplina: "Programação Web", cor: "#bd9a00", url: "gestao.html#javascriptman" }
+];
+
+const searchInput = document.querySelector(".pesquisa");
+const sugestaoContainer = document.createElement("div");
+sugestaoContainer.classList.add("sugestao");
+document.body.appendChild(sugestaoContainer);
+
+searchInput.addEventListener("input", function () {
+    const query = searchInput.value.toLowerCase();
+    sugestaoContainer.innerHTML = ""; // Limpa as sugestões anteriores
+
+    if (query) {
+        // Filtra páginas e professores
+        const filteredPages = pages.filter(page => page.title.toLowerCase().includes(query));
+        const filteredProfessores = professores.filter(professor => professor.nome.toLowerCase().includes(query));
+
+        // Adiciona sugestões de páginas
+        filteredPages.forEach(page => {
+            const sugestao = document.createElement("div");
+            sugestao.classList.add("sugestao-item");
+            sugestao.innerText = page.title;
+            sugestao.onclick = () => window.location.href = page.url; // Redireciona ao clicar
+            sugestaoContainer.appendChild(sugestao);
+        });
+
+        // Adiciona sugestões de professores
+        filteredProfessores.forEach(professor => {
+            const sugestao = document.createElement("div");
+            sugestao.classList.add("sugestao-item");
+            sugestao.innerText = `${professor.nome} - ${professor.disciplina}`;
+            sugestao.onclick = () => window.location.href = professor.url; // Redireciona ao clicar
+            sugestaoContainer.appendChild(sugestao);
+        });
+    }
+});
