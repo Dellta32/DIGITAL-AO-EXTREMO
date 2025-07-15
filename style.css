@@ -972,7 +972,7 @@ nav.dark-theme {
 
 .sugestao {
     position: absolute;
-    top: 50px;
+    top: 60px;
     left: 15%;
     width: 300px;
     background-color: #fff;
@@ -991,3 +991,41 @@ nav.dark-theme {
 .sugestao-item:hover {
     background-color: #f0f0f0;
 }
+
+.errotexto {
+    position: absolute;
+    top: 300px;
+    left: 30%;
+    width: 600px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    padding: 10px;
+    color: #ff0000;
+    z-index: 1000;
+    text-transform: uppercase;
+}
+
+.errotexto h1 {
+    font-size: 50px;
+    color: #ff0000;
+}
+
+.errotexto h2 {
+    font-size: 17px;
+    color: #490b0b;
+}
+
+#sugestaoContainer {
+    
+    left: 1324px;
+  
+    width: 300px; /* Faz com que as sugestões tenham a mesma largura do input */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none; /* Inicialmente escondido */
+}
+
