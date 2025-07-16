@@ -399,7 +399,7 @@ body {
     height: 500px;
     background-color: #122333;
     margin-right: 0;
-    margin-left: 550px;
+    margin-left: 600px;
     margin-top: 40px;
     border: solid #2a3e52;
     border-radius: 9px;
@@ -1017,15 +1017,82 @@ nav.dark-theme {
 }
 
 #sugestaoContainer {
-    
+
     left: 1324px;
-  
-    width: 300px; /* Faz com que as sugestões tenham a mesma largura do input */
+
+    width: 300px;
+    /* Faz com que as sugestões tenham a mesma largura do input */
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    display: none; /* Inicialmente escondido */
+    display: none;
+    /* Inicialmente escondido */
 }
 
+body.dark-theme #sugestaoContainer {
+
+    left: 1324px;
+    width: 300px;
+    background-color: #444444 !important;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+    display: none;
+    /* Inicialmente escondido */
+}
+
+body.dark-theme .sugestao-item:hover {
+
+    color: #000000;
+}
+
+body.dark-theme .selectors-conteiner {
+
+    background-color: #3b414f !important;
+    border: solid #cecece !important;
+
+
+}
+
+@font-face {
+    font-family: Holborn;
+    src: url(font/Holborn.ttf) format('ttf'),
+        url(font/Holborn.otf) format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.slogan {
+
+    font-family: Holborn;
+}
+
+.slogan h1 {
+    font-size: 70px;
+    color: #c90202;
+    text-align: center;
+    margin-top: 300px;
+    font-weight: bold;
+    margin-right: 1000px;
+    text-transform: uppercase;
+}
+
+.slogan h2 {
+    margin-right: 770px;
+    font-size: 20px;
+    color: #11283d;
+    text-align: center;
+    margin-top: 1px;
+    font-weight: bold;
+}
+
+body.dark-theme .slogan h1 {
+    color: #c90202 !important;
+}
+
+body.dark-theme .slogan h2 {
+    color: #dbdbdb !important;
+}

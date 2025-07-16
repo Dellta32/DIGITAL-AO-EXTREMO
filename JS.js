@@ -2024,7 +2024,6 @@ function pesquisa() {
      // Ajustar a largura e posição do container de sugestões
     sugestaoContainer.style.position = 'absolute';
     sugestaoContainer.style.top = `${input.offsetTop + input.offsetHeight}px`;
-    sugestaoContainer.style.left = `${input.onsetLeft}px`;
     
 
       // Exibir sugestões enquanto o usuário digita
