@@ -794,6 +794,14 @@ nav.dark-theme {
     /* Texto claro */
 }
 
+.menu.dark-theme .sun{
+    display: none;
+}
+
+.menu.dark-theme moon{
+
+}
+
 /* Tema escuro para os itens do menu */
 .menu.dark-theme .nav-list li {
     background-color: #1e1e1e;
