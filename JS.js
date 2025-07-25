@@ -37,6 +37,7 @@ function menu() {
     var li4 = document.createElement("li");
     var li5 = document.createElement("li");
     var li6 = document.createElement("li");
+    var li7 = document.createElement("li");
 
     var link0 = document.createElement("a");
     var link1 = document.createElement("a");
@@ -45,6 +46,16 @@ function menu() {
     var link4 = document.createElement("a");
     var link5 = document.createElement("a");
     var link6 = document.createElement("a");
+    var link7 = document.createElement("a");
+    
+    var span0 = document.createElement("span");
+    var span1 = document.createElement("span");
+    var span2 = document.createElement("span");
+    var span3 = document.createElement("span");
+    var span4 = document.createElement("span");
+    var span5 = document.createElement("span");
+    var span6 = document.createElement("span");
+    var span7 = document.createElement("span");
 
 
 
@@ -55,6 +66,7 @@ function menu() {
     ul.appendChild(li4);
     ul.appendChild(li5);
     ul.appendChild(li6);
+    ul.appendChild(li7);
 
     li0.appendChild(link0);
     li1.appendChild(link1);
@@ -63,29 +75,41 @@ function menu() {
     li4.appendChild(link4);
     li5.appendChild(link5);
     li6.appendChild(link6);
+    li7.appendChild(link7);
+
+    link0.appendChild(span0)
+    link1.appendChild(span1)
+    link2.appendChild(span2)
+    link3.appendChild(span3)
+    link4.appendChild(span4)
+    link5.appendChild(span5)
+    link6.appendChild(span6)
+    link7.appendChild(span7)
 
 
-
-    link0.innerText = "Início";
+    span0.innerText = "Início";
     link0.href = "index.html";
 
-    link1.innerText = "sobre";
+    span1.innerText = "sobre";
     link1.href = "sobre.html";
 
-    link2.innerText = "Horários";
+    span2.innerText = "Horários";
     link2.href = "horarios.html";
 
-    link3.innerText = "Cardápio";
+    span3.innerText = "Cardápio";
     link3.href = "cardapio.html";
 
-    link4.innerText = "Grade Curricular";
+    span4.innerText = "area de estudo";
     link4.href = "areaestudo.html";
 
-    link5.innerText = "Gestão e Professores";
+    span5.innerText = "Gestão e Professores";
     link5.href = "gestao.html";
 
-    link6.innerText = "Guia Para O Enem";
+    span6.innerText = "Guia Para O Enem";
     link6.href = "guiaTreineiro.html";
+
+    span7.innerText = "Eventos";
+    link7.href = "eventos.html";
 
     itens.appendChild(ul);
 
@@ -102,7 +126,7 @@ function menu() {
     conteinerclosebotao.appendChild(closebotao)
     itens.appendChild(conteinerclosebotao);
 
-    closebotao.innerText = "X";
+    closebotao.innerText = "×";
     closebotao.classList.add("menu-close");
 
 

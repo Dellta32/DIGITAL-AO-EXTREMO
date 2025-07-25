@@ -68,6 +68,7 @@ a {
 }
 
 .nav-list {
+    gap: 5px;
     align-items: baseline;
     list-style: none;
     flex-direction: column;
@@ -82,62 +83,40 @@ a {
 
 }
 
-.nav-list li:nth-child(5):hover {
-    padding: 40px 15px;
-    /* Mantém o tamanho consistente */
-    border-radius: 7px;
-    background-color: #122333;
-    /* Cor de fundo no hover */
-    color: #f7f7f7;
-    /* Cor do texto no hover */
-    font-size: 16px;
-    /* Tamanho do texto consistente */
-    transition: all 0.3s ease;
-    /* Transição suave */
-}
-
 
 .nav-list li {
 
-    background-color: #f7f7f7;
-    width: 250px;
+    width: 100%;
     transition: 0.7s;
-    color: #122333;
     letter-spacing: 4px;
-    gap: 10px;
-    margin: 1px;
-    padding: 40px 15px 40px;
-
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+    border-radius: 10px;
 }
 
-.nav-list li:hover {
-
-    background-color: #122333;
-    padding: 47px 15px 40px;
-    border-radius: 7px;
-}
 
 .nav-list li a {
-    color: #122333;
+    border-radius: 10px;
     font-size: 20px;
-    height: 100%;
+    color: #122333;
+    padding: 20px 4%;
+    display: flex;
+    line-height: 40px;
     transition: 1s;
 }
 
 .nav-list li:hover a {
+    font-size: 22px;
+    border-radius: 10px;
     color: #f7f7f7;
     text-decoration: none;
-    display: flex;
-    width: 100%;
     background-color: #122333;
     transition: 0.5s ease;
 }
 
 .nav-list li a:hover {
-    font-size: 30px;
-    transition: 0.5s ease;
+    transition: 0.5s;
+    background-color: #3c5b79;
+    font-size: 22px;
 
 }
 
@@ -229,21 +208,11 @@ body {
 }
 
 .pesquisa {
-
     align-self: center;
     margin-left: 10px;
-    /* Espaço entre a logo e o campo de pesquisa */
-    height: 30px;
-    border-radius: 5px;
-    padding: 5px;
-    font-size: 16px;
-    flex-shrink: 0;
-    /* Impede que o campo de pesquisa encolha */
     position: absolute;
     right: 15%;
-    /* Ajuste para posicionar ao lado da logo */
     width: 80px;
-    /* Largura inicial */
     height: 30px;
     border: 2px solid #ccc;
     border-radius: 5px;
@@ -251,8 +220,6 @@ body {
     font-size: 16px;
     outline: none;
     transition: all 0.3s ease;
-    /* Transição suave para todas as propriedades */
-
 }
 
 .pesquisa:focus {
@@ -424,17 +391,24 @@ body {
 
 .tabelaCardapio table {
     margin: 20px;
+    background: azure;
+    border-radius: 30px;
     border: 1px solid #2a3e52;
-
+    width: 100%;
 
 }
 
+
 .tabelaCardapio td {
     text-align: center;
-    height: 80px;
-    width: 150px;
+    height: 70px;
+    width: 120px;
+    border-radius: 30px;
     border: solid 1px #2a3e52;
     font-weight: bold;
+    padding: 10px;
+    border: none;
+
 }
 
 /*CORES DOS PROFESSORES NA TABELA DE HORARIO*/
@@ -633,7 +607,6 @@ body {
         text-transform: uppercase;
         width: 285px;
         overflow: hidden;
-        border: solid #490b2d;
     }
 
     .nav-list li {
@@ -721,8 +694,12 @@ body {
         justify-content: center;
         border-radius: 5px;
         font-weight: bold;
+    }
 
-
+    .pesquisa {
+        right: 5%;
+        width: 100px;
+        height: 20px;
     }
 
     .close-conteiner {
@@ -798,6 +775,14 @@ nav.dark-theme {
     /* Cor escura */
     border-bottom: groove #333;
     /* Borda escura */
+}
+
+nav.dark-theme .logotext {
+    font-size: 30px;
+    color: #ffffff;
+    margin-right: 40px;
+    margin-top: 18px;
+    text-transform: uppercase;
 }
 
 /* Tema escuro para o menu */
