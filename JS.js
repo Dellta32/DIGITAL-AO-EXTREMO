@@ -78,7 +78,7 @@ function menu() {
     link3.innerText = "Cardápio";
     link3.href = "cardapio.html";
 
-    link4.innerText = "area de estudo";
+    link4.innerText = "Grade Curricular";
     link4.href = "areaestudo.html";
 
     link5.innerText = "Gestão e Professores";
