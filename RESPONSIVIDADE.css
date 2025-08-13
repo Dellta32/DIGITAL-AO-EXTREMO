@@ -4,7 +4,7 @@
         align-items: center;
         justify-content: space-around;
         background-color: #122333;
-        height: 8dd;
+        height: 8dvh;
         border-bottom: groove #490b2d;
     }
 
@@ -17,6 +17,12 @@
         font-size: 20px !important;
         border-radius: 24px;
     }
+
+    .professor-container img {
+        width: 200px;
+        height: 200px;
+    }
+
 
     .nav-list li {
         width: 100%;
