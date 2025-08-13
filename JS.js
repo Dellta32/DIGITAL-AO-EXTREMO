@@ -205,30 +205,33 @@ function menu() {
 
     toggleInput.addEventListener("change", function () {
         document.body.classList.toggle("dark-theme");
-
+    
         var nav = document.getElementById("nav");
-        nav.classList.toggle("dark-theme");         // Apenas adiciona ou remove a classe 'dark-theme'
-
+        nav.classList.toggle("dark-theme");
+    
         var header = document.querySelector("header");
         header.classList.toggle("dark-theme");
-
+    
         var menu = document.querySelector(".menu");
         if (menu) {
             menu.classList.toggle("dark-theme");
         }
-
-
+    
+        // Alternar visibilidade dos ícones de sol e lua
+        const sun = document.querySelector('.sun');
+        const moon = document.querySelector('.moon');
+        if (document.body.classList.contains("dark-theme")) {
+            sun.style.opacity = "0";
+            sun.style.transform = "scale(0.8)";
+            moon.style.opacity = "1";
+            moon.style.transform = "scale(1)";
+        } else {
+            sun.style.opacity = "1";
+            sun.style.transform = "scale(1)";
+            moon.style.opacity = "0";
+            moon.style.transform = "scale(0.8)";
+        }
     });
-
-
-    const sun = document.querySelector('.sun')
-    const moon = document.querySelector('.moon')
-    const button = document.querySelector('.container')
-
-    button.addEventListener('click', () => {
-        sun.classList.toggle('visible')
-        moon.classList.toggle('visible')
-    })
 
 
 }
