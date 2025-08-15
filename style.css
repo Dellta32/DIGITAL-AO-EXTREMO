@@ -329,9 +329,7 @@ body {
 .tabela-horario {
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
-    margin-left: 90px;
-    width: 350px;
+    margin: 0px 0px 0px 0px !important;
     background-color: #fff;
     border: solid #2a3e52;
     border-radius: 9px;
@@ -346,27 +344,29 @@ body {
     font-weight: bold;
 }
 
-.flexconteiner {
-    display: flex;
-    gap: 0px;
-    height: 93d;
-    flex-direction: row;
-    align-items: flex-start;
-    transition: 0.7;
-    text-transform: uppercase;
+    .flexconteiner {
+        display: flex
+    ;
+        gap: 0px;
+        height: 93dvh;
+        flex-direction: row;
+        align-items: flex-start;
+        transition: 0.7s;
+        text-transform: uppercase;
 
 }
 
-.table-conteiner {
-    width: 700px;
-    margin-top: 40px;
-    height: 1100PX;
-    background-color: #122333;
-    border: solid #2a3e52;
-    border-radius: 9px;
-    float: right;
-    margin-right: 40px;
-}
+
+    .table-conteiner {
+        width: 400px;
+        margin-top: 40px;
+        background-color: #122333;
+        border: solid #2a3e52;
+        border-radius: 9px;
+        float: right;
+        margin-right: 400px;
+    }
+
 
 .selectors-conteiner {
     display: flex;
