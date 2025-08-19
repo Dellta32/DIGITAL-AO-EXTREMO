@@ -330,7 +330,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0px 0px 0px 0px !important;
-    background-color: #fff;
+    background-color: #122333;
     border: solid #2a3e52;
     border-radius: 9px;
     align-items: center;
@@ -340,32 +340,32 @@ body {
     text-align: center;
     height: 80px;
     width: 150px;
+    background-color: #fff;
     border: solid 1px #2a3e52;
     font-weight: bold;
 }
 
-    .flexconteiner {
-        display: flex
-    ;
-        gap: 0px;
-        height: 93dvh;
-        flex-direction: row;
-        align-items: flex-start;
-        transition: 0.7s;
-        text-transform: uppercase;
+.flexconteiner {
+    display: flex;
+    gap: 0px;
+    height: 93dvh;
+    flex-direction: row;
+    align-items: flex-start;
+    transition: 0.7s;
+    text-transform: uppercase;
 
 }
 
 
-    .table-conteiner {
-        width: 400px;
-        margin-top: 40px;
-        background-color: #122333;
-        border: solid #2a3e52;
-        border-radius: 9px;
-        float: right;
-        margin-right: 400px;
-    }
+.table-conteiner {
+    width: 400px;
+    margin-top: 40px;
+    background-color: #122333;
+    border: solid #2a3e52;
+    border-radius: 9px;
+    float: right;
+    margin-right: 400px;
+}
 
 
 .selectors-conteiner {
@@ -423,100 +423,98 @@ body {
 
 /*CORES DOS PROFESSORES NA TABELA DE HORARIO*/
 .Lucas {
-    background-color: #cccab4;
+    background-color: #cccab4 !important;
 }
 
 .Mariana {
-    background-color: #ae91cf;
-
+    background-color: #ae91cf !important;
 }
 
 .Manuela {
-    background-color: #7bbd86;
+    background-color: #7bbd86 !important;
 }
 
 .Leonardo {
-    background-color: #913737;
+    background-color: #913737 !important;
 }
 
 .Daniel {
-    background-color: #001ea3;
-    color: #fff;
+    background-color: #001ea3 !important;
+    color: #fff !important;
 }
 
 .Marcela {
-    background-color: #dd3bdd;
-
+    background-color: #dd3bdd !important;
 }
 
 .Iara {
-    background-color: #89699b;
+    background-color: #89699b !important;
 }
 
 .JavaScriptMan {
-    background-color: #bd9a00;
+    background-color: #bd9a00 !important;
 }
 
 .Chico {
-    background-color: #929292;
+    background-color: #929292 !important;
 }
 
 .Gaspar {
-    background-color: #6aa3da;
+    background-color: #6aa3da !important;
 }
 
 .Paulo {
-    background-color: #ac6203;
+    background-color: #ac6203 !important;
 }
 
 .Ranaildo {
-    background-color: #5900be;
+    background-color: #5900be !important;
 }
 
 .Marcelo {
-    background-color: #d4d1a4;
+    background-color: #d4d1a4 !important;
 }
 
 .Eber {
-    background-color: #d9ff00;
+    background-color: #d9ff00 !important;
 }
 
 .Rute {
-    background-color: #7a4949;
+    background-color: #7a4949 !important;
 }
 
 .Rosa {
-    background-color: #af0000;
+    background-color: #af0000 !important;
 }
 
 .Sorvetinho {
-    background-color: #496885;
+    background-color: #496885 !important;
 }
 
 .Lula {
-    background-color: #048004;
+    background-color: #048004 !important;
 }
 
 .AnaG {
-    background-color: #eee1c5;
+    background-color: #eee1c5 !important;
 }
 
 .Linduberg {
-    background-color: #3c5b79;
+    background-color: #3c5b79 !important;
+    color: rgb(255, 255, 255) !important;
+    font-weight: bold;
 }
 
-
 .Eletrilha {
-    background-color: #122333;
+    background-color: #122333 !important;
 }
 
 .Praticas {
-    background-color: #c5e4e0;
+    background-color: #c5e4e0 !important;
 }
 
 .Nancy {
-
-    background-color: #00EEEE;
+    background-color: #00EEEE !important;
 }
 
 /*cardapio*/
@@ -645,11 +643,10 @@ nav.dark-theme {
 }
 
 nav.dark-theme .logotext {
-    font-size: 30px;
-    color: #ffffff;
-    margin-right: 40px;
-    margin-top: 18px;
-    text-transform: uppercase;
+    font-size: 30px !important;
+    color: #ffffff !important;
+    margin-right: 40px !important;
+    text-transform: uppercase !important;
 }
 
 /* Tema escuro para o menu */
@@ -923,14 +920,6 @@ body.dark-theme .selectors-conteiner {
 
 }
 
-@font-face {
-    font-family: Holborn;
-    src: url(font/Holborn.ttf) format('ttf'),
-        url(font/Holborn.otf) format('otf');
-    font-weight: normal;
-    font-style: normal;
-}
-
 .slogan {
 
     font-family: Holborn;
@@ -972,12 +961,25 @@ body.dark-theme .menu .moon {
     opacity: 1 !important;
 }
 
+body.dark-theme .tabela-horario {
+    background-color: #3b414f;
+}
+body.dark-theme .tabela-horario td {
+    background-color: #ffffff;
+    color: #000000;
+    border: solid 1px #cecece;
+}
+body.dark-theme .table-conteiner {
+    border: solid #CECECE !important;
+}
+
+body.dark-theme .titulo-area {
+    color: #ffffff !important;
+    
+}
 /*GEstao e professores*/
 
-.professor-container {
-    display: flex;
-    flex-direction: row;
-}
+
 
 .professor-container img {
     height: 500px;
@@ -986,6 +988,7 @@ body.dark-theme .menu .moon {
     object-fit: cover;
     border-radius: 100px;
     margin: 10px;
+
 }
 
 
@@ -997,7 +1000,9 @@ body.dark-theme .menu .moon {
     background-color: #f7f7f7;
     border-radius: 24px;
     width: 900px;
-    
+    display: flex;
+    flex-direction: row;
+
 }
 
 .professor-profile {
@@ -1006,5 +1011,5 @@ body.dark-theme .menu .moon {
     margin-left: 20px;
     display: flex;
     flex-direction: column;
-    
+
 }
