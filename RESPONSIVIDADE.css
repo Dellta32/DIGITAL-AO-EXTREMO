@@ -49,9 +49,7 @@
 
     }
 
-    .nav-list {
-        margin-top: 50px;
-    }
+    
 
     .nav-list li>a {
         border-radius: 10px;
@@ -59,7 +57,7 @@
         color: #122333;
         padding: 20px 4%;
         display: flex;
-        line-height: 26px;
+        line-height: 20px;
         transition: 1s;
     }
 
@@ -236,7 +234,7 @@
 
     .theme-toggle-container {
         position: absolute !important;
-        bottom: 11px !important;
+        bottom: 40px !important;
         left: 10px !important;
     }
 

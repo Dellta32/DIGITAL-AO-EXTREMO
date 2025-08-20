@@ -80,8 +80,6 @@ a {
     text-transform: uppercase;
     width: 300px;
     overflow: hidden;
-
-
 }
 
 .nav-list li {
@@ -96,6 +94,7 @@ a {
     border-radius: 10px;
     font-size: 20px;
     color: #122333;
+    
     padding: 20px 4%;
     display: flex;
     line-height: 40px;
@@ -195,13 +194,13 @@ body {
 .menutext {
 
     font-weight: bold;
-    color: #0b40bd;
+    color: #585858;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .close-conteiner {
     width: 300px;
-    height: 8d;
+    height: 8dvh;
 
 }
 
@@ -964,19 +963,31 @@ body.dark-theme .menu .moon {
 body.dark-theme .tabela-horario {
     background-color: #3b414f;
 }
+
 body.dark-theme .tabela-horario td {
     background-color: #ffffff;
     color: #000000;
     border: solid 1px #cecece;
 }
+
 body.dark-theme .table-conteiner {
     border: solid #CECECE !important;
 }
 
 body.dark-theme .titulo-area {
     color: #ffffff !important;
-    
 }
+
+#nav.dark-theme .burguer div {
+    color: #dbdbdb !important;
+
+
+}
+#nav.dark-theme .burguer .menutext {
+    background: #dbdbdb !important;
+}
+
+
 /*GEstao e professores*/
 
 
