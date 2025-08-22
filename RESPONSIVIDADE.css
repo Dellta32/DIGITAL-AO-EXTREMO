@@ -29,15 +29,19 @@
 
     .professor-container img {
 
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
+        min-width: 50px;
+        min-height: 50px;
+        max-width: 50px;
+        max-height: 50px;
+        border-radius: 100%;
         margin-right: 10px;
 
     }
 
     .titulo-area {
+        text-transform: uppercase;
         place-self: center;
+        margin-top: 50px;
     }
 
 
@@ -49,7 +53,7 @@
 
     }
 
-    
+
 
     .nav-list li>a {
         border-radius: 10px;
