@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Hello, World!</title>
+</head>
+<script>
+
+function tabHorario()
+{const professores = [
+    { nome: "Lucas", disciplina: "Inglês", url: "gestao.html#lucas" },
+    { nome: "Mariana", disciplina:["Projeto de Vida" ,"Sociologia"], url: "gestao.html#mariana" },
+    { nome: "Manuela", disciplina: "BiologiaManu", url: "gestao.html#manuela" },
+    { nome: "Rute", disciplina: "Marketing e Serviços", url: "gestao.html#rute" },
+    { nome: "Ranaildo", disciplina: "Sistemas de Informação", url: "gestao.html#ranaildo" },
+    { nome: "Lula", disciplina: "Arte", url: "gestao.html#lula" },
+    { nome: "Eber Ramos", disciplina: "Português", url: "gestao.html#eber" },
+    { nome: "Marcelo", disciplina: ["Biologia" ,"Informatica Basica"], url: "gestao.html#marcelo" },
+    { nome: "Daniel", disciplina: "Educação Física", url: "gestao.html#daniel" },
+    { nome: "Leonardo", disciplina: "Matemática", url: "gestao.html#leonardo" },
+    { nome: "Paulo", disciplina: "Geografia", url: "gestao.html#paulo" },
+    { nome: "Allan", disciplina: "Banco de Dados", url: "gestao.html#allan" },
+    { nome: "Nancy", disciplina: "Desenvolvimento de Sistemas", url: "gestao.html#nancy" },
+    { nome: "Iara", disciplina: "Projeto de Vida", url: "gestao.html#iara" },
+    { nome: "Rosa", disciplina: "Orientação Acadêmica", url: "gestao.html#rosa" },
+    { nome: "Francisco", disciplina: "História e Trilhas (UC1)", url: "gestao.html#francisco" },
+    { nome: "Linduberg", disciplina: "Metodologia do Trabalho Científico (MTC)", url: "gestao.html#linduberg" },
+    {nome: "Ricardo", disciplina: "Fisica", url: "gestao.html"},
+  ];
+  /* Array com os horaios para criar as tds corretamente*/
+  const horarios = {
+  "1AI": { SEG: ["BiologiaManu", "Fisica", "ingles" , "", "Projeto de Vida", "Projeto de Vida", "", "Quimica", "Sociologia" , "" , "Fundamentos de Redes de Computadores" , "Fundamentos de Redes de Compitadores"], TER: [], QUA: [], QUI: [], SEX: [] },
+  "1BI": { SEG: [], TER: [], QUA: [], QUI: [], SEX: [] },
+  "1CI": { SEG: [], TER: [], QUA: [], QUI: [], SEX: [] },
+  "1AA": { SEG: [], TER: [], QUA: [], QUI: [], SEX: [] },
+  "1BA": { SEG: [], TER: [], QUA: [], QUI: [], SEX: [] },
+  "2AI": { SEG: [], TER: [], QUA: [], QUI: [], SEX: [] },
+  "2AA": { SEG: [], TER: [], QUA: [], QUI: [], SEX: [] },
+  "2BA": { SEG: [], TER: [], QUA: [], QUI: [], SEX: [] },
+  "3AI": { SEG: [], TER: [], QUA: [], QUI: [], SEX: [] },
+  "3BI": { SEG: [], TER: [], QUA: [], QUI: [], SEX: [] },
+  "3AA": { SEG: [], TER: [], QUA: [], QUI: [], SEX: [] },
+  "3BA": { SEG: [], TER: [], QUA: [], QUI: [], SEX: [] }
+};
+  
+  const turmaSelecionada = document.getElementById("Turma").value;
+  const diaSelecionado = document.getElementById("dia").value;
+
+  var tableConteiner = document.querySelector("#table-conteiner");
+  tableConteiner.inerHTML = "";
+  var table = document.createElement("table");
+  table.classList.add("tabela-horario");
+  tableConteiner.appendChild(table);
+  
+  var tr = document.createElement("tr")
+  table.appendChild(tr)  
+  
+  
+    const horariosDoDia = horarios[turmaSelecionada][diaSelecionado];
+
+  for (let i = 0; i < 12; i++) { // 12 horários fixos
+    const td = document.createElement("td");
+    const disciplina = horariosDoDia[i] || "";
+    if (disciplina === "") {
+      if (i === 3) td.textContent = "Café da manhã - 10:00h á 10:20h";
+      else if (i === 5) td.textContent = "Almoço - 12:00h á 13:20h";
+      else if (i === 9) td.textContent = "Lanche - 15:00h á 15:20h";
+      else td.textContent = "Intervalo";
+    } else {
+      const professor = professores.find(p =>
+        Array.isArray(p.disciplina)
+          ? p.disciplina.includes(disciplina)
+          : p.disciplina === disciplina
+      );
+
+      if (professor) {
+        td.classList.add(professor.nome.replace(/\s+/g,""));
+        td.textContent = disciplina + " - " + professor.nome; 
+      } else {
+        td.textContent = disciplina;
+      }
+    }
+
+    tr.appendChild(td);
+   
+  }
+}
+</script>
+<body>
+  <h1>
+    IIIIIIIHUUUUL
+  </h1>
+</body>
+</html>
