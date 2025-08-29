@@ -230,7 +230,13 @@ function menu() {
             sun.style.transform = "scale(1)";
             moon.style.opacity = "0";
             moon.style.transform = "scale(0.8)";
-        }
+            var theme = {"sun": sun,
+                        "moon": moon,
+                        "menu": menu,
+                        "header": header,
+                        "nav": nav,
+                        "body": body}
+        } var savetheme = localStorage.setItem("savedTheme", JSON.stringify(theme))
     });
 
 
@@ -2102,4 +2108,10 @@ function pesquisa() {
 
 window.onload = function () {
     pesquisa();
+    window.onload= function() {}
+
+    var theme = JSON.parse(localStorage.getItem("savedTheme"))
+    theme.sun
+    theme.nav
 };
+
