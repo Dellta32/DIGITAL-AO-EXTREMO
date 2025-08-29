@@ -1,4 +1,17 @@
+// --- aplicar tema salvo assim que a página carregar ---
+document.addEventListener("DOMContentLoaded", () => {
+  const savedTheme = localStorage.getItem("savedTheme");
+  const isDark = savedTheme === "dark";
 
+  document.body.classList.toggle("dark-theme", isDark);
+
+  const nav = document.getElementById("nav");
+  if (nav) nav.classList.toggle("dark-theme", isDark);
+
+  const header = document.querySelector("header");
+  if (header) header.classList.toggle("dark-theme", isDark);
+});
+
 
 
 function menu() {
