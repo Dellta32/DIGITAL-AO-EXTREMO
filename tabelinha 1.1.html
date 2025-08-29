@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-
 <html>
 <head>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
   <title>Hello, World!</title>
 </head>
 <script>
-
-function tabHorario()
-{const professores = [
+function tabHorario() {
+  const professores = [
     { nome: "Lucas", disciplina: "Inglês", url: "gestao.html#lucas" },
     { nome: "Mariana", disciplina:["Projeto de Vida" ,"Sociologia"], url: "gestao.html#mariana" },
     { nome: "Manuela", disciplina: "BiologiaManu", url: "gestao.html#manuela" },
@@ -43,31 +41,37 @@ function tabHorario()
   "3AA": { SEG: [], TER: [], QUA: [], QUI: [], SEX: [] },
   "3BA": { SEG: [], TER: [], QUA: [], QUI: [], SEX: [] }
 };
-  
   const turmaSelecionada = document.getElementById("Turma").value;
   const diaSelecionado = document.getElementById("dia").value;
 
   var tableConteiner = document.querySelector("#table-conteiner");
-  tableConteiner.inerHTML = "";
+  tableConteiner.innerHTML = "";
   var table = document.createElement("table");
   table.classList.add("tabela-horario");
   tableConteiner.appendChild(table);
   
-  var tr = document.createElement("tr")
-  table.appendChild(tr)  
-  
-  
-    const horariosDoDia = horarios[turmaSelecionada][diaSelecionado];
+  const horariosDoDia = horarios[turmaSelecionada][diaSelecionado];
 
   for (let i = 0; i < 12; i++) { // 12 horários fixos
+    const tr = document.createElement("tr"); // linha por horário
     const td = document.createElement("td");
     const disciplina = horariosDoDia[i] || "";
+
     if (disciplina === "") {
       if (i === 3) td.textContent = "Café da manhã - 10:00h á 10:20h";
       else if (i === 5) td.textContent = "Almoço - 12:00h á 13:20h";
       else if (i === 9) td.textContent = "Lanche - 15:00h á 15:20h";
       else td.textContent = "Intervalo";
-    } else {
+    } 
+    // caso especial para práticas, eletiva e trilhas
+    else if (disciplina.includes("Práticas")) {
+      td.textContent = disciplina;
+      td.classList.add("praticas");
+    } else if (disciplina.includes("Eletiva") || disciplina.includes("Trilhas")) {
+      td.textContent = disciplina;
+      td.classList.add("Eletrilhas");
+    } 
+    else {
       const professor = professores.find(p =>
         Array.isArray(p.disciplina)
           ? p.disciplina.includes(disciplina)
@@ -75,7 +79,7 @@ function tabHorario()
       );
 
       if (professor) {
-        td.classList.add(professor.nome.replace(/\s+/g,""));
+        td.classList.add(professor.nome));
         td.textContent = disciplina + " - " + professor.nome; 
       } else {
         td.textContent = disciplina;
@@ -83,13 +87,12 @@ function tabHorario()
     }
 
     tr.appendChild(td);
-   
+    table.appendChild(tr); // adiciona a linha na tabela
   }
 }
 </script>
 <body>
-  <h1>
-    IIIIIIIHUUUUL
-  </h1>
+  <h1>IIIIIIIHUUUUL</h1>
+  <div id="table-conteiner"></div>
 </body>
 </html>
