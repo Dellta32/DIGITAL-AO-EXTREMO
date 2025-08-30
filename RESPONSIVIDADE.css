@@ -389,3 +389,75 @@
         /* Centraliza horizontalmente */
     }
 }
+
+//Cardápio//
+
+    .cardapio-main {
+        justify-self: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        width: 100%;
+        margin: 20px;
+    }
+
+    .cardapio-container {
+        width: 360px;
+        background-color: #fff;
+        border: solid #2a3e52;
+        border-radius: 9px;
+        align-items: center;
+        justify-content: center;
+    }
+    .table-cardapio {
+        border-radius: 20px;
+        padding: 5px;
+        width: 350px;
+        height: 200px;
+    }
+    .cardapio-container td {
+        text-align: center;
+        height: 30px;
+        width: 10px;
+        border-radius: 10px;
+        border: solid 1px #2a3e52;
+        border: none;
+        font-size: 10px;
+        padding: 0;
+    }
+    .fila-container {
+        font-size: 10px;
+        width: 360px;
+        height: 600px;
+        justify-self: center;
+        overflow-x: auto;
+        justify-content: center;
+    }
+    .fila-tabela th {
+        background: linear-gradient(to right, rgb(13, 12, 31), rgb(58, 58, 95));
+        width: 30px;
+        height: 25px;
+        border: solid 1px #2a3e52;
+        border-radius: 30px;
+        color: white;
+        padding: 5px;
+    }
+    .fila-tabela td {
+        height: 25px;
+        width: 30px;
+        table-layout: fixed;
+        padding: 5px;
+    }
+    .titulo-cardapio {
+        font-size: 20px;
+    }
+    .titulo-fila {
+        font-size: 20px;
+        position: sticky;
+        left: 50%;
+        z-index: 10;
+        transform: translateX(-50%);
+    }
+}
