@@ -12,14 +12,13 @@
 
 <body>
     <header>
-        <nav id="nav" alt="Menu de navegação">
+        <nav id="nav">
             <div class="burguer" onclick="menu()">
                 <div></div>
-                <div ></div>
-                <div ></div>
+                <div></div>
+                <div></div>
                 <span class="menutext">MENU</span>
             </div>
-            <span class="logotext">ceephxv</span>
             <img src="imagens/logo.png.png" class="logo">
             <input type="text" class="pesquisa" placeholder="Pesquisar...">
             <div id="sugestaoContainer"></div>
@@ -27,248 +26,248 @@
         </nav>
 
     </header>
+    <main class="cardapio-main">
+        <div class="cardapio-container">
+            <h1 class="titulo-cardapio">Horários dos Lanches</h1>
+            <table class="table-cardapio">
+                <tr class="diasSemana-cardapio">
+                    <td>Dias da Semana</td>
+                    <td>Segunda-Feira</td>
+                    <td>Terça-Feira</td>
+                    <td>Quarta-Feira</td>
+                    <td>Quinta-Feira</td>
+                    <td>Sexta-Feira</td>
+                </tr>
+                <tr>
+                    <td class="lanche-title">LANCHE DA MANHÃ</td>
+                    <td class="lanche">Salada de Frutas</td>
+                    <td class="lanche">Biscoito Cream Cracker Com Suco</td>
+                    <td class="lanche">Pão com Café</td>
+                    <td class="lanche">Frutas</td>
+                    <td class="lanche">Cachorro Quente Com Suco</td>
+                </tr>
+                <tr>
+                    <td class="almoco-title">Almoço</td>
+                    <td class="almoco">Creme de Frango Com Suco</td>
+                    <td class="almoco">Risoto com pure</td>
+                    <td class="almoco">Feijoada Com Suco</td>
+                    <td class="almoco">Feijão, Arroz, Carne Muída Com Suco</td>
+                    <td class="almoco">Arroz de Leite com Paçoca</td>
+                </tr>
+                <tr>
+                    <td class="lanche-title">LANCHE DA TARDE</td>
+                    <td class="lanche">Biscuito Doce Com Suco</td>
+                    <td class="lanche">Frutas</td>
+                    <td class="lanche">Mungusá</td>
+                    <td class="lanche">Biscoito Creme Crake com Suco</td>
+                    <td class="lanche">Salada de Frutas</td>
+                </tr>
+            </table>
+        </div>
 
-    <div class="tabelaCardapio">
-        <table class="table-cardapio">
-            <tr>
-                <td class="diasSemanaCardapio">-</td>
-                <td class="diasSemanaCardapio">Segunda-Feira</td>
-                <td class="diasSemanaCardapio">Terça-Feira</td>
-                <td class="diasSemanaCardapio">Quarta-Feira</td>
-                <td class="diasSemanaCardapio">Quinta-Feira</td>
-                <td class="diasSemanaCardapio">Sexta-Feira</td>
-                <span class="tituloCardapio">Horários dos Lanches</span>
-            </tr>
-            <tr>
-                <td class="lanche">LANCHE</td>
-                <td class="lanche">Salada de Frutas</td>
-                <td class="lanche">Biscoito Cream Cracker Com Suco</td>
-                <td class="lanche">Pão com Café</td>
-                <td class="lanche">Frutas</td>
-                <td class="lanche">Cachorro Quente Com Suco</td>
-            </tr>
-            <tr>
-                <td class="almoco">Almoço</td>
-                <td class="almoco">Creme de Frango Com Suco</td>
-                <td class="almoco">Risoto com pure</td>
-                <td class="almoco">Feijoada Com Suco</td>
-                <td class="almoco">Feijão, Arroz, Carne Muída Com Suco</td>
-                <td class="almoco">Arroz de Leite com Paçoca</td>
-            </tr>
-            <tr>
-                <td class="lanche">LANCHE</td>
-                <td class="lanche">Biscuito Doce Com Suco</td>
-                <td class="lanche">Frutas</td>
-                <td class="lanche">Mungusá</td>
-                <td class="lanche">Biscoito Creme Crake com Suco</td>
-                <td class="lanche">Salada de Frutas</td>
-            </tr>
-        </table>
-    </div>
 
+        <div class="fila-container">
+            <h1 class="titulo-fila"> Sequência da fila</h1>
+            <table class="fila-tabela">
+                <tr>
+                    <th>ORDEM</th>
+                    <th>21/05</th>
+                    <th>22/05</th>
+                    <th>23/05</th>
+                    <th>26/05</th>
+                    <th>27/05</th>
+                    <th>28/05</th>
+                    <th>29/05</th>
+                    <th>30/05</th>
+                    <th>02/06</th>
+                    <th>03/06</th>
+                    <th>04/06</th>
+                    <th>05/06</th>
+                </tr>
+                <tr>
+                    <th>1º </th>
+                    <td  class="fila-cell" style="background-color: aquamarine;">3º A ADM</td>
+                    <td style="background-color:#d3c60c;">3º B ADM</td>
+                    <td style="background-color: #cab9b9;">3º A INFO</td>
+                    <td style="background-color: #97c0d3;">3º B INFO</td>
+                    <td style="background-color: #a34d4d;">2º A ADM</td>
+                    <td style="background-color: #a7c5a3;">2º B ADM</td>
+                    <td style="background-color: #c07109;">2º A INFO</td>
+                    <td style="background-color: #28a9ff;">1º A ADM</td>
+                    <td style="background-color: #c7d2d3;">1º B ADM</td>
+                    <td style="background-color: #dad7b5;">1º A INFO</td>
+                    <td style="background-color: #b8cada;">1º B INFO</td>
+                    <td style="background-color:#fffbf0">1º C INFO</td>
 
-    <div class="tabelaCardapio">
-        <table class="filaTabela">
-            <tr>
-                <td>ORDEM</td>
-                <td>21/05</td>
-                <td>22/05</td>
-                <td>23/05</td>
-                <td>26/05</td>
-                <td>27/05</td>
-                <td>28/05</td>
-                <td>29/05</td>
-                <td>30/05</td>
-                <td>02/06</td>
-                <td>03/06</td>
-                <td>04/06</td>
-                <td>05/06</td>
-                <span class="tituloCardapio"> Sequência Da Fila </span>
-            </tr>
-            <tr>
-                <td>1º </td>
-                <td style="background-color: aquamarine;">3º A ADM</td>
-                <td style="background-color:#d3c60c;">3º B ADM</td>
-                <td style="background-color: #cab9b9;">3º A INFO</td>
-                <td style="background-color: #97c0d3;">3º B INFO</td>
-                <td style="background-color: #a34d4d;">2º A ADM</td>
-                <td style="background-color: #a7c5a3;">2º B ADM</td>
-                <td style="background-color: #c07109;">2º A INFO</td>
-                <td style="background-color: #28a9ff;">1º A ADM</td>
-                <td style="background-color: #c7d2d3;">1º B ADM</td>
-                <td style="background-color: #dad7b5;">1º A INFO</td>
-                <td style="background-color: #b8cada;">1º B INFO</td>
-                <td style=" background-color:#fffbf0">1º C INFO</td>
-
-            </tr>
-            <tr>
-                <td>2º</td>
-                <td style="background-color:#d3c60c;">3º B ADM</td>
-                <td style="background-color: #cab9b9;">3º A INFO</td>
-                <td style="background-color: #97c0d3;">3º B INFO</td>
-                <td style="background-color: #a34d4d;">2º A ADM</td>
-                <td style="background-color: #a7c5a3;">2º B ADM</td>
-                <td style="background-color: #c07109;">2º A INFO</td>
-                <td style="background-color: #28a9ff;">1º A ADM</td>
-                <td style="background-color: #c7d2d3;">1º B ADM</td>
-                <td style="background-color: #dad7b5;">1º A INFO</td>
-                <td style="background-color: #b8cada;">1º B INFO</td>
-                <td style=" background-color:#fffbf0">1º C INFO</td>
-                <td style="background-color: aquamarine;">3º A ADM</td>
-            </tr>
-            <tr>
-                <td>3º</td>
-                <td style="background-color: #cab9b9;">3º A INFO</td>
-                <td style="background-color: #97c0d3;">3º B INFO</td>
-                <td style="background-color: #a34d4d;">2º A ADM</td>
-                <td style="background-color: #a7c5a3;">2º B ADM</td>
-                <td style="background-color: #c07109;">2º A INFO</td>
-                <td style="background-color: #28a9ff;">1º A ADM</td>
-                <td style="background-color: #c7d2d3;">1º B ADM</td>
-                <td style="background-color: #dad7b5;">1º A INFO</td>
-                <td style="background-color: #b8cada;">1º B INFO</td>
-                <td style=" background-color:#fffbf0">1º C INFO</td>
-                <td style="background-color: aquamarine;">3º A ADM</td>
-                <td style="background-color: #d3c60c;">3º B ADM</td>
-            </tr>
-            <tr>
-                <td>4º</td>
-                <td style="background-color: #97c0d3;">3º B INFO</td>
-                <td style="background-color: #a34d4d;">2º A ADM</td>
-                <td style="background-color: #a7c5a3;">2º B ADM</td>
-                <td style="background-color: #c07109;">2º A INFO</td>
-                <td style="background-color: #28a9ff;">1º A ADM </td>
-                <td style="background-color: #c7d2d3;">1º B ADM</td>
-                <td style="background-color: #dad7b5;">1º A INFO</td>
-                <td style="background-color: #b8cada;">1º B INFO</td>
-                <td style=" background-color: #fffbf0;">1º C INFO</td>
-                <td style="background-color: aquamarine;">3º A ADM</td>
-                <td style="background-color:#d3c60c;">3º B ADM</td>
-                <td style="background-color: #cab9b9;">3º A INFO</td>
-            </tr>
-            <tr>
-                <td>5º</td>
-                <td style="background-color: #a34d4d;">2º A ADM</td>
-                <td style="background-color: #a7c5a3;">2º B ADM</td>
-                <td style="background-color: #c07109;">2º A INFO</td>
-                <td style="background-color: #28a9ff;">1º A ADM</td>
-                <td style="background-color: #c7d2d3;">1º B ADM</td>
-                <td style="background-color: #dad7b5;">1º A INFO</td>
-                <td style="background-color: #b8cada;">1º B INFO</td>
-                <td style=" background-color:#fffbf0">1º C INFO</td>
-                <td style="background-color: aquamarine;">3º A ADM</td>
-                <td style="background-color:#d3c60c;">3º B ADM</td>
-                <td style="background-color: #cab9b9;">3º A INFO</td>
-                <td style="background-color: #97c0d3;">3º B INFO</td>
-            </tr>
-            <tr>
-                <td>6º</td>
-                <td style="background-color: #a7c5a3;">2º B ADM</td>
-                <td style="background-color: #c07109;">2º A INFO</td>
-                <td style="background-color: #28a9ff;">1º A ADM</td>
-                <td style="background-color: #c7d2d3;">1º B ADM</td>
-                <td style="background-color: #dad7b5;">1º A INFO</td>
-                <td style="background-color: #b8cada;">1º B INFO</td>
-                <td style=" background-color:#fffbf0">1º C INFO</td>
-                <td style="background-color: aquamarine;">3º A ADM</td>
-                <td style="background-color:#d3c60c;">3º B ADM</td>
-                <td style="background-color: #cab9b9;">3º A INFO</td>
-                <td style="background-color: #97c0d3;">3º B INFO</td>
-                <td style="background-color: #a34d4d;">2º A ADM</td>
-            </tr>
-            <tr>
-                <td>7º</td>
-                <td style="background-color: #c07109;">2º A INFO</td>
-                <td style="background-color: #28a9ff;">1º A ADM</td>
-                <td style="background-color: #c7d2d3;">1º B ADM</td>
-                <td style="background-color: #dad7b5;">1º A INFO</td>
-                <td style="background-color: #b8cada;">1º B INFO</td>
-                <td style=" background-color:#fffbf0">1º C INFO</td>
-                <td style="background-color: aquamarine;">3º A ADM</td>
-                <td style="background-color:#d3c60c;">3º B ADM</td>
-                <td style="background-color: #cab9b9;">3º A INFO</td>
-                <td style="background-color: #97c0d3;">3º B INFO</td>
-                <td style="background-color: #a34d4d;">2º A ADM</td>
-                <td style="background-color: #a7c5a3;">2º B ADM</td>
-            </tr>
-            <tr>
-                <td>8º</td>
-                <td style="background-color: #28a9ff;">1º A ADM</td>
-                <td style="background-color: #c7d2d3;">1º B ADM</td>
-                <td style="background-color: #dad7b5;">1º A INFO</td>
-                <td style="background-color: #b8cada;">1º B INFO</td>
-                <td style=" background-color:#fffbf0">1º C INFO</td>
-                <td style="background-color: aquamarine;">3º A ADM</td>
-                <td style="background-color:#d3c60c;">3º B ADM</td>
-                <td style="background-color: #cab9b9;">3º A INFO</td>
-                <td style="background-color: #97c0d3;">3º B INFO</td>
-                <td style="background-color: #a34d4d;">2º A ADM</td>
-                <td style="background-color: #a7c5a3;">2º B ADM</td>
-                <td style="background-color: #c07109;">2º A INFO</td>
-            </tr>
-            <tr>
-                <td>9º</td>
-                <td style="background-color: #c7d2d3;">1º B ADM</td>
-                <td style="background-color: #dad7b5;">1º A INFO</td>
-                <td style="background-color: #b8cada;">1º B INFO</td>
-                <td style=" background-color:#fffbf0">1º C INFO</td>
-                <td style="background-color: aquamarine;">3º A ADM</td>
-                <td style="background-color:#d3c60c;">3º B ADM</td>
-                <td style="background-color: #cab9b9;">3º A INFO</td>
-                <td style="background-color: #97c0d3;">3º B INFO</td>
-                <td style="background-color: #a34d4d;">2º A ADM</td>
-                <td style="background-color: #a7c5a3;">2º B ADM</td>
-                <td style="background-color: #c07109;">2º A INFO</td>
-                <td style="background-color: #28a9ff;">1º A ADM </td>
-            </tr>
-            <tr>
-                <td>10º</td>
-                <td style="background-color: #dad7b5;">1º A INFO</td>
-                <td style="background-color: #b8cada;">1º B INFO</td>
-                <td style=" background-color:#fffbf0">1º C INFO</td>
-                <td style="background-color: aquamarine;">3º A ADM</td>
-                <td style="background-color:#d3c60c;">3º B ADM</td>
-                <td style="background-color: #cab9b9;">3º A INFO</td>
-                <td style="background-color: #97c0d3;">3º B INFO</td>
-                <td style="background-color: #a34d4d;">2º A ADM</td>
-                <td style="background-color: #a7c5a3;">2º B ADM</td>
-                <td style="background-color: #c07109;">2º A INFO</td>
-                <td style="background-color: #28a9ff;">1º A ADM</td>
-                <td style="background-color: #c7d2d3;">1º B ADM</td>
-            </tr>
-            <tr>
-                <td>11º</td>
-                <td style="background-color: #b8cada;">1º B INFO</td>
-                <td style=" background-color:#fffbf0">1º C INFO</td>
-                <td style="background-color: aquamarine;">3º A ADM</td>
-                <td style="background-color:#d3c60c;">3º B ADM</td>
-                <td style="background-color: #cab9b9;">3º A INFO</td>
-                <td style="background-color: #97c0d3;">3º B INFO</td>
-                <td style="background-color: #a34d4d;">2º A ADM</td>
-                <td style="background-color: #a7c5a3;">2º B ADM</td>
-                <td style="background-color: #c07109;">2º A INFO</td>
-                <td style="background-color: #28a9ff;">1º A ADM</td>
-                <td style="background-color: #c7d2d3;">1º B ADM</td>
-                <td style="background-color: #dad7b5;">1º A INFO</td>
-            </tr>
-            <tr>
-                <td>12º</td>
-                <td style=" background-color:#fffbf0">1º C INFO</td>
-                <td style="background-color: aquamarine;">3º A ADM</td>
-                <td style="background-color:#d3c60c;">3º B ADM</td>
-                <td style="background-color: #cab9b9;">3º A INFO</td>
-                <td style="background-color: #97c0d3;">3º B INFO</td>
-                <td style="background-color: #a34d4d;">2º A ADM</td>
-                <td style="background-color: #a7c5a3;">2º B ADM</td>
-                <td style="background-color: #c07109;">2º A INFO</td>
-                <td style="background-color: #28a9ff;">1º A ADM</td>
-                <td style="background-color: #c7d2d3;">1º B ADM</td>
-                <td style="background-color: #dad7b5;">1º A INFO</td>
-                <td style="background-color: #b8cada;">1º B INFO</td>
-            </tr>
-        </table>
-    </div>
-
+                </tr>
+                <tr>
+                    <th>2º</th>
+                    <td style="background-color:#d3c60c;">3º B ADM</td>
+                    <td style="background-color: #cab9b9;">3º A INFO</td>
+                    <td style="background-color: #97c0d3;">3º B INFO</td>
+                    <td style="background-color: #a34d4d;">2º A ADM</td>
+                    <td style="background-color: #a7c5a3;">2º B ADM</td>
+                    <td style="background-color: #c07109;">2º A INFO</td>
+                    <td style="background-color: #28a9ff;">1º A ADM</td>
+                    <td style="background-color: #c7d2d3;">1º B ADM</td>
+                    <td style="background-color: #dad7b5;">1º A INFO</td>
+                    <td style="background-color: #b8cada;">1º B INFO</td>
+                    <td style="background-color:#fffbf0">1º C INFO</td>
+                    <td style="background-color: aquamarine;">3º A ADM</td>
+                </tr>
+                <tr>
+                    <th>3º</th>
+                    <td style="background-color: #cab9b9;">3º A INFO</td>
+                    <td style="background-color: #97c0d3;">3º B INFO</td>
+                    <td style="background-color: #a34d4d;">2º A ADM</td>
+                    <td style="background-color: #a7c5a3;">2º B ADM</td>
+                    <td style="background-color: #c07109;">2º A INFO</td>
+                    <td style="background-color: #28a9ff;">1º A ADM</td>
+                    <td style="background-color: #c7d2d3;">1º B ADM</td>
+                    <td style="background-color: #dad7b5;">1º A INFO</td>
+                    <td style="background-color: #b8cada;">1º B INFO</td>
+                    <td style="background-color:#fffbf0">1º C INFO</td>
+                    <td style="background-color: aquamarine;">3º A ADM</td>
+                    <td style="background-color: #d3c60c;">3º B ADM</td>
+                </tr>
+                <tr>
+                    <th>4º</th>
+                    <td style="background-color: #97c0d3;">3º B INFO</td>
+                    <td style="background-color: #a34d4d;">2º A ADM</td>
+                    <td style="background-color: #a7c5a3;">2º B ADM</td>
+                    <td style="background-color: #c07109;">2º A INFO</td>
+                    <td style="background-color: #28a9ff;">1º A ADM </td>
+                    <td style="background-color: #c7d2d3;">1º B ADM</td>
+                    <td style="background-color: #dad7b5;">1º A INFO</td>
+                    <td style="background-color: #b8cada;">1º B INFO</td>
+                    <td style="background-color: #fffbf0;">1º C INFO</td>
+                    <td style="background-color: aquamarine;">3º A ADM</td>
+                    <td style="background-color:#d3c60c;">3º B ADM</td>
+                    <td style="background-color: #cab9b9;">3º A INFO</td>
+                </tr>
+                <tr>
+                    <th>5º</th>
+                    <td style="background-color: #a34d4d;">2º A ADM</td>
+                    <td style="background-color: #a7c5a3;">2º B ADM</td>
+                    <td style="background-color: #c07109;">2º A INFO</td>
+                    <td style="background-color: #28a9ff;">1º A ADM</td>
+                    <td style="background-color: #c7d2d3;">1º B ADM</td>
+                    <td style="background-color: #dad7b5;">1º A INFO</td>
+                    <td style="background-color: #b8cada;">1º B INFO</td>
+                    <td style="background-color:#fffbf0">1º C INFO</td>
+                    <td style="background-color: aquamarine;">3º A ADM</td>
+                    <td style="background-color:#d3c60c;">3º B ADM</td>
+                    <td style="background-color: #cab9b9;">3º A INFO</td>
+                    <td style="background-color: #97c0d3;">3º B INFO</td>
+                </tr>
+                <tr>
+                    <th>6º</th>
+                    <td style="background-color: #a7c5a3;">2º B ADM</td>
+                    <td style="background-color: #c07109;">2º A INFO</td>
+                    <td style="background-color: #28a9ff;">1º A ADM</td>
+                    <td style="background-color: #c7d2d3;">1º B ADM</td>
+                    <td style="background-color: #dad7b5;">1º A INFO</td>
+                    <td style="background-color: #b8cada;">1º B INFO</td>
+                    <td style="background-color:#fffbf0">1º C INFO</td>
+                    <td style="background-color: aquamarine;">3º A ADM</td>
+                    <td style="background-color:#d3c60c;">3º B ADM</td>
+                    <td style="background-color: #cab9b9;">3º A INFO</td>
+                    <td style="background-color: #97c0d3;">3º B INFO</td>
+                    <td style="background-color: #a34d4d;">2º A ADM</td>
+                </tr>
+                <tr>
+                    <th>7º</th>
+                    <td style="background-color: #c07109;">2º A INFO</td>
+                    <td style="background-color: #28a9ff;">1º A ADM</td>
+                    <td style="background-color: #c7d2d3;">1º B ADM</td>
+                    <td style="background-color: #dad7b5;">1º A INFO</td>
+                    <td style="background-color: #b8cada;">1º B INFO</td>
+                    <td style="background-color:#fffbf0">1º C INFO</td>
+                    <td style="background-color: aquamarine;">3º A ADM</td>
+                    <td style="background-color:#d3c60c;">3º B ADM</td>
+                    <td style="background-color: #cab9b9;">3º A INFO</td>
+                    <td style="background-color: #97c0d3;">3º B INFO</td>
+                    <td style="background-color: #a34d4d;">2º A ADM</td>
+                    <td style="background-color: #a7c5a3;">2º B ADM</td>
+                </tr>
+                <tr>
+                    <th>8º</th>
+                    <td style="background-color: #28a9ff;">1º A ADM</td>
+                    <td style="background-color: #c7d2d3;">1º B ADM</td>
+                    <td style="background-color: #dad7b5;">1º A INFO</td>
+                    <td style="background-color: #b8cada;">1º B INFO</td>
+                    <td style="background-color:#fffbf0">1º C INFO</td>
+                    <td style="background-color: aquamarine;">3º A ADM</td>
+                    <td style="background-color:#d3c60c;">3º B ADM</td>
+                    <td style="background-color: #cab9b9;">3º A INFO</td>
+                    <td style="background-color: #97c0d3;">3º B INFO</td>
+                    <td style="background-color: #a34d4d;">2º A ADM</td>
+                    <td style="background-color: #a7c5a3;">2º B ADM</td>
+                    <td style="background-color: #c07109;">2º A INFO</td>
+                </tr>
+                <tr>
+                    <th>9º</th>
+                    <td style="background-color: #c7d2d3;">1º B ADM</td>
+                    <td style="background-color: #dad7b5;">1º A INFO</td>
+                    <td style="background-color: #b8cada;">1º B INFO</td>
+                    <td style="background-color:#fffbf0">1º C INFO</td>
+                    <td style="background-color: aquamarine;">3º A ADM</td>
+                    <td style="background-color:#d3c60c;">3º B ADM</td>
+                    <td style="background-color: #cab9b9;">3º A INFO</td>
+                    <td style="background-color: #97c0d3;">3º B INFO</td>
+                    <td style="background-color: #a34d4d;">2º A ADM</td>
+                    <td style="background-color: #a7c5a3;">2º B ADM</td>
+                    <td style="background-color: #c07109;">2º A INFO</td>
+                    <td style="background-color: #28a9ff;">1º A ADM </td>
+                </tr>
+                <tr>
+                    <th>10º</th>
+                    <td style="background-color: #dad7b5;">1º A INFO</td>
+                    <td style="background-color: #b8cada;">1º B INFO</td>
+                    <td style="background-color:#fffbf0">1º C INFO</td>
+                    <td style="background-color: aquamarine;">3º A ADM</td>
+                    <td style="background-color:#d3c60c;">3º B ADM</td>
+                    <td style="background-color: #cab9b9;">3º A INFO</td>
+                    <td style="background-color: #97c0d3;">3º B INFO</td>
+                    <td style="background-color: #a34d4d;">2º A ADM</td>
+                    <td style="background-color: #a7c5a3;">2º B ADM</td>
+                    <td style="background-color: #c07109;">2º A INFO</td>
+                    <td style="background-color: #28a9ff;">1º A ADM</td>
+                    <td style="background-color: #c7d2d3;">1º B ADM</td>
+                </tr>
+                <tr>
+                    <th>11º</th>
+                    <td style="background-color: #b8cada;">1º B INFO</td>
+                    <td style="background-color:#fffbf0">1º C INFO</td>
+                    <td style="background-color: aquamarine;">3º A ADM</td>
+                    <td style="background-color:#d3c60c;">3º B ADM</td>
+                    <td style="background-color: #cab9b9;">3º A INFO</td>
+                    <td style="background-color: #97c0d3;">3º B INFO</td>
+                    <td style="background-color: #a34d4d;">2º A ADM</td>
+                    <td style="background-color: #a7c5a3;">2º B ADM</td>
+                    <td style="background-color: #c07109;">2º A INFO</td>
+                    <td style="background-color: #28a9ff;">1º A ADM</td>
+                    <td style="background-color: #c7d2d3;">1º B ADM</td>
+                    <td style="background-color: #dad7b5;">1º A INFO</td>
+                </tr>
+                <tr>
+                    <th>12º</th>
+                    <td style="background-color:#fffbf0">1º C INFO</td>
+                    <td style="background-color: aquamarine;">3º A ADM</td>
+                    <td style="background-color:#d3c60c;">3º B ADM</td>
+                    <td style="background-color: #cab9b9;">3º A INFO</td>
+                    <td style="background-color: #97c0d3;">3º B INFO</td>
+                    <td style="background-color: #a34d4d;">2º A ADM</td>
+                    <td style="background-color: #a7c5a3;">2º B ADM</td>
+                    <td style="background-color: #c07109;">2º A INFO</td>
+                    <td style="background-color: #28a9ff;">1º A ADM</td>
+                    <td style="background-color: #c7d2d3;">1º B ADM</td>
+                    <td style="background-color: #dad7b5;">1º A INFO</td>
+                    <td style="background-color: #b8cada;">1º B INFO</td>
+                </tr>
+            </table>
+        </div>
+    </main>
 </body>
 
 </html>
