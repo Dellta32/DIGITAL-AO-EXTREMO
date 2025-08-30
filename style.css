@@ -1028,3 +1028,86 @@ body.dark-theme .titulo-area {
     flex-direction: column;
 
 }
+
+/*PAGINA DO ENEM + DARK-THEME DA MESMA*/
+
+
+.enem-main {
+    overflow: hidden;
+    margin: 200px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.enem-content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px;
+    border-radius: 7px;
+}
+
+.enem-logo {
+    align-self: center;
+    width: 300px;
+}
+.main-contents > p {
+    text-align: justify;
+    font-size: 20px;
+    color: #11283d;
+}
+
+.main-contents > h1 {
+    color: #a80909;
+    font-size: 30px;
+}
+
+.link-enem {
+    text-decoration: none;
+    color: #001ea3;
+}
+
+.sisu-content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.sisu-logo {
+    align-self: center;
+    width: 250px;
+}
+
+.main-lists {
+    list-style: circle;
+    padding: 0;
+    margin: 3vh 0 3vh 3vh;
+    font-size: 18px;
+    color: #444d56;
+}
+.main-lists > li {
+    margin: 10px;
+}
+
+body.dark-theme .enem-content {
+    background-color: #3b414f;
+    color: #dbdbdb;
+}
+body.dark-theme .sisu-content {
+    background-color: #3b414f;
+    color: #dbdbdb;
+}
+body.dark-theme .main-contents > p {
+    color: #dbdbdb;
+}
+body.dark-theme .main-contents > h1 {
+    color: #ff6262;
+}
+body.dark-theme .main-lists li {
+    color: #c3c7cc;
+}
+.main-lists > li {
+    margin: 10px;
+}
