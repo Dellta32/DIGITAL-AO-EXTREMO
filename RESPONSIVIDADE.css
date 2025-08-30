@@ -338,59 +338,35 @@
         align-items: center;
 
     }
-}
 
-@media (max-height: 600px) {
-    #nav {
-        height: 12dvh;
+/*PAGINA DO ENEM*/
+
+   .enem-main {
+        margin: 10px;
+        padding: 10px;
+    }
+    .enem-logo {
+        width: 200px;
+    }
+    .sisu-content {
+        padding: 20px;
+    }
+    .sisu-logo {
+        width: 200px;
+        margin: 15px;
+    }
+    .main-contents > p {
+        font-size: 16px;
+    }
+    .main-contents > h1 {
+        font-size: 24px;
+    }
+    .main-lists {
+        font-size: 16px;
+        margin: 2vh 0 2vh 2vh;
     }
 
-    .nav-list li>a {
-
-        line-height: 20px;
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: column;
-        /* Organiza os itens verticalmente */
-        justify-content: flex-start;
-        /* Alinha os itens no topo */
-        height: 100%;
-        /* Garante que o menu ocupe toda a altura disponível */
-        max-height: 100vh;
-        /* Limita a altura do menu à altura da janela */
-        padding: 20px 0;
-        /* Espaçamento interno */
-        overflow-y: auto;
-        /* Permite rolagem vertical */
-        overflow-x: hidden;
-        /* Remove qualquer rolagem horizontal */
-        box-sizing: border-box;
-        /* Inclui padding no cálculo da largura e altura */
-    }
-
-    .nav-list {
-        flex-grow: 1;
-        /* Faz a lista ocupar o espaço disponível */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        overflow-y: auto;
-        /* Adiciona rolagem à lista, se necessário */
-    }
-
-    .theme-toggle-container {
-        margin-top: auto;
-        /* Move o toggle para o final */
-        align-self: center;
-        /* Centraliza horizontalmente */
-    }
-}
-
-      /*Cardápio*/
+/*Cardápio*/
 
     .cardapio-main {
         justify-self: center;
@@ -461,30 +437,60 @@
         transform: translateX(-50%);
     }
 
-/*PAGINA DO ENEM*/
 
-   .enem-main {
-        margin: 10px;
-        padding: 10px;
+}
+
+@media (max-height: 600px) {
+    #nav {
+        height: 12dvh;
     }
-    .enem-logo {
-        width: 200px;
+
+    .nav-list li>a {
+
+        line-height: 20px;
     }
-    .sisu-content {
-        padding: 20px;
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        /* Organiza os itens verticalmente */
+        justify-content: flex-start;
+        /* Alinha os itens no topo */
+        height: 100%;
+        /* Garante que o menu ocupe toda a altura disponível */
+        max-height: 100vh;
+        /* Limita a altura do menu à altura da janela */
+        padding: 20px 0;
+        /* Espaçamento interno */
+        overflow-y: auto;
+        /* Permite rolagem vertical */
+        overflow-x: hidden;
+        /* Remove qualquer rolagem horizontal */
+        box-sizing: border-box;
+        /* Inclui padding no cálculo da largura e altura */
     }
-    .sisu-logo {
-        width: 200px;
-        margin: 15px;
+
+    .nav-list {
+        flex-grow: 1;
+        /* Faz a lista ocupar o espaço disponível */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        overflow-y: auto;
+        /* Adiciona rolagem à lista, se necessário */
     }
-    .main-contents > p {
-        font-size: 16px;
+
+    .theme-toggle-container {
+        margin-top: auto;
+        /* Move o toggle para o final */
+        align-self: center;
+        /* Centraliza horizontalmente */
     }
-    .main-contents > h1 {
-        font-size: 24px;
-    }
-    .main-lists {
-        font-size: 16px;
-        margin: 2vh 0 2vh 2vh;
-    }
+}
+
+      
+
+
 }
