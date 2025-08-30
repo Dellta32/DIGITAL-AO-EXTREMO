@@ -538,8 +538,8 @@ body {
     margin-top: 33px;
 }
 
-.titulodaFila {
-
+.titulo-Fila {
+    z-index: 2;
     font-weight: bold;
     display: block;
     align-self: center;
