@@ -384,41 +384,6 @@ body {
 
 }
 
-.tabelaCardapio {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    margin-left: 90px;
-    background-color: #fff;
-    border: solid #2a3e52;
-    border-radius: 9px;
-    align-items: center;
-    width: 1080px;
-    justify-self: center;
-
-}
-
-.tabelaCardapio table {
-    margin: 20px;
-    background: azure;
-    border-radius: 30px;
-    border: 1px solid #2a3e52;
-    width: 100%;
-
-}
-
-
-.tabelaCardapio td {
-    text-align: center;
-    height: 70px;
-    width: 120px;
-    border-radius: 30px;
-    border: solid 1px #2a3e52;
-    font-weight: bold;
-    padding: 10px;
-    border: none;
-
-}
 
 /*CORES DOS PROFESSORES NA TABELA DE HORARIO*/
 .Lucas {
@@ -516,7 +481,10 @@ body {
     background-color: #00EEEE !important;
 }
 
-/*cardapio*/
+
+
+
+/*CARDÁPIO*/
 
 
 .lanche {
@@ -538,15 +506,7 @@ body {
     margin-top: 33px;
 }
 
-.titulo-Fila {
-    z-index: 2;
-    font-weight: bold;
-    display: block;
-    align-self: center;
 
-
-
-}
 
 .diasSemanaCardapio {
 
@@ -555,7 +515,18 @@ body {
 
 }
 
-/*FILA DO LANCHE/*/
+/*FILA DO LANCHE*/
+
+
+.titulo-fila {
+    z-index: 2;
+    font-weight: bold;
+    display: block;
+    align-self: center;
+
+
+
+}
 
 .filaTabela {
     display: flex;
@@ -593,6 +564,8 @@ body {
 
 }
 
+
+/*//FILA DO LANCHE//*/
 
 .logotext {
     font-size: 30px;
