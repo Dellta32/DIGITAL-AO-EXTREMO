@@ -461,3 +461,31 @@
         transform: translateX(-50%);
     }
 }
+
+/*PAGINA DO ENEM*/
+
+   .enem-main {
+        margin: 10px;
+        padding: 10px;
+    }
+    .enem-logo {
+        width: 200px;
+    }
+    .sisu-content {
+        padding: 20px;
+    }
+    .sisu-logo {
+        width: 200px;
+        margin: 15px;
+    }
+    .main-contents > p {
+        font-size: 16px;
+    }
+    .main-contents > h1 {
+        font-size: 24px;
+    }
+    .main-lists {
+        font-size: 16px;
+        margin: 2vh 0 2vh 2vh;
+    }
+}
