@@ -484,96 +484,129 @@ body {
 
 
 
-/*CARDÁPIO*/
-
-
-.lanche {
-
-    background: #FFAB24;
-    background: linear-gradient(180deg, #5272b6 1%, #ffffff 96%);
-
-}
-
-.almoco {
-
-    background: #FFAB24;
-    background: linear-gradient(180deg, #abd1ec 1%, #ffffff 96%);
-}
-
-.tituloCardapio {
-
-    font-weight: bold;
-    margin-top: 33px;
-}
-
-
-
-.diasSemanaCardapio {
-
-    background: #dddddd;
-    background: linear-gradient(180deg, #818181 1%, #ffffff 96%);
-
-}
-
-/*FILA DO LANCHE*/
-
-
-.titulo-fila {
-    z-index: 2;
-    font-weight: bold;
-    display: block;
-    align-self: center;
-
-
-
-}
-
-.filaTabela {
+.cardapio-main {
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    margin-left: 90px;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    width: auto;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.cardapio-container {
     background-color: #fff;
     border: solid #2a3e52;
     border-radius: 9px;
     align-items: center;
-    width: 1080px;
+    width: 100%;
+    margin: 20px;
+}
+
+.table-cardapio {
+    justify-self: center;
+    padding: 20px;
+    margin: 20px;
+    background: rgb(255, 0, 217);
+    border-radius: 30px;
+}
+
+.cardapio-container td {
+    text-align: center;
+    height: 70px;
+    width: 120px;
+    border-radius: 30px;
+    border: solid 1px #2a3e52;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+}
+
+.lanche {
+    background: #ffffff;
+}
+
+.almoco {
+    background: #ffffff;
+}
+
+.diasSemana-cardapio {
+    color: white;
+    background: linear-gradient(to right, rgb(13, 12, 31), rgb(58, 58, 95));
+}
+
+.lanche-title {
+    color: white;
+    background: linear-gradient(to right, rgb(13, 12, 31), rgb(58, 58, 95));
+    height: 20px;
+    width: 120px;
+}
+
+.almoco-title {
+    color: white;
+    background: linear-gradient(to right, rgb(13, 12, 31), rgb(58, 58, 95));
+}
+
+.titulo-cardapio {
+    margin: 10px 0 10px 0;
+    font-weight: bold;
+    font-size: 25px;
+    justify-self: center;
+}
+.titulo-fila {
+    margin: 10px 0 10px 0;
+    font-weight: bold;
+    font-size: 25px;
     justify-self: center;
 }
 
-.filaTabela table {
-    margin: 20px;
-    border: 1px solid #2a3e52;
-    height: 440px;
-    width: 100%;
-    border-spacing: 0;
+/*FILA DO LANCHE/*/
 
+.fila-container {
+    background-color: #fff;
+    border: solid #2a3e52;
+    border-radius: 9px;
+    justify-self: center;
+    width: 100%;
 
 }
 
-.filaTabela td {
+.fila-tabela {
+    padding: 10px;
+    height: 440px;
+    width: 100%;
+    border-spacing: 3px;
+    border-radius: 30px;
+}
+
+.fila-tabela th {
+    background: linear-gradient(to right, rgb(13, 12, 31), rgb(58, 58, 95));
+    width: 40px;
+    height: 40px;
+    border: solid 1px #2a3e52;
+    padding: 10px;
+    border-radius: 30px;
+    color: white;
+}
+
+.fila-tabela td {
     text-align: center;
     height: 40px;
-    width: 80px;
+    width: 40px;
     border: solid 1px #2a3e52;
     font-weight: bold;
     text-size-adjust: 30px;
     table-layout: fixed;
-
-
+    border-radius: 30px;
+    border: solid 1px #2a3e52;
+    font-weight: bold;
+    padding: 10px;
 }
 
 
-/*//FILA DO LANCHE//*/
 
-.logotext {
-    font-size: 30px;
-    color: #490b2d;
-    margin-right: 40px;
-    margin-top: 18px;
-    text-transform: uppercase;
-}
+
 
 /* TEMA ESCURO*/
 
@@ -1083,4 +1116,31 @@ body.dark-theme .main-lists li {
 }
 .main-lists > li {
     margin: 10px;
-}
+}
+
+/*DARK-THEME CARDÁPIO*/
+
+body.dark-theme .cardapio-container {
+    background-color: #3b414f !important;
+    border-color: #cecece !important;
+}
+body.dark-theme .titulos-cardapio {
+    color: white !important;
+}
+body.dark-theme .table-cardapio {
+    background: #2c2c32 !important;
+}
+body.dark-theme .fila-container {
+    background-color: #3b414f !important;
+    border-color: #cecece !important;
+}
+body.dark-theme .fila-tabela th {
+    background: #ededed !important;
+    color: rgb(0, 0, 0) !important;
+}
+body.dark-theme .titulo-cardapio {
+    color: white;
+}
+body.dark-theme .titulo-fila {
+    color: white;
+}
