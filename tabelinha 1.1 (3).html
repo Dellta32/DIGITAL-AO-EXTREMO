@@ -6,25 +6,29 @@
 </head>
 <script>
 function tabHorario() {
-  const professores = [
-    { nome: "Lucas", disciplina: "Inglês", url: "gestao.html#lucas" },
-    { nome: "Mariana", disciplina:["Projeto de Vida" ,"Sociologia"], url: "gestao.html#mariana" },
-    { nome: "Manuela", disciplina: "BiologiaManu", url: "gestao.html#manuela" },
-    { nome: "Rute", disciplina: "Marketing e Serviços", url: "gestao.html#rute" },
-    { nome: "Ranaildo", disciplina: "Sistemas de Informação", url: "gestao.html#ranaildo" },
-    { nome: "Lula", disciplina: "Arte", url: "gestao.html#lula" },
-    { nome: "Eber Ramos", disciplina: "PortuguêsEber", url: "gestao.html#eber" },
-    { nome: "Marcelo", disciplina: ["Biologia" ,"Informatica Basica"], url: "gestao.html#marcelo" },
-    { nome: "Daniel", disciplina: "Educação Física", url: "gestao.html#daniel" },
-    { nome: "Leonardo", disciplina: "Matemática", url: "gestao.html#leonardo" },
-    { nome: "Paulo", disciplina: "Geografia", url: "gestao.html#paulo" },
-    { nome: "Allan", disciplina: "Banco de Dados", url: "gestao.html#allan" },
-    { nome: "Nancy", disciplina: "Desenvolvimento de Sistemas", url: "gestao.html#nancy" },
-    { nome: "Iara", disciplina: "Projeto de Vida", url: "gestao.html#iara" },
-    { nome: "Rosa", disciplina: "Orientação Acadêmica", url: "gestao.html#rosa" },
-    { nome: "Francisco", disciplina: "História e Trilhas (UC1)", url: "gestao.html#francisco" },
-    { nome: "Linduberg", disciplina: "Metodologia do Trabalho Científico (MTC)", url: "gestao.html#linduberg" },
-    {nome: "Ricardo", disciplina: "Fisica", url: "gestao.html"},
+  {const professores = [
+    { nome: "Joelson", disciplina: ["MatemáticaJoel", "OficinasJoel"], url: "gestao.html#joelson"},
+    { nome: "AnaG", disciplina: ["Português", "OficinasAnaG"], url: "gestao.html#joelson"},
+    { nome: "Lucas", disciplina: ["Inglês", "Orientação AcadêmicaLucas", "OficinasLucas"], url: "gestao.html#lucas" },
+    { nome: "Mariana", disciplina:["Projeto de VidaMariana" ,"Sociologia"], url: "gestao.html#mariana" },
+    { nome: "Manuela", disciplina: ["BiologiaManu", "OficinasManuela"], url: "gestao.html#manuela" },
+    { nome: "Rute", disciplina: ["Marketing e Serviços", "GFRute", "Matemática Financeira", "Orientação AcadêmicaRute"], url: "gestao.html#rute" },
+    { nome: "Ranaildo", disciplina: ["Estatística", "Empreendedorismo"], url: "gestao.html#ranaildo" },
+    { nome: "Lula", disciplina: ["Orientação AcadêmicaLula", "Arte"], url: "gestao.html#lula" },
+    { nome: "Eber", disciplina: ["Português", "Eletiva OrientadaEber"], url: "gestao.html#eber" },
+    { nome: "Marcelo", disciplina: ["BiologiaMarcelo" ,"Informatica Basica"], url: "gestao.html#marcelo" },
+    { nome: "Daniel", disciplina: ["Educação Física"], url: "gestao.html#daniel" },
+    { nome: "Leonardo", disciplina: ["MatemáticaLeo", "Eletiva OrientadaLeo", "OficinasLeo"], url: "gestao.html#leonardo" },
+    { nome: "Paulo", disciplina: ["Geografia", "OficinasPaulo"], url: "gestao.html#paulo" },
+    { nome: "Allan", disciplina: ["Banco de Dados", "PW1&2", "PEOO"], url: "gestao.html#allan" },
+    { nome: "Nancy", disciplina: ["Desenvolvimento de Sistemas", "FRCNancy", "Segurança da Informação"], url: "gestao.html#nancy" },
+    { nome: "Iara", disciplina: ["Projeto de VidaIara", "HistóriaIara"], url: "gestao.html#iara" },
+    { nome: "Rosa", disciplina: "MTA", url: "gestao.html#rosa" },
+    { nome: "Francisco", disciplina: ["HistóriaFran"], url: "gestao.html#francisco" },
+    { nome: "Linduberg", disciplina: ["MTCLindemberg", "FRCLindemberg", "TIR"], url: "gestao.html#linduberg" },
+    { nome: "Ricardo", disciplina: ["Fisica", "OficinasRicardo"], url: "gestao.html" },
+    { nome: "Gaspar", disciplina: ["GPTS", "GFGas", "MTCGas"], url: "gestao.html#gaspar"},
+    { nome: "Ruziane", disciplina: ["Gestão de Pessoas", "Orientação AcadêmicaRuziane"], url: "gestao.html#ruziane"},
   ];
   /* Array com os horaios para criar as tds corretamente*/
   const horarios = {
