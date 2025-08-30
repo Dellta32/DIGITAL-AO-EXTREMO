@@ -566,7 +566,7 @@ body {
     font-weight: bold;
     font-size: 25px;
     justify-self: center;
-    z-index: 1;
+    z-index: 01;
 }
 
 /*FILA DO LANCHE/*/
@@ -656,10 +656,9 @@ nav.dark-theme {
 }
 
 nav.dark-theme .logotext {
-    font-size: 30px !important;
+    
     color: #ffffff !important;
-    margin-right: 40px !important;
-    text-transform: uppercase !important;
+    
 }
 
 /* Tema escuro para o menu */
