@@ -55,7 +55,10 @@ a {
 }
 .logotext{
 
-   text-transform:uppercase;
+   font-size: 30px;
+    color: #a80909;
+    margin-right: 40px;
+    text-transform: uppercase;
 }
 
 #nav {
