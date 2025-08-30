@@ -53,6 +53,10 @@ a {
     }
 
 }
+.logotext{
+
+   text-transform:uppercase;
+}
 
 #nav {
     display: flex;
