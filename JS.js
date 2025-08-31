@@ -2115,3 +2115,27 @@ window.onload = function () {
     theme.nav
 };
 
+
+
+//ZOOM DA PAGINA GESTÃO 
+
+const popup = document.getElementById("popup");
+    const popupImg = document.getElementById("popup-img");
+    const caption = document.getElementById("popup-caption");
+
+    // Pega todas as imagens com a classe professor-image
+    document.querySelectorAll(".professor-image").forEach(img => {
+      img.addEventListener("click", () => {
+        popup.style.display = "flex";
+        popupImg.src = img.src;
+        caption.innerHTML = img.alt || "";
+      });
+    });
+
+    // Fecha popup clicando fora da imagem
+    popup.addEventListener("click", function (e) {
+      if (e.target !== popupImg) {
+        popup.style.display = "none";
+      }
+    });
+
