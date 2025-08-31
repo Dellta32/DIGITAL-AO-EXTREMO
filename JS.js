@@ -2117,7 +2117,7 @@ window.onload = function () {
 
 
 
-//ZOOM DA PAGINA GESTÃO 
+//ZOOM DA PAGINA GESTÃO //
 
 const popup = document.getElementById("popup");
     const popupImg = document.getElementById("popup-img");
