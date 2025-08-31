@@ -438,14 +438,6 @@
     }
 
 /*ZOOM DA PAGINA GESTÃO*/
-  .professor-container {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .professor-image {
-        margin: 0 0 15px;
-      }
 
       .popup-content {
         max-width: 100%;
