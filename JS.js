@@ -2107,12 +2107,7 @@ function pesquisa() {
 }
 
 window.onload = function () {
-    pesquisa();
-    window.onload= function() {}
-
-    var theme = JSON.parse(localStorage.getItem("savedTheme"))
-    theme.sun
-    theme.nav
+    pesquisa();
 };
 
 
