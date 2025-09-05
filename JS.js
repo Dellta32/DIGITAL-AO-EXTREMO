@@ -245,45 +245,45 @@ function menu() {
 
 function tabHorario() {
     const professores = [
-      { nome: "Joelson", disciplina: ["MatemáticaJoel", "OficinasJoel"], url: "gestao.html#joelson" },
-      { nome: "AnaG", disciplina: ["PortuguêsAna", "OficinasAnaG"], url: "gestao.html#joelson" },
-      { nome: "Lucas", disciplina: ["Inglês", "Orientação AcadêmicaLucas", "OficinasLucas"], url: "gestao.html#lucas" },
-      { nome: "Mariana", disciplina: ["Projeto de VidaMariana", "Sociologia"], url: "gestao.html#mariana" },
-      { nome: "Manuela", disciplina: ["BiologiaManu", "OficinasManuela"], url: "gestao.html#manuela" },
-      { nome: "Rute", disciplina: ["Marketing e Serviços", "GFRute", "Matemática Financeira", "Orientação AcadêmicaRute"], url: "gestao.html#rute" },
-      { nome: "Ranaildo", disciplina: ["Estatística", "Empreendedorismo"], url: "gestao.html#ranaildo" },
-      { nome: "Lula", disciplina: ["Orientação AcadêmicaLula", "Arte"], url: "gestao.html#lula" },
-      { nome: "Eber", disciplina: ["Português", "Eletiva Orientada - Eber"], url: "gestao.html#eber" },
-      { nome: "Marcelo", disciplina: ["BiologiaMarcelo", "Informática Básica"], url: "gestao.html#marcelo" },
-      { nome: "Daniel", disciplina: ["Educação Física"], url: "gestao.html#daniel" },
-      { nome: "Leonardo", disciplina: ["MatemáticaLeo", "Eletiva OrientadaLeo", "OficinasLeo"], url: "gestao.html#leonardo" },
-      { nome: "Paulo", disciplina: ["Geografia", "OficinasPaulo"], url: "gestao.html#paulo" },
-      { nome: "Allan", disciplina: ["Banco de Dados", "PW1&2", "PEOO"], url: "gestao.html#allan" },
-      { nome: "Nancy", disciplina: ["Desenvolvimento de Sistemas", "FRCNancy", "Segurança da Informação"], url: "gestao.html#nancy" },
-      { nome: "Iara", disciplina: ["Projeto de VidaIara", "HistóriaIara"], url: "gestao.html#iara" },
-      { nome: "Rosa", disciplina: "MTA", url: "gestao.html#rosa" },
-      { nome: "Francisco", disciplina: ["HistóriaFran"], url: "gestao.html#francisco" },
-      { nome: "Lindemberg", disciplina: ["Lógica de Programação - AlgoritimosLindemberg", "MTCLindemberg", "FRCLindemberg", "TIR"], url: "gestao.html#linduberg" },
-      { nome: "Ricardo", disciplina: ["Física", "OficinasRicardo"], url: "gestao.html#ricardo" },
-      { nome: "Gaspar", disciplina: ["GPTS", "GFGas", "MTCGas"], url: "gestao.html#gaspar" },
-      { nome: "Ruziane", disciplina: ["Gestão de Pessoas", "Orientação Acadêmica Ruziane"], url: "gestao.html#ruziane" },
-      { nome: "Marcela", disciplina: "Química", url: "gestao.html#marcela" },
-     
+        { nome: "Joelson", disciplina: ["MatemáticaJoelson", "OficinasJoelson"], url: "gestao.html#joelson" },
+        { nome: "AnaG", disciplina: ["PortuguêsAnaG", "OficinasAnaG"], url: "gestao.html#joelson" },
+        { nome: "Lucas", disciplina: ["Inglês", "Orientação AcadêmicaLucas", "OficinasLucas"], url: "gestao.html#lucas" },
+        { nome: "Mariana", disciplina: ["Projeto de VidaMariana", "Sociologia"], url: "gestao.html#mariana" },
+        { nome: "Manuela", disciplina: ["BiologiaManuela", "OficinasManuela"], url: "gestao.html#manuela" },
+        { nome: "Rute", disciplina: ["Marketing e Serviços", "Gestão FinanceiraRute", "Matemática Financeira", "Orientação AcadêmicaRute"], url: "gestao.html#rute" },
+        { nome: "Ranaildo", disciplina: ["Estatística", "Empreendedorismo"], url: "gestao.html#ranaildo" },
+        { nome: "Lula", disciplina: ["Orientação AcadêmicaLula", "Arte"], url: "gestao.html#lula" },
+        { nome: "Eber", disciplina: ["PortuguêsEber", "Eletiva Orientada - Eber"], url: "gestao.html#eber" },
+        { nome: "Marcelo", disciplina: ["BiologiaMarcelo", "Informática Básica"], url: "gestao.html#marcelo" },
+        { nome: "Daniel", disciplina: ["Educação Física"], url: "gestao.html#daniel" },
+        { nome: "Leonardo", disciplina: ["MatemáticaLeonardo", "Eletiva Orientada - Leonardo", "OficinasLeonardo"], url: "gestao.html#leonardo" },
+        { nome: "Paulo", disciplina: ["Geografia", "OficinasPaulo"], url: "gestao.html#paulo" },
+        { nome: "Allan", disciplina: ["Banco de Dados", "Programação Web 1&2", "Programação Estruturada e Orientada a Objeto"], url: "gestao.html#allan" },
+        { nome: "Nancy", disciplina: ["Desenvolvimento de Sistemas", "Fundamentos De Redes de ComputadoresNancy", "Segurança da Informação"], url: "gestao.html#nancy" },
+        { nome: "Iara", disciplina: ["Projeto de VidaIara", "HistóriaIara"], url: "gestao.html#iara" },
+        { nome: "Rosa", disciplina: "Metodos e Técnicas Administrativa", url: "gestao.html#rosa" },
+        { nome: "Francisco", disciplina: ["HistóriaFrancisco"], url: "gestao.html#francisco" },
+        { nome: "Lindemberg", disciplina: ["Lógica de Programação - AlgoritimosLindemberg", "Metodologia do Trabalho Cientifico (MTC)Lindemberg", "Fundamentos De Redes de ComputadoresLindemberg", "Tecnologia De Implementação de Redes"], url: "gestao.html#linduberg" },
+        { nome: "Ricardo", disciplina: ["Física", "OficinasRicardo"], url: "gestao.html#ricardo" },
+        { nome: "Gaspar", disciplina: ["Gestão Publica e Terceiro Setor", "Gestão FinanceiraGaspar", "Metodologia do Trabalho Cientifico (MTC)Gaspar"], url: "gestao.html#gaspar" },
+        { nome: "Ruziane", disciplina: ["Gestão de Pessoas", "Orientação Acadêmica Ruziane"], url: "gestao.html#ruziane" },
+        { nome: "Marcela", disciplina: "Química", url: "gestao.html#marcela" },
+
     ];
     /* Array com os horaios para criar as tds corretamente*/
     const horarios = {
-      "1AI": { SEG: ["BiologiaManu", "Física", "Inglês", "", "Projeto de VidaIara", "Projeto de VidaIara", "", "Química", "Sociologia", "", "FRCNancy", "FRCNancy"], TER: ["OficinasManuela", "OficinasManuela", "HistóriaFran", "", "LPALindemberg", "LPALindemberg", "", "MatemáticaJoel", "MatemáticaJoel", "", "Educação Física", "Inglês"], QUA: ["Geografia", "PW1&2", "PW1&2", "", "Eletiva", "Eletiva", "", "Química", "BiologiaManu", "", "Eletiva Orientada - Eber", "Eletiva Orientada - Eber"], QUI: ["HistóriaFran", "PortuguêsAna", "Educação Física", "", "FRCNancy", "FRCNancy", "", "MatemáticaJoel", "Práticas", "", "Informática Básica", "Geografia"], SEX: ["Orientação Acadêmica Ruziane", "Orientação Acadêmica Ruziane", "Arte", "", "Informática Básica", "Física", "", "PortuguêsAna", "PortuguêsAna", "", "Espanhol - Sem Professor", "Filosofia - Sem Professor"] },
-      "1BI": { SEG: ["HistóriaFran", "Geográfia", "BiologiaManu", "", "FRCNancy", "FRCNancy", "", "Projeto de VidaIara", "Projeto de VidaIara", "", "Práticas", "MatemáticaJoel"], TER: ["Educação Física", "Informática Básica", "Inglês", "", "Projeto de VidaIara", "Projeto de VidaIara", "", "BiologiaManu", "Educação Física", "", "Sociologia", "Informática Básica"], QUA: ["Sociologia", "HistóriaFran", "Inglês", "", "Eletiva", "Eletiva", "", "Educação Física", "Química", "", "PortuguêsAna", "PortuguêsAna"], QUI: ["BiologiaManu", "Física", "Geografia", "", "Informática Básica", "Química", "", "FRCNancy", "FRCNancy", "", "Orientação AcadêmicaLula"], SEX: ["Arte", "Física", "PortuguêsAna", "", "Lógica de Programação - AlgoritimosLindemberg", "Lógica de Programação - AlgoritimosLindemberg", "", "Eletiva Orientada - Eber", "Eletiva Orientada - Eber","", "Espanhol - Sem Professor", "Filosofia - Sem Professor"] },
-      "1CI": { SEG: ["Geografia", "Informática Básica", "HistóriaFran", "", "Física", "BiologiaManu", "", "Eletiva Orientada - Eber", "Eletiva Orientada - Eber", "", "Práticas", "Química"], TER: ["Inglês", "LPALindemberg", "LPALindemberg", "", "Projeto de VidaIara", "Projeto de VidaIara", "", "BiologiaManu", "Educação Física", "", "Sociologia", "informática Básica"], QUA: ["FRCLindemberg", "FRCLindemberg", "PortuguêsAna", "", "Eletiva", "Eletiva", "", "Arte", "Educação Física", "", "MatemáticaJoel", "MatemáticaJoel"], QUI: ["FRCLindemberg", "FRCLindemberg", "Inglês", "", "PortuguêsAna", "PortuguêsAna", "", "Química", "Geografia", "", "MatemáticaJoel", "Física"], SEX: ["PW1&2", "PW1&2", "HistóriaFran", "", "Orientação AcadêmicaLula", "Orientação AcadêmicaLula", "", "OficinasRicardo", "OficinasRicardo", "", "Espanhol - Sem Professor", "Filosofia - Sem Professor"] },
-      "1AA": { SEG: ["Estátistica", "Estátistica", "Química", "", "GPTS", "GPTS", "", "MatemáticaJoel", "MatemáticaJoel", "", "Inglês", "Sociologia"], TER: ["Geografia", "HistóriaFran", "Informática Básica", "", "Educação Física", "Educação Física", "", "Filosofia - Sem Professor", "BiologiaManu", "", "GPTS", "GPTS"], QUA: ["HistóriaFran", "Orientação Acadêmica Ruziane", "Orientação Acadêmica Ruziane", "", "Eletiva", "Eletiva", "", "PortuguêsAna", "PortuguêsAna", "", "Química", "Física"], QUI: ["Inglês", "Eletiva OrientadaLeo", "Eletiva OrientadaLeo", "", "Estatísticas", "Estatísticas", "", "PortuguêsAna", "Arte", "", "Geografia", "MatemáticaJoel"], SEX: ["Projeto de VidaIara", "Projeto de VidaIara", "BiologiaManu", "", "Física", "Informática Básica", "", "OficinasJoel", "OficinasJoel", "", "Práticas", "Espanhol - Sem Professor"] },
-      "1BA": { SEG: ["GPTS", "GPTS", "Informática Basica", "", "BiologiaManu", "HistóriaFran", "", "Física", "Química", "", "Sociologia", "Inglês"], TER: ["Informática Básica", "Física", "Educação Física", "", "Orientação AcadêmicaRute", "Orientação AcadêmicaRute", "", "GPTS", "GPTS", "Espanhol - Sem Professor", "Filosofia - Sem Professor"], QUA: ["Estatística", "Estatística", "Arte", "", "Eletiva", "Eletiva", "", "MatemáticaJoel", "MatemáticaJoel", "", "Educação Física", "Química"], QUI: ["Geografia", "Estatísticas", "Estatísticas", "", "BiologiaManu", "Inglês", "", "OficinasManu", "OficinasManu", "", "PortuguêsAna", "PortuguêsAna"], SEX: ["HistóriaFran", "PortuguêsAna", "Geografia", "", "Projeto de VidaIara", "Projeto de VidaIara", "", "Eletiva OrientadaLeo", "Eletiva OrientadaLeo", "", "Práticas", "MatemáticaJoel"] },
-      "2AI": { SEG: ["Inglês", "Química", "PortuguêsEber", "", "Empreendedorismo", "Empreendedorismo", "", "Sociologia", "Física", "", "Espanhol - Sem Professor", "Filosofia - Sem Professor"], TER: ["TIR", "PEOO", "PEOO", "", "Trilhas", "Trilhas", "", "Trilhas", "Trilhas", "", "HistóriaIara", "Educação Física"], QUA: ["PEOO", "Geografia", "TRC", "", "Eletiva", "Eletiva", "", "PortuguêsEber", "Arte", "", "MatemáticaLeo", "Oficina - Sem Professor"], QUI: ["MatemáticaLeo", "Segurança da Informação", "Segurança da Informação", "", "TIR", "TIR", "", "BiologiaMarcelo", "Práticas", "", "Projeto de VidaIara", "Projeto de VidaIara"], SEX: ["OficinasLucas", "OficinasLucas", "MTCBerg", "", "PEOO", "PEOO", "", "Orientação AcadêmicaRuzi", "Orientação AcadêmicaRuzi", "Práticas", "Oficinas - Sem Professor"] },
-      "2AA": { SEG: ["Biologia", "Informática Básica", "HistóriaFran", "", "Geografia", "Química", "", "Empreendedorismo", "Empreendedorismo", "", "Práticas", "Espanhol - Sem Professor"], TER: ["Filosofia", "MTCGas", "GFRute", "", "Trilhas", "Trilhas", "", "Trilhas", "Trilhas", "", "HistóriaIara", "Educação Física"], QUA: ["Gestão de Pessoas", "Matemática Financeira", "Matemática Financeira", "", "Eletiva", "Eletiva", "", "Orientação AcadêmicaLucas", "Orientação AcadêmicaLucas", "", "Física", "MatemáticaLeo"], QUI: ["Projeto de VidaIara", "Projeto de VidaIara", "Práticas", "", "Educação física", "Arte", "", "Matemática Financeira", "Matemática Financeira", "", "Gestão de Pessoas", "Gestão de Pessoas"], SEX: ["OficinasPaulo", "OficinasPaulo", "Gestão de Pessoas", "", "PortuguêsEber", "PortuguêsEber", "", "GFRute", "GFRute", "", "Oficinas - Sem Professor", "Oficinas - Sem Professor"] },
-      "2BA": { SEG: ["Projeto De VidaIara", "Projeto De VidaIara", "Empreendedorismo", "", "Química", "PortuguêsEber", "", "Gestão FinanceiraGas", "MatemáticaLeo", "", "Práticas", "BiologiaMarcelo"], TER: ["Matemática Financeira", "Matemática Financeira", "Sociologia", "", "Trilhas", "Trilhas", "", "Trilhas", "Trilhas", "", "Geografia", "MatemáticaLeo"], QUA: ["GFGas", "GFGas", "Português", "Eletiva", "Eletiva", "", "Gestão de Pessoas", "Gestão de Pessoas", "", "Espanhol - Sem Professor", "Filosofia - Sem Professor"], QUI: ["Empreendedorismo", "Educação Física", "MTCLindemberg", "", "Física", "HistóriaIara", "", "Arte", "Práticas", "", "Matemática Financeira", "Matemática Financeira"], SEX: ["OficinasManuela", "OficinasManuela", "Inglês", "", "GFRute", "GFRute", "", "Orientação AcadêmicaLucas", "Orientação AcadêmicaLucas", "", "Oficinas - Sem Professor", "Oficinas - Sem Professor"] },
-      "3AI": { SEG: ["Química", "Desenvolvimento de Sistemas", "Geografia", "", "BiologiaMarcelo", "Sociologia", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR",], TER: ["MatemáticaLeo", "Educação Física", "Física", "", "Projeto de VidaMariana", "Projeto de VidaMariana", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], QUA: ["Práticas", "Espanhol - Sem Professor", "Desenvolvimento de Sistemas", "", "Orientação Acadêmica - Sem Professor", "Inglês", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], QUI: ["Orientação Acadêmica", "HistóriaFran", "Práticas", "", "Arte", "MatemáticaLeo", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], SEX: ["PortuguêsEber", "PortuguêsEber", "Orientação Acadêmica - Sem Professor", "", "OficinasPaulo", "OficinasPaulo", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"] },
-      "3BI": { SEG: ["PortuguêsEber", "PortuguêsEber", "Desenvolvimento de Sistemas", "", "Sociologia", "Espanhol - Sem Professor", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], TER: ["HistóriaFran", "Projeto de VidaIara", "Projeto de VidaIara", "", "MatemáticaLeo", "Filosofia - Sem Professor", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], QUA: ["Práticas", "Desenvolvimento de Sistemas", "Educação Física", "", "Química", "Orientação Acadêmica - Sem Professor", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], QUI: ["BiologiaMarcelo", "Geografia", "Práticas", "", "Inglês", "Orientação Acadêmica", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], SEX: ["MatemáticaLeo", "Arte", "Física", "", "OficinasLeo", "OficinasLeo", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"] },
-      "3AA": { SEG: ["Projeto de VidaMariana", "Projeto de VidaMariana", "Física", "", "PortuguêsEber", "Espanhol - Sem Professor", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], TER: ["MTA", "MatemáticaLeo", "MatemáticaLeo", "", "Geografia", "Filosofia - Sem Professor", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], QUA: ["Práticas", "Sociologia", "MTARute", "", "Inglês", "Orientação Acadêmica - Sem Professor", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], QUI: ["Arte", "Química", "Práticas", "", "HistóriaFran", "Educação Física", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], SEX: ["BiologiaMarcelo", "Orientação Acadêmica - Sem Professor", "PortuguêsEber", "", "OficinasManuela", "OficinasManuela", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"] },
-      "3BA": { SEG: ["Espanhol - Sem Professor", "HistóriaFran", "Sociologia", "", "Inglês", "Geografia", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], TER: ["Projeto de VidaMariana", "Projeto de VidaMariana", "MTA", "", "Biologia", "Filosofia", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], QUA: ["Práticas", "MTARute", "Orientação Acadêmica - Sem Professor", "", "PortuguêsEber", "PortuguêsEber", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], QUI: ["Educação Física", "Arte", "Práticas", "Química", "Física", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], SEX: ["Orientação Acadêmica - Sem Professor", "MatemáticaLeo", "MatemáticaLeo", "", "OficinasAnaG", "OficinasAnaG", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"] }
+        "1AI": { SEG: ["BiologiaManuela", "Física", "Inglês", "", "Projeto de VidaIara", "Projeto de VidaIara", "", "Química", "Sociologia", "", "Fundamentos De Redes de ComputadoresNancy", "Fundamentos De Redes de ComputadoresNancy"], TER: ["OficinasManuela", "OficinasManuela", "HistóriaFrancisco", "", "Fundamentos De Redes de ComputadoresLindemberg", "Fundamentos De Redes de ComputadoresLindemberg", "", "MatemáticaJoelson", "MatemáticaJoelson", "", "Educação Física", "Inglês"], QUA: ["Geografia", "Programação Web 1&2", "Programação Web 1&2", "", "Eletiva", "Eletiva", "", "Química", "BiologiaManuela", "", "Eletiva Orientada - Eber", "Eletiva Orientada - Eber"], QUI: ["HistóriaFrancisco", "PortuguêsAnaG", "Educação Física", "", "Fundamentos De Redes de ComputadoresNancy", "Fundamentos De Redes de ComputadoresNancy", "", "MatemáticaJoelson", "Práticas", "", "Informática Básica", "Geografia"], SEX: ["Orientação Acadêmica Ruziane", "Orientação Acadêmica Ruziane", "Arte", "", "Informática Básica", "Física", "", "PortuguêsAnaG", "PortuguêsAnaG", "", "Espanhol - Sem Professor", "Filosofia - Sem Professor"] },
+        "1BI": { SEG: ["HistóriaFrancisco", "Geografia", "BiologiaManuela", "", "Fundamentos De Redes de ComputadoresNancy", "Fundamentos De Redes de ComputadoresNancy", "", "Projeto de VidaIara", "Projeto de VidaIara", "", "Práticas", "MatemáticaJoelson"], TER: ["Educação Física", "Informática Básica", "Inglês", "", "Projeto de VidaIara", "Projeto de VidaIara", "", "BiologiaManuela", "Educação Física", "", "Sociologia", "Informática Básica"], QUA: ["Sociologia", "HistóriaFrancisco", "Inglês", "", "Eletiva", "Eletiva", "", "Educação Física", "Química", "", "PortuguêsAnaG", "PortuguêsAnaG"], QUI: ["BiologiaManuela", "Física", "Geografia", "", "Informática Básica", "Química", "", "Fundamentos De Redes de ComputadoresNancy", "Fundamentos De Redes de ComputadoresNancy", "", "Orientação AcadêmicaLula", "Orientação AcadêmicaLula"], SEX: ["Arte", "Física", "PortuguêsAnaG", "", "Lógica de Programação - AlgoritimosLindemberg", "Lógica de Programação - AlgoritimosLindemberg", "", "Eletiva Orientada - Eber", "Eletiva Orientada - Eber", "", "Espanhol - Sem Professor", "Filosofia - Sem Professor"] },
+        "1CI": { SEG: ["Geografia", "Informática Básica", "HistóriaFrancisco", "", "Física", "BiologiaManuela", "", "Eletiva Orientada - Eber", "Eletiva Orientada - Eber", "", "Práticas", "Química"], TER: ["Inglês", "Fundamentos De Redes de ComputadoresLindemberg", "Fundamentos De Redes de ComputadoresLindemberg", "", "Projeto de VidaIara", "Projeto de VidaIara", "", "BiologiaManuela", "Educação Física", "", "Sociologia", "Informática Básica"], QUA: ["Fundamentos De Redes de ComputadoresLindemberg", "Fundamentos De Redes de ComputadoresLindemberg", "PortuguêsAnaG", "", "Eletiva", "Eletiva", "", "Arte", "Educação Física", "", "MatemáticaJoelson", "MatemáticaJoelson"], QUI: ["Fundamentos De Redes de ComputadoresLindemberg", "Fundamentos De Redes de ComputadoresLindemberg", "Inglês", "", "PortuguêsAnaG", "PortuguêsAnaG", "", "Química", "Geografia", "", "MatemáticaJoelson", "Física"], SEX: ["Programação Web 1&2", "Programação Web 1&2", "HistóriaFrancisco", "", "Orientação AcadêmicaLula", "Orientação AcadêmicaLula", "", "OficinasRicardo", "OficinasRicardo", "", "Espanhol - Sem Professor", "Filosofia - Sem Professor"] },
+        "1AA": { SEG: ["Estatística", "Estatística", "Química", "", "Gestão Publica e Terceiro Setor", "Gestão Publica e Terceiro Setor", "", "MatemáticaJoelson", "MatemáticaJoelson", "", "Inglês", "Sociologia"], TER: ["Geografia", "HistóriaFrancisco", "Informática Básica", "", "Educação Física", "Educação Física", "", "Filosofia - Sem Professor", "BiologiaManuela", "", "Gestão Publica e Terceiro Setor", "Gestão Publica e Terceiro Setor"], QUA: ["HistóriaFrancisco", "Orientação Acadêmica Ruziane", "Orientação Acadêmica Ruziane", "", "Eletiva", "Eletiva", "", "PortuguêsAnaG", "PortuguêsAnaG", "", "Química", "Física"], QUI: ["Inglês", "Eletiva Orientada - Leonardo", "Eletiva Orientada - Leonardo", "", "Estatística", "Estatística", "", "PortuguêsAnaG", "Arte", "", "Geografia", "MatemáticaJoelson"], SEX: ["Projeto de VidaIara", "Projeto de VidaIara", "BiologiaManuela", "", "Física", "Informática Básica", "", "OficinasJoelson", "OficinasJoelson", "", "Práticas", "Espanhol - Sem Professor"] },
+        "1BA": { SEG: ["Gestão Publica e Terceiro Setor", "Gestão Publica e Terceiro Setor", "Informática Básica", "", "BiologiaManuela", "HistóriaFrancisco", "", "Física", "Química", "", "Sociologia", "Inglês"], TER: ["Informática Básica", "Física", "Educação Física", "", "Orientação AcadêmicaRute", "Orientação AcadêmicaRute", "", "Gestão Publica e Terceiro Setor", "Gestão Publica e Terceiro Setor", "Espanhol - Sem Professor", "Filosofia - Sem Professor"], QUA: ["Estatística", "Estatística", "Arte", "", "Eletiva", "Eletiva", "", "MatemáticaJoelson", "MatemáticaJoelson", "", "Educação Física", "Química"], QUI: ["Geografia", "Estatística", "Estatística", "", "BiologiaManuela", "Inglês", "", "OficinasManuela", "OficinasManuela", "", "PortuguêsAnaG", "PortuguêsAnaG"], SEX: ["HistóriaFrancisco", "PortuguêsAnaG", "Geografia", "", "Projeto de VidaIara", "Projeto de VidaIara", "", "Eletiva Orientada - Leonardo", "Eletiva Orientada - Leonardo", "", "Práticas", "MatemáticaJoelson"] },
+        "2AI": { SEG: ["Inglês", "Química", "PortuguêsEber", "", "Empreendedorismo", "Empreendedorismo", "", "Sociologia", "Física", "", "Espanhol - Sem Professor", "Filosofia - Sem Professor"], TER: ["Tecnologia De Implementação de Redes", "Programação Estruturada e Orientada a Objeto", "Programação Estruturada e Orientada a Objeto", "", "Trilhas", "Trilhas", "", "Trilhas", "Trilhas", "", "HistóriaIara", "Educação Física"], QUA: ["Programação Estruturada e Orientada a Objeto", "Geografia", "Tecnologia De Implementação de Redes", "", "Eletiva", "Eletiva", "", "PortuguêsEber", "Arte", "", "MatemáticaLeonardo", "Oficina - Sem Professor"], QUI: ["MatemáticaLeonardo", "Segurança da Informação", "Segurança da Informação", "", "Tecnologia De Implementação de Redes", "Tecnologia De Implementação de Redes", "", "BiologiaMarcelo", "Práticas", "", "Projeto de VidaIara", "Projeto de VidaIara"], SEX: ["OficinasLucas", "OficinasLucas", "Metodologia do Trabalho Cientifico (MTC)Lindemberg", "", "Programação Estruturada e Orientada a Objeto", "Programação Estruturada e Orientada a Objeto", "", "Orientação Acadêmica Ruziane", "Orientação Acadêmica Ruziane", "Práticas", "Oficinas - Sem Professor"] },
+        "2AA": { SEG: ["BiologiaMarcelo", "Informática Básica", "HistóriaFrancisco", "", "Geografia", "Química", "", "Empreendedorismo", "Empreendedorismo", "", "Práticas", "Espanhol - Sem Professor"], TER: ["Filosofia", "Metodologia do Trabalho Cientifico (MTC)Gaspar", "Gestão FinanceiraRute", "", "Trilhas", "Trilhas", "", "Trilhas", "Trilhas", "", "HistóriaIara", "Educação Física"], QUA: ["Gestão de Pessoas", "Matemática Financeira", "Matemática Financeira", "", "Eletiva", "Eletiva", "", "Orientação AcadêmicaLucas", "Orientação AcadêmicaLucas", "", "Física", "MatemáticaLeonardo"], QUI: ["Projeto de VidaIara", "Projeto de VidaIara", "Práticas", "", "Educação física", "Arte", "", "Matemática Financeira", "Matemática Financeira", "", "Gestão de Pessoas", "Gestão de Pessoas"], SEX: ["OficinasPaulo", "OficinasPaulo", "Gestão de Pessoas", "", "PortuguêsEber", "PortuguêsEber", "", "Gestão FinanceiraRute", "Gestão FinanceiraRute", "", "Oficinas - Sem Professor", "Oficinas - Sem Professor"] },
+        "2BA": { SEG: ["Projeto de VidaIara", "Projeto de VidaIara", "Empreendedorismo", "", "Química", "PortuguêsEber", "", "Gestão FinanceiraGaspar", "MatemáticaLeonardo", "", "Práticas", "BiologiaMarcelo"], TER: ["Matemática Financeira", "Matemática Financeira", "Sociologia", "", "Trilhas", "Trilhas", "", "Trilhas", "Trilhas", "", "Geografia", "MatemáticaLeonardo"], QUA: ["Gestão FinanceiraGaspar", "Gestão FinanceiraGaspar", "Português", "Eletiva", "Eletiva", "", "Gestão de Pessoas", "Gestão de Pessoas", "", "Espanhol - Sem Professor", "Filosofia - Sem Professor"], QUI: ["Empreendedorismo", "Educação Física", "Metodologia do Trabalho Cientifico (MTC)Lindemberg", "", "Física", "HistóriaIara", "", "Arte", "Práticas", "", "Matemática Financeira", "Matemática Financeira"], SEX: ["OficinasManuela", "OficinasManuela", "Inglês", "", "Gestão FinanceiraRute", "Gestão FinanceiraRute", "", "Orientação AcadêmicaLucas", "Orientação AcadêmicaLucas", "", "Oficinas - Sem Professor", "Oficinas - Sem Professor"] },
+        "3AI": { SEG: ["Química", "Desenvolvimento de Sistemas", "Geografia", "", "BiologiaMarcelo", "Sociologia", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR",], TER: ["MatemáticaLeonardo", "Educação Física", "Física", "", "Projeto de VidaMariana", "Projeto de VidaMariana", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], QUA: ["Práticas", "Espanhol - Sem Professor", "Desenvolvimento de Sistemas", "", "Orientação Acadêmica - Sem Professor", "Inglês", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], QUI: ["Orientação Acadêmica", "HistóriaFrancisco", "Práticas", "", "Arte", "MatemáticaLeonardo", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], SEX: ["PortuguêsEber", "PortuguêsEber", "Orientação Acadêmica - Sem Professor", "", "OficinasPaulo", "OficinasPaulo", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"] },
+        "3BI": { SEG: ["PortuguêsEber", "PortuguêsEber", "Desenvolvimento de Sistemas", "", "Sociologia", "Espanhol - Sem Professor", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], TER: ["HistóriaFrancisco", "Projeto de VidaIara", "Projeto de VidaIara", "", "MatemáticaLeonardo", "Filosofia - Sem Professor", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], QUA: ["Práticas", "Desenvolvimento de Sistemas", "Educação Física", "", "Química", "Orientação Acadêmica - Sem Professor", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], QUI: ["BiologiaMarcelo", "Geografia", "Práticas", "", "Inglês", "Orientação Acadêmica", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], SEX: ["MatemáticaLeonardo", "Arte", "Física", "", "OficinasLeonardo", "OficinasLeonardo", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"] },
+        "3AA": { SEG: ["Projeto de VidaMariana", "Projeto de VidaMariana", "Física", "", "PortuguêsEber", "Espanhol - Sem Professor", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], TER: ["Metodos e Técnicas Administrativa", "MatemáticaLeonardo", "MatemáticaLeonardo", "", "Geografia", "Filosofia - Sem Professor", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], QUA: ["Práticas", "Sociologia", "Metodos e Técnicas Administrativa", "", "Inglês", "Orientação Acadêmica - Sem Professor", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], QUI: ["Arte", "Química", "Práticas", "", "HistóriaFrancisco", "Educação Física","" ,"PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], SEX: ["BiologiaMarcelo", "Orientação Acadêmica - Sem Professor", "PortuguêsEber", "", "OficinasManuela", "OficinasManuela", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"] },
+        "3BA": { SEG: ["Espanhol - Sem Professor", "HistóriaFrancisco", "Sociologia", "", "Inglês", "Geografia", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], TER: ["Projeto de VidaMariana", "Projeto de VidaMariana", "Metodos e Técnicas Administrativa", "", "Biologia", "Filosofia", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], QUA: ["Práticas", "Metodos e Técnicas Administrativa", "Orientação Acadêmica - Sem Professor", "", "PortuguêsEber", "PortuguêsEber", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], QUI: ["Educação Física", "Arte", "Práticas", "Química", "Física", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], SEX: ["Orientação Acadêmica - Sem Professor", "MatemáticaLeonardo", "MatemáticaLeonardo", "", "OficinasAnaG", "OficinasAnaG", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"] }
     };
 
 
@@ -301,52 +301,54 @@ function tabHorario() {
     const horariosDoDia = horarios[turmaSelecionada][diaSelecionado];
 
     for (let i = 0; i < 12; i++) { // 12 horários fixos
-      const tr = document.createElement("tr"); // linha por horário
-      const td = document.createElement("td");
-      const disciplina = horariosDoDia[i] || "";
+        const tr = document.createElement("tr"); // linha por horário
+        const td = document.createElement("td");
+        const disciplina = horariosDoDia[i] || "";
 
-      if (disciplina === "") {
-        if (i === 3) td.textContent = "Café da manhã - 10:00h á 10:20h";
-        else if (i === 5) td.textContent = "Almoço - 12:00h á 13:20h";
-        else if (i === 9) td.textContent = "Lanche - 15:00h á 15:20h";
-        else td.textContent = "Intervalo";
-      }
-      // caso especial para práticas, eletiva e trilhas
-      else if (disciplina.includes("Práticas")) {
-        td.textContent = disciplina;
-        td.classList.add("Práticas");
-      } else if (disciplina.includes("Eletiva") || disciplina.includes("Trilhas")) {
-        td.textContent = disciplina;
-        td.classList.add("Eletrilhas");
-      }
-      else {
-        const professor = professores.find(p =>
-          Array.isArray(p.disciplina)
-            ? p.disciplina.includes(disciplina)
-            : p.disciplina === disciplina
-        );
-
-        if (professor) {
-          td.classList.add(professor.nome);
-
-          // Remove o nome do professor da disciplina, se estiver embutido
-          const disciplinaSemProfessor = disciplina.replace(professor.nome, "").trim();
-
-          // Adiciona a disciplina sem o nome do professor
-          td.textContent = disciplinaSemProfessor + " - " + professor.nome;
-        } else {
-          td.textContent = disciplina;
+        if (disciplina === "") {
+            if (i === 3) td.textContent = "Café da manhã - 10:00h á 10:20h";
+            else if (i === 6) td.textContent = "Almoço - 12:00h á 13:20h";
+            else if (i === 9) td.textContent = "Lanche - 15:00h á 15:20h";
+            else td.textContent = "Intervalo";
         }
-      }
+        // caso especial para práticas, eletiva e trilhas
+        else if (disciplina.includes("Práticas")) {
+            td.textContent = disciplina;
+            td.classList.add("Práticas");
+        } else if (disciplina.includes("Eletiva") || disciplina.includes("Trilhas")) {
+            td.textContent = disciplina;
+            td.classList.add("Eletrilhas");
+        } else if (disciplina.includes("PROJETO INTEGRADOR")){
+             td.textContent = disciplina; 
+             td.classList.add("PROJETO-INTEGRADOR"); } 
+      else {
+            const professor = professores.find(p =>
+                Array.isArray(p.disciplina)
+                    ? p.disciplina.includes(disciplina)
+                    : p.disciplina === disciplina
+            );
 
-      tr.appendChild(td);
-      table.appendChild(tr); // adiciona a linha na tabela
+            if (professor) {
+                td.classList.add(professor.nome);
+
+                // Remove o nome do professor da disciplina, se estiver embutido
+                const disciplinaSemProfessor = disciplina.replace(professor.nome, "").trim();
+
+                // Adiciona a disciplina sem o nome do professor
+                td.textContent = disciplinaSemProfessor + " - " + professor.nome;
+            } else {
+                td.textContent = disciplina;
+            }
+        }
+
+        tr.appendChild(td);
+        table.appendChild(tr); // adiciona a linha na tabela
 
     }
     var conteinerseletor = document.getElementById("select-cont");
     conteinerseletor.style.animation = "deladin 0.5s ease-out forwards"
 
-  }
+}
 
 
 // Arrays de dados
