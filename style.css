@@ -53,11 +53,12 @@ a {
     }
 
 }
-.logotext{
 
-   font-size: 30px;
+.logotext {
+
+    font-size: 30px;
     color: #a80909;
-    margin-right: 40px;
+    margin: 15px 40px;
     text-transform: uppercase;
 }
 
@@ -101,7 +102,7 @@ a {
     border-radius: 10px;
     font-size: 20px;
     color: #122333;
-    
+
     padding: 20px 4%;
     display: flex;
     line-height: 40px;
@@ -344,11 +345,13 @@ body {
 
 .tabela-horario td {
     text-align: center;
-    height: 80px;
+    height: 100px;
     width: 150px;
+    max-width: 150px;
     background-color: #fff;
     border: solid 1px #2a3e52;
     font-weight: bold;
+    word-wrap: break-word;
 }
 
 .flexconteiner {
@@ -422,11 +425,11 @@ body {
     background-color: #89699b !important;
 }
 
-.JavaScriptMan {
+.Allan {
     background-color: #bd9a00 !important;
 }
 
-.Chico {
+.Francisco {
     background-color: #929292 !important;
 }
 
@@ -458,7 +461,7 @@ body {
     background-color: #af0000 !important;
 }
 
-.Sorvetinho {
+.Joelson {
     background-color: #496885 !important;
 }
 
@@ -470,17 +473,17 @@ body {
     background-color: #eee1c5 !important;
 }
 
-.Linduberg {
+.Lindemberg {
     background-color: #3c5b79 !important;
-    color: rgb(255, 255, 255) !important;
+    color: #ffffff !important;
     font-weight: bold;
 }
 
-.Eletrilha {
-    background-color: #122333 !important;
+.Eletrilhas {
+    background-color: #cc7400 !important;
 }
 
-.Praticas {
+.Práticas {
     background-color: #c5e4e0 !important;
 }
 
@@ -488,7 +491,20 @@ body {
     background-color: #00EEEE !important;
 }
 
+.Ricardo {
 
+    background-color: #2ad100 !important;
+}
+
+.Ruziane {
+
+    background-color: #4d0039 !important;
+    color: #ffffff;
+}
+
+.PROJETO-INTEGRADOR {
+    background-color: #f17c7c !important;
+}
 
 
 .cardapio-main {
@@ -561,6 +577,7 @@ body {
     font-size: 25px;
     justify-self: center;
 }
+
 .titulo-fila {
     margin: 10px 0 10px 0;
     font-weight: bold;
@@ -656,9 +673,9 @@ nav.dark-theme {
 }
 
 nav.dark-theme .logotext {
-    
+
     color: #ffffff !important;
-    
+
 }
 
 /* Tema escuro para o menu */
@@ -996,6 +1013,7 @@ body.dark-theme .titulo-area {
 
 
 }
+
 #nav.dark-theme .burguer .menutext {
     background: #dbdbdb !important;
 }
@@ -1015,11 +1033,12 @@ body.dark-theme .titulo-area {
 
 }
 
-.titulo-area{
+.titulo-area {
     text-transform: uppercase;
     place-self: center;
     margin-top: 50px;
 }
+
 .professor-container {
     margin: 80px 0 30px 90px;
     margin-right: 15px;
@@ -1064,13 +1083,14 @@ body.dark-theme .titulo-area {
     align-self: center;
     width: 300px;
 }
-.main-contents > p {
+
+.main-contents>p {
     text-align: justify;
     font-size: 20px;
     color: #11283d;
 }
 
-.main-contents > h1 {
+.main-contents>h1 {
     color: #a80909;
     font-size: 30px;
 }
@@ -1088,6 +1108,7 @@ body.dark-theme .titulo-area {
     border-radius: 10px;
     margin-top: 20px;
 }
+
 .sisu-logo {
     align-self: center;
     width: 250px;
@@ -1100,7 +1121,8 @@ body.dark-theme .titulo-area {
     font-size: 18px;
     color: #444d56;
 }
-.main-lists > li {
+
+.main-lists>li {
     margin: 10px;
 }
 
@@ -1108,20 +1130,25 @@ body.dark-theme .enem-content {
     background-color: #3b414f;
     color: #dbdbdb;
 }
+
 body.dark-theme .sisu-content {
     background-color: #3b414f;
     color: #dbdbdb;
 }
-body.dark-theme .main-contents > p {
+
+body.dark-theme .main-contents>p {
     color: #dbdbdb;
 }
-body.dark-theme .main-contents > h1 {
+
+body.dark-theme .main-contents>h1 {
     color: #ff6262;
 }
+
 body.dark-theme .main-lists li {
     color: #c3c7cc;
 }
-.main-lists > li {
+
+.main-lists>li {
     margin: 10px;
 }
 
@@ -1131,65 +1158,109 @@ body.dark-theme .cardapio-container {
     background-color: #3b414f !important;
     border-color: #cecece !important;
 }
+
 body.dark-theme .titulos-cardapio {
     color: white !important;
 }
+
 body.dark-theme .table-cardapio {
     background: #2c2c32 !important;
 }
+
 body.dark-theme .fila-container {
     background-color: #3b414f !important;
     border-color: #cecece !important;
 }
+
 body.dark-theme .fila-tabela th {
     background: #ededed !important;
     color: rgb(0, 0, 0) !important;
 }
+
 body.dark-theme .titulo-cardapio {
     color: white;
 }
+
 body.dark-theme .titulo-fila {
     color: white;
 }
 
 /*ZOOM DA PAGINA GESTÃO*/
 
-.popup {
-      display: none;
-      position: fixed;
-      z-index: 9999;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.9);
-      
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
 
-    .popup-content {
-      max-width: 90%;
-      max-height: 80vh;
-      border-radius: 12px;
-      box-shadow: 0 0 20px #000;
-      animation: zoom 0.3s ease;
-    }
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
 
-    #popup-caption {
-      margin-top: 15px;
-      text-align: center;
-      color: #ccc;
-      font-size: 18px;
-    }
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
-    @keyframes zoom {
-      from {
+.popup-content {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #000;
+    animation: zoom 0.3s ease;
+}
+
+#popup-caption {
+    margin-top: 15px;
+    text-align: center;
+    color: #ccc;
+    font-size: 18px;
+}
+
+@keyframes zoom {
+    from {
         transform: scale(0.7);
-      }
-
-      to {
-        transform: scale(1);
-      }
     }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/*PAGINA DE EVENTOS*/
+
+.div-eventos {
+    background-color: #FFF;
+    border: none 20px transparent;
+    border-radius: 30px;
+    max-width: 800px;
+    margin: 40px 40px 40px 500px;
+    text-align: center;
+}
+
+.itemEventos div {
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    background: #fff;
+    max-width: 800px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 30px;
+    text-align: center;
+
+
+}
+
+.itemEventos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.itemEventos  img {
+    height: 250px;
+    
+
+}
