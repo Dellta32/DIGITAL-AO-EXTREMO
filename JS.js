@@ -441,3 +441,24 @@ function pesquisa() {
 window.onload = function () {
     pesquisa();
 };
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const popup = document.getElementById("popup");
+  const popupImg = document.getElementById("popup-img");
+  const caption = document.getElementById("popup-caption");
+
+  document.querySelectorAll(".professor-image").forEach(img => {
+    img.addEventListener("click", () => {
+      popup.style.display = "flex";
+      popupImg.src = img.src;
+      caption.innerHTML = img.alt || "";
+    });
+  });
+
+  popup.addEventListener("click", (e) => {
+    if (e.target !== popupImg) {
+      popup.style.display = "none";
+    }
+  });
+});
