@@ -291,9 +291,10 @@
     }
 
     .logotext {
+        
         font-size: 30px !important;
         color: #490b2d !important;
-        margin-right: 100px !important;
+        margin-right: 40px !important;
         margin-top: 1px !important;
 
     }
@@ -494,5 +495,6 @@
         /* Centraliza horizontalmente */
     }
 }
+
 
       
