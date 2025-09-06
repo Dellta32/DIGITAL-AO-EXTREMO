@@ -173,79 +173,72 @@ function menu() {
     }
     )
 
-    var toggleContainer = document.createElement("div");
-    toggleContainer.classList.add("theme-toggle-container");
+    
+    
+ var toggleContainer = document.createElement("div");
+toggleContainer.classList.add("theme-toggle-container");
 
-    var toggleInput = document.createElement("input");
-    toggleInput.type = "checkbox";
-    toggleInput.id = "theme-toggle";
-    toggleInput.classList.add("theme-toggle");
+var toggleInput = document.createElement("input");
+toggleInput.type = "checkbox";
+toggleInput.id = "theme-toggle";
+toggleInput.classList.add("theme-toggle");
 
-    var toggleLabel = document.createElement("label");
-    toggleLabel.setAttribute("for", "theme-toggle");
-    toggleLabel.classList.add("theme-toggle-label");
+var toggleLabel = document.createElement("label");
+toggleLabel.setAttribute("for", "theme-toggle");
+toggleLabel.classList.add("theme-toggle-label");
 
-    var iconeSol = document.createElement("div");
-    iconeSol.classList.add("sun");
+var iconeSol = document.createElement("div");
+iconeSol.classList.add("sun");
 
-    var iconeLua = document.createElement("div");
-    iconeLua.classList.add("moon");
-    var star1 = document.createElement("div");
-    star1.classList.add("star");
-    var star2 = document.createElement("div");
-    star2.classList.add("star", "small");
+var iconeLua = document.createElement("div");
+iconeLua.classList.add("moon");
+var star1 = document.createElement("div");
+star1.classList.add("star");
+var star2 = document.createElement("div");
+star2.classList.add("star", "small");
 
-    iconeLua.appendChild(star1);
-    iconeLua.appendChild(star2);
+iconeLua.appendChild(star1);
+iconeLua.appendChild(star2);
 
-    toggleLabel.appendChild(iconeSol);
-    toggleLabel.appendChild(iconeLua);
+toggleLabel.appendChild(iconeSol);
+toggleLabel.appendChild(iconeLua);
 
-    var themeText = document.createElement("span");
-    themeText.classList.add("theme-text");
-    themeText.innerText = "Tema";
+var themeText = document.createElement("span");
+themeText.classList.add("theme-text");
+themeText.innerText = "Tema";
 
-    toggleContainer.appendChild(toggleInput);
-    toggleContainer.appendChild(toggleLabel);
-    toggleContainer.appendChild(themeText);
-    toggleContainer.style.position = "absolute";
-    toggleContainer.style.bottom = "20px";
-    toggleContainer.style.right = "20px";
+toggleContainer.appendChild(toggleInput);
+toggleContainer.appendChild(toggleLabel);
+toggleContainer.appendChild(themeText);
+toggleContainer.style.position = "absolute";
+toggleContainer.style.bottom = "20px";
+toggleContainer.style.right = "20px";
 
-    itens.appendChild(toggleContainer);
+itens.appendChild(toggleContainer);
+// --- já marca o checkbox conforme tema salvo ---
+  const savedTheme = localStorage.getItem("savedTheme");
+  toggleInput.checked = savedTheme === "dark";
 
-    toggleInput.addEventListener("change", function () {
-        document.body.classList.toggle("dark-theme");
+  // --- evento de troca do tema ---
+  toggleInput.addEventListener("change", function () {
+    const isDark = toggleInput.checked;
 
-        var nav = document.getElementById("nav");
-        nav.classList.toggle("dark-theme");
+    document.body.classList.toggle("dark-theme", isDark);
 
-        var header = document.querySelector("header");
-        header.classList.toggle("dark-theme");
+    var nav = document.getElementById("nav");
+    if (nav) nav.classList.toggle("dark-theme", isDark);
 
-        var menu = document.querySelector(".menu");
-        if (menu) {
-            menu.classList.toggle("dark-theme");
-        }
+    var header = document.querySelector("header");
+    if (header) header.classList.toggle("dark-theme", isDark);
 
-        // Alternar visibilidade dos ícones de sol e lua
-        const sun = document.querySelector('.sun');
-        const moon = document.querySelector('.moon');
-        if (document.body.classList.contains("dark-theme")) {
-            sun.style.opacity = "0";
-            sun.style.transform = "scale(0.8)";
-            moon.style.opacity = "1";
-            moon.style.transform = "scale(1)";
-        } else {
-            sun.style.opacity = "1";
-            sun.style.transform = "scale(1)";
-            moon.style.opacity = "0";
-            moon.style.transform = "scale(0.8)";
-        }
-    });
+    var menu = document.querySelector(".menu");
+    if (menu) menu.classList.toggle("dark-theme", isDark);
+
+    localStorage.setItem("savedTheme", isDark ? "dark" : "light");
+  });}
 
 
-}
+
 
 
 
