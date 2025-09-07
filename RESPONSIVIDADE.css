@@ -246,9 +246,7 @@
         display: none
     }
 
-    body {
-        background-color: #c2c2c2;
-    }
+
 
     .menu-close {
         position: absolute;
@@ -291,11 +289,11 @@
     }
 
     .logotext {
-        
+
         font-size: 30px !important;
         color: #490b2d !important;
         margin-right: 40px !important;
-        margin-top: 1px !important;
+        margin-top: 15px !important;
 
     }
 
@@ -340,34 +338,40 @@
 
     }
 
-/*PAGINA DO ENEM*/
+    /*PAGINA DO ENEM*/
 
-   .enem-main {
+    .enem-main {
         margin: 10px;
         padding: 10px;
     }
+
     .enem-logo {
         width: 200px;
     }
+
     .sisu-content {
         padding: 20px;
     }
+
     .sisu-logo {
         width: 200px;
         margin: 15px;
     }
-    .main-contents > p {
+
+    .main-contents>p {
         font-size: 16px;
     }
-    .main-contents > h1 {
+
+    .main-contents>h1 {
         font-size: 24px;
     }
+
     .main-lists {
         font-size: 16px;
         margin: 2vh 0 2vh 2vh;
     }
 
-/*Cardápio*/
+    /*Cardápio*/
 
     .cardapio-main {
         justify-self: center;
@@ -388,12 +392,14 @@
         align-items: center;
         justify-content: center;
     }
+
     .table-cardapio {
         border-radius: 20px;
         padding: 5px;
         width: 350px;
         height: 200px;
     }
+
     .cardapio-container td {
         text-align: center;
         height: 30px;
@@ -404,6 +410,7 @@
         font-size: 10px;
         padding: 0;
     }
+
     .fila-container {
         font-size: 10px;
         width: 360px;
@@ -412,6 +419,7 @@
         overflow-x: auto;
         justify-content: center;
     }
+
     .fila-tabela th {
         background: linear-gradient(to right, rgb(13, 12, 31), rgb(58, 58, 95));
         width: 30px;
@@ -421,15 +429,18 @@
         color: white;
         padding: 5px;
     }
+
     .fila-tabela td {
         height: 25px;
         width: 30px;
         table-layout: fixed;
         padding: 5px;
     }
+
     .titulo-cardapio {
         font-size: 20px;
     }
+
     .titulo-fila {
         font-size: 20px;
         position: sticky;
@@ -438,12 +449,12 @@
         transform: translateX(-50%);
     }
 
-/*ZOOM DA PAGINA GESTÃO*/
+    /*ZOOM DA PAGINA GESTÃO*/
 
-      .popup-content {
+    .popup-content {
         max-width: 100%;
         max-height: 70vh;
-      }
+    }
 }
 
 @media (max-height: 600px) {
@@ -497,4 +508,57 @@
 }
 
 
-      
+
+@media (max-widith: 1400px) {
+
+    #nav {
+        height: 12dvh;
+    }
+
+    .nav-list li>a {
+
+        line-height: 20px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        /* Organiza os itens verticalmente */
+        justify-content: flex-start;
+        /* Alinha os itens no topo */
+        height: 100%;
+        /* Garante que o menu ocupe toda a altura disponível */
+        max-height: 100vh;
+        /* Limita a altura do menu à altura da janela */
+        padding: 20px 0;
+        /* Espaçamento interno */
+        overflow-y: auto;
+        /* Permite rolagem vertical */
+        overflow-x: hidden;
+        /* Remove qualquer rolagem horizontal */
+        box-sizing: border-box;
+        /* Inclui padding no cálculo da largura e altura */
+    }
+
+    .nav-list {
+        flex-grow: 1;
+        /* Faz a lista ocupar o espaço disponível */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        overflow-y: auto;
+        /* Adiciona rolagem à lista, se necessário */
+    }
+
+    .theme-toggle-container {
+        margin-top: auto;
+        /* Move o toggle para o final */
+        align-self: center;
+        /* Centraliza horizontalmente */
+    }
+}
+
+
+

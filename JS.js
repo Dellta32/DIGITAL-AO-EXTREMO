@@ -1,16 +1,16 @@
-
 document.addEventListener("DOMContentLoaded", () => {
-  const savedTheme = localStorage.getItem("savedTheme");
-  const isDark = savedTheme === "dark";
+    const savedTheme = localStorage.getItem("savedTheme");
+    const isDark = savedTheme === "dark";
 
-  document.body.classList.toggle("dark-theme", isDark);
+    document.body.classList.toggle("dark-theme", isDark);
 
-  const nav = document.getElementById("nav");
-  if (nav) nav.classList.toggle("dark-theme", isDark);
+    const nav = document.getElementById("nav");
+    if (nav) nav.classList.toggle("dark-theme", isDark);
 
-  const header = document.querySelector("header");
-  if (header) header.classList.toggle("dark-theme", isDark);
+    const header = document.querySelector("header");
+    if (header) header.classList.toggle("dark-theme", isDark);
 });
+
 
 function menu() {
     var overlay = document.createElement("div");
@@ -173,72 +173,71 @@ function menu() {
     }
     )
 
-    
-    
- var toggleContainer = document.createElement("div");
-toggleContainer.classList.add("theme-toggle-container");
 
-var toggleInput = document.createElement("input");
-toggleInput.type = "checkbox";
-toggleInput.id = "theme-toggle";
-toggleInput.classList.add("theme-toggle");
+    var toggleContainer = document.createElement("div");
+    toggleContainer.classList.add("theme-toggle-container");
 
-var toggleLabel = document.createElement("label");
-toggleLabel.setAttribute("for", "theme-toggle");
-toggleLabel.classList.add("theme-toggle-label");
+    var toggleInput = document.createElement("input");
+    toggleInput.type = "checkbox";
+    toggleInput.id = "theme-toggle";
+    toggleInput.classList.add("theme-toggle");
 
-var iconeSol = document.createElement("div");
-iconeSol.classList.add("sun");
+    var toggleLabel = document.createElement("label");
+    toggleLabel.setAttribute("for", "theme-toggle");
+    toggleLabel.classList.add("theme-toggle-label");
 
-var iconeLua = document.createElement("div");
-iconeLua.classList.add("moon");
-var star1 = document.createElement("div");
-star1.classList.add("star");
-var star2 = document.createElement("div");
-star2.classList.add("star", "small");
+    var iconeSol = document.createElement("div");
+    iconeSol.classList.add("sun");
 
-iconeLua.appendChild(star1);
-iconeLua.appendChild(star2);
+    var iconeLua = document.createElement("div");
+    iconeLua.classList.add("moon");
+    var star1 = document.createElement("div");
+    star1.classList.add("star");
+    var star2 = document.createElement("div");
+    star2.classList.add("star", "small");
 
-toggleLabel.appendChild(iconeSol);
-toggleLabel.appendChild(iconeLua);
+    iconeLua.appendChild(star1);
+    iconeLua.appendChild(star2);
 
-var themeText = document.createElement("span");
-themeText.classList.add("theme-text");
-themeText.innerText = "Tema";
+    toggleLabel.appendChild(iconeSol);
+    toggleLabel.appendChild(iconeLua);
 
-toggleContainer.appendChild(toggleInput);
-toggleContainer.appendChild(toggleLabel);
-toggleContainer.appendChild(themeText);
-toggleContainer.style.position = "absolute";
-toggleContainer.style.bottom = "20px";
-toggleContainer.style.right = "20px";
+    var themeText = document.createElement("span");
+    themeText.classList.add("theme-text");
+    themeText.innerText = "Tema";
 
-itens.appendChild(toggleContainer);
-// --- já marca o checkbox conforme tema salvo ---
-  const savedTheme = localStorage.getItem("savedTheme");
-  toggleInput.checked = savedTheme === "dark";
+    toggleContainer.appendChild(toggleInput);
+    toggleContainer.appendChild(toggleLabel);
+    toggleContainer.appendChild(themeText);
+    toggleContainer.style.position = "absolute";
+    toggleContainer.style.bottom = "20px";
+    toggleContainer.style.right = "20px";
 
-  // --- evento de troca do tema ---
-  toggleInput.addEventListener("change", function () {
-    const isDark = toggleInput.checked;
+    itens.appendChild(toggleContainer);
+    // --- já marca o checkbox conforme tema salvo ---
+    const savedTheme = localStorage.getItem("savedTheme");
+    toggleInput.checked = savedTheme === "dark";
 
-    document.body.classList.toggle("dark-theme", isDark);
+    // --- evento de troca do tema ---
+    toggleInput.addEventListener("change", function () {
+        const isDark = toggleInput.checked;
 
-    var nav = document.getElementById("nav");
-    if (nav) nav.classList.toggle("dark-theme", isDark);
+        document.body.classList.toggle("dark-theme", isDark);
 
-    var header = document.querySelector("header");
-    if (header) header.classList.toggle("dark-theme", isDark);
+        var nav = document.getElementById("nav");
+        if (nav) nav.classList.toggle("dark-theme", isDark);
 
-    var menu = document.querySelector(".menu");
-    if (menu) menu.classList.toggle("dark-theme", isDark);
+        var header = document.querySelector("header");
+        if (header) header.classList.toggle("dark-theme", isDark);
 
-    localStorage.setItem("savedTheme", isDark ? "dark" : "light");
-  });}
+        var menu = document.querySelector(".menu");
+        if (menu) menu.classList.toggle("dark-theme", isDark);
+
+        localStorage.setItem("savedTheme", isDark ? "dark" : "light");
+    });
+}
 
 
-
 
 
 
@@ -286,7 +285,7 @@ function tabHorario() {
         "2BA": { SEG: ["Projeto de VidaIara", "Projeto de VidaIara", "Empreendedorismo", "", "Química", "PortuguêsEber", "", "Gestão FinanceiraGaspar", "MatemáticaLeonardo", "", "Práticas", "BiologiaMarcelo"], TER: ["Matemática Financeira", "Matemática Financeira", "Sociologia", "", "Trilhas", "Trilhas", "", "Trilhas", "Trilhas", "", "Geografia", "MatemáticaLeonardo"], QUA: ["Gestão FinanceiraGaspar", "Gestão FinanceiraGaspar", "Português", "Eletiva", "Eletiva", "", "Gestão de Pessoas", "Gestão de Pessoas", "", "Espanhol - Sem Professor", "Filosofia - Sem Professor"], QUI: ["Empreendedorismo", "Educação Física", "Metodologia do Trabalho Cientifico (MTC)Lindemberg", "", "Física", "HistóriaIara", "", "Arte", "Práticas", "", "Matemática Financeira", "Matemática Financeira"], SEX: ["OficinasManuela", "OficinasManuela", "Inglês", "", "Gestão FinanceiraRute", "Gestão FinanceiraRute", "", "Orientação AcadêmicaLucas", "Orientação AcadêmicaLucas", "", "Oficinas - Sem Professor", "Oficinas - Sem Professor"] },
         "3AI": { SEG: ["Química", "Desenvolvimento de Sistemas", "Geografia", "", "BiologiaMarcelo", "Sociologia", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR",], TER: ["MatemáticaLeonardo", "Educação Física", "Física", "", "Projeto de VidaMariana", "Projeto de VidaMariana", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], QUA: ["Práticas", "Espanhol - Sem Professor", "Desenvolvimento de Sistemas", "", "Orientação Acadêmica - Sem Professor", "Inglês", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], QUI: ["Orientação Acadêmica", "HistóriaFrancisco", "Práticas", "", "Arte", "MatemáticaLeonardo", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], SEX: ["PortuguêsEber", "PortuguêsEber", "Orientação Acadêmica - Sem Professor", "", "OficinasPaulo", "OficinasPaulo", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"] },
         "3BI": { SEG: ["PortuguêsEber", "PortuguêsEber", "Desenvolvimento de Sistemas", "", "Sociologia", "Espanhol - Sem Professor", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], TER: ["HistóriaFrancisco", "Projeto de VidaIara", "Projeto de VidaIara", "", "MatemáticaLeonardo", "Filosofia - Sem Professor", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], QUA: ["Práticas", "Desenvolvimento de Sistemas", "Educação Física", "", "Química", "Orientação Acadêmica - Sem Professor", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], QUI: ["BiologiaMarcelo", "Geografia", "Práticas", "", "Inglês", "Orientação Acadêmica", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], SEX: ["MatemáticaLeonardo", "Arte", "Física", "", "OficinasLeonardo", "OficinasLeonardo", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"] },
-        "3AA": { SEG: ["Projeto de VidaMariana", "Projeto de VidaMariana", "Física", "", "PortuguêsEber", "Espanhol - Sem Professor", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], TER: ["Metodos e Técnicas Administrativa", "MatemáticaLeonardo", "MatemáticaLeonardo", "", "Geografia", "Filosofia - Sem Professor", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], QUA: ["Práticas", "Sociologia", "Metodos e Técnicas Administrativa", "", "Inglês", "Orientação Acadêmica - Sem Professor", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], QUI: ["Arte", "Química", "Práticas", "", "HistóriaFrancisco", "Educação Física","" ,"PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], SEX: ["BiologiaMarcelo", "Orientação Acadêmica - Sem Professor", "PortuguêsEber", "", "OficinasManuela", "OficinasManuela", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"] },
+        "3AA": { SEG: ["Projeto de VidaMariana", "Projeto de VidaMariana", "Física", "", "PortuguêsEber", "Espanhol - Sem Professor", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], TER: ["Metodos e Técnicas Administrativa", "MatemáticaLeonardo", "MatemáticaLeonardo", "", "Geografia", "Filosofia - Sem Professor", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], QUA: ["Práticas", "Sociologia", "Metodos e Técnicas Administrativa", "", "Inglês", "Orientação Acadêmica - Sem Professor", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], QUI: ["Arte", "Química", "Práticas", "", "HistóriaFrancisco", "Educação Física", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], SEX: ["BiologiaMarcelo", "Orientação Acadêmica - Sem Professor", "PortuguêsEber", "", "OficinasManuela", "OficinasManuela", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"] },
         "3BA": { SEG: ["Espanhol - Sem Professor", "HistóriaFrancisco", "Sociologia", "", "Inglês", "Geografia", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], TER: ["Projeto de VidaMariana", "Projeto de VidaMariana", "Metodos e Técnicas Administrativa", "", "BiologiaMarcelo", "Filosofia", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], QUA: ["Práticas", "Metodos e Técnicas Administrativa", "Orientação Acadêmica - Sem Professor", "", "PortuguêsEber", "PortuguêsEber", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], QUI: ["Educação Física", "Arte", "Práticas", "Química", "Física", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"], SEX: ["Orientação Acadêmica - Sem Professor", "MatemáticaLeonardo", "MatemáticaLeonardo", "", "OficinasAnaG", "OficinasAnaG", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR", "", "PROJETO INTEGRADOR", "PROJETO INTEGRADOR"] }
     };
 
@@ -322,10 +321,11 @@ function tabHorario() {
         } else if (disciplina.includes("Eletiva") || disciplina.includes("Trilhas")) {
             td.textContent = disciplina;
             td.classList.add("Eletrilhas");
-        } else if (disciplina.includes("PROJETO INTEGRADOR")){
-             td.textContent = disciplina; 
-             td.classList.add("PROJETO-INTEGRADOR"); } 
-      else {
+        } else if (disciplina.includes("PROJETO INTEGRADOR")) {
+            td.textContent = disciplina;
+            td.classList.add("PROJETO-INTEGRADOR");
+        }
+        else {
             const professor = professores.find(p =>
                 Array.isArray(p.disciplina)
                     ? p.disciplina.includes(disciplina)
@@ -448,21 +448,21 @@ window.onload = function () {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  const popup = document.getElementById("popup");
-  const popupImg = document.getElementById("popup-img");
-  const caption = document.getElementById("popup-caption");
+    const popup = document.getElementById("popup");
+    const popupImg = document.getElementById("popup-img");
+    const caption = document.getElementById("popup-caption");
 
-  document.querySelectorAll(".professor-image").forEach(img => {
-    img.addEventListener("click", () => {
-      popup.style.display = "flex";
-      popupImg.src = img.src;
-      caption.innerHTML = img.alt || "";
+    document.querySelectorAll(".professor-image").forEach(img => {
+        img.addEventListener("click", () => {
+            popup.style.display = "flex";
+            popupImg.src = img.src;
+            caption.innerHTML = img.alt || "";
+        });
     });
-  });
 
-  popup.addEventListener("click", (e) => {
-    if (e.target !== popupImg) {
-      popup.style.display = "none";
-    }
-  });
+    popup.addEventListener("click", (e) => {
+        if (e.target !== popupImg) {
+            popup.style.display = "none";
+        }
+    });
 });
