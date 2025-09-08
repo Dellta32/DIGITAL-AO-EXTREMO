@@ -1143,91 +1143,248 @@ body.dark-theme .titulo-area {
 /*PAGINA DO ENEM + DARK-THEME DA MESMA*/
 
 
+/* parte com informações sobre o enem e inscrição*/
 .enem-main {
+    width: 70%;
     overflow: hidden;
-    margin: 200px;
-    padding: 30px;
     border-radius: 10px;
+    justify-self: center;
+    margin: 100px 0 100px 0;
 }
 
 .enem-content {
+    border: solid 3px #3b414f;
     display: flex;
     flex-direction: column;
     background-color: white;
-    padding: 30px;
-    border-radius: 7px;
+    padding: 40px;
+    border-radius: 30px;
 }
-
+.content-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 30px;
+}
 .enem-logo {
+    object-fit: cover;
     align-self: center;
-    width: 300px;
+    width: 400px;
 }
-
-.main-contents>p {
-    text-align: justify;
-    font-size: 20px;
-    color: #11283d;
-}
-
-.main-contents>h1 {
-    color: #a80909;
-    font-size: 30px;
-}
-
 .link-enem {
     text-decoration: none;
     color: #001ea3;
 }
 
+/* ---------------------------------------------------------------------------------- */
+
+
+
+/* parte com informações sobre o sisu e inscrição */
 .sisu-content {
+    border: solid 3px #3b414f;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
     background-color: white;
     padding: 30px;
-    border-radius: 10px;
     margin-top: 20px;
 }
-
 .sisu-logo {
     align-self: center;
     width: 250px;
 }
+/* -------------------------------------------------------------------------------------- */
+
+
+
+
+/* classes gerais para elementos da pagina (listas, paragrafos e titulos*/
+.main-contents {
+    margin: 30px;
+}
+.main-contents > p {
+    text-align: justify;
+    font-size: 23px;
+    color: #11283d;
+}
+
+.main-contents > h1 {
+    font-weight: 900;
+    color: #1964b9;
+    font-size: 30px;
+}
+.main-contents > h2 {
+    font-weight: 900;
+    color: #1964b9;
+    font-size: 30px;
+    margin: 20px;
+}
 
 .main-lists {
-    list-style: circle;
-    padding: 0;
-    margin: 3vh 0 3vh 3vh;
-    font-size: 18px;
+    list-style-type: disc;
+    padding: 5px;
+    margin: 3vh;
+    font-size: 23px;
+    width: 500px;
+    border-radius: 30px;
+}
+.main-lists > li {
+    margin: 10px;
     color: #444d56;
 }
+.conteudos-list::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+.conteudos-list::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.conteudos-list::-webkit-scrollbar-thumb {
+    color: black;
+    background-color:#454655;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.1)
+}
+.conteudos-list::-webkit-scrollbar-button {
+    background: transparent;
+}
 
-.main-lists>li {
+.conteudos-list {
+    list-style-type: disc;
+    padding: 10px 10px 10px 40px;
+    margin: 10px;
+    font-size: 25px;
+    width: 35%;
+    height: 570px;
+    border-radius: 30px;
+    background-color: #c6c6cc;
+    overflow-y: auto;
+}
+.conteudos-list li {
+    color: #2c2d35;
     margin: 10px;
 }
+.conteudos-list h2 {
+    font-weight: 800;
+    color: #454655;
+}
+
+.titulos-enem {
+    justify-self: center;
+    align-self: center;
+    font-weight: 900;
+    color: #1964b9;
+    font-size: 45px;
+}
+
+/* ----------------------------------------------- */
+
+
+
+
+
+/* Parte com conteudos para estudar para o Enem*/
+
+.conteudos-container {
+    justify-content: center;
+    border: solid 3px #3b414f;
+    background-color: white;
+    padding: 60px;
+    border-radius: 30px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.conteudos-container > h1 {
+    color: #1964b9;
+    font-size: 30px;
+    font-weight: 1000;
+    margin: 10px 0 10px 0;
+}
+.conteudos-container > h2 {
+    color: #1964b9;;
+    font-weight: 900;
+}
+.conteudos-container > p {
+    text-align: justify;
+    font-size: 23px;
+    color: #11283d;
+}
+
+.conteudos-container h1 {
+    display: block;
+    width: 100%;
+}
+.conteudos-content {
+    margin: 20px 0 20px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: first baseline;
+    justify-content: center;
+    justify-content: space-around;
+}
+.conteudos-content p {
+    text-align: justify;
+    font-size: 23px;
+    color: #11283d;
+}
+
+.conteudos-container > h2 {
+    color: #1964b9;
+    font-size: 30px;
+}
+.conteudos-container > h3 {
+    color: #224368;
+    font-size: 27px;
+}
+/* ----------------------------------------------------------------------- */
+
+
+
+/* Conteudos para estudar redação */
+.redacao-content {
+    margin: 10px 0 40px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: first baseline;
+}
+
+.redacao-list {
+    padding: 10px 10px 10px 30px;
+    list-style-type: disc;
+    margin: 3vh;
+    font-size: 21px;
+    width: 500px;
+    height: 630px;
+    border-radius: 30px;
+    background-color: #c6c6cc;
+}
+
+.redacao-list li {
+    color: #2c2d35;
+    margin: 5px;
+}
+/* tema escuro */
 
 body.dark-theme .enem-content {
     background-color: #3b414f;
     color: #dbdbdb;
 }
-
 body.dark-theme .sisu-content {
     background-color: #3b414f;
     color: #dbdbdb;
 }
-
-body.dark-theme .main-contents>p {
+body.dark-theme .main-contents > p {
     color: #dbdbdb;
 }
-
-body.dark-theme .main-contents>h1 {
+body.dark-theme .main-contents > h1 {
     color: #ff6262;
 }
-
 body.dark-theme .main-lists li {
     color: #c3c7cc;
 }
-
-.main-lists>li {
+.main-lists > li {
     margin: 10px;
 }
 
