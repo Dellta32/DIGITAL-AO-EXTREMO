@@ -1390,6 +1390,22 @@ body.dark-theme .main-lists li {
     margin: 10px;
 }
 
+body.dark-theme .professor-container{
+    border: solid #fcf7f7 !important;
+    background-color: #3b414f !important;
+}
+body.dark-theme .professor-info {
+    background-color: #2b2b2b;
+}body.dark-theme .professor-info  h3{
+    color: #fcf7f7;
+}
+body.dark-theme .professor-info  p{
+    color: #fcf7f7;
+}
+body.dark-theme .titulo-cargo{
+    color: #fcf7f7;
+}
+
 /*DARK-THEME CARDÁPIO*/
 
 body.dark-theme .cardapio-container {
