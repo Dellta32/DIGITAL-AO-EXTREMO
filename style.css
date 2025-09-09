@@ -1,3 +1,4 @@
+
 /* Torna todas as barras de rolagem invisíveis, mas funcionais (sem webkit) */
 * {
     scrollbar-width: none;
