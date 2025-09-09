@@ -22,7 +22,7 @@ body {
 }
 
 a {
-    color: #fff;
+    color: #fcf7f7;
     text-transform: uppercase;
     font-family: system-ui, -apple-system, sans-serif;
     letter-spacing: 4px;
@@ -72,7 +72,7 @@ a {
 .logotext {
 
     font-size: 30px;
-    color: #a80909;
+    color: #B80f10;
     margin: 5px 39px;
     align-self: center;
     text-transform: uppercase;
@@ -84,9 +84,9 @@ a {
     justify-content: center;
     flex-wrap: nowrap;
     flex-direction: row;
-    background-color: #f7f7f7;
+    background-color: #fCf7f7;
     height: 8dvh;
-    border-bottom-color: #a80909;
+    border-bottom-color: #B80f10;
     border-bottom-style: groove;
     position: relative;
 
@@ -135,7 +135,7 @@ a {
 .nav-list li:hover a {
     font-size: 22px;
     border-radius: 10px;
-    color: #f7f7f7;
+    color: #fCf7f7;
     text-decoration: none;
     background-color: #122333;
     transition: 0.5s ease;
@@ -160,22 +160,22 @@ a {
 }
 
 .burguer div:nth-child(1) {
-    background: #f10f10
+    background: #B80f10;
         /* Cor 1 baseada na logo */
 }
 
 .burguer div:nth-child(2) {
-    background: #f10f10;
+    background: #B80f10;
     /* Cor 2 baseada na logo */
 }
 
 .burguer div:nth-child(3) {
-    background: #f10f10;
+    background: #B80f10;
     /* Cor 3 baseada na logo */
 }
 
 .menu {
-    background-color: #f7f7f7;
+    background-color: #fCf7f7;
     width: 300px;
     height: 100%;
     position: fixed;
@@ -188,12 +188,12 @@ a {
 
 
 .menu li:hover {
-    color: #f7f7f7;
+    color: #fCf7f7;
     background-color: #122333;
 }
 
 body {
-    background-color: #c2c2c2;
+    background-color: #cecece;
 }
 
 .menu-close {
@@ -201,7 +201,7 @@ body {
     top: 10px;
     left: 15px;
     font-size: 24px;
-    color: #fff;
+    color: #fcf7f7;
     cursor: pointer;
     background-color: #490b2d;
     width: 36px;
@@ -219,7 +219,7 @@ body {
 .menutext {
 
     font-weight: bold;
-    color: #585858;
+    color: #3b414f;
     font-family: system-ui, -apple-system, sans-serif;
 }
 
@@ -246,7 +246,7 @@ body {
     width: 80px;
     /* Largura inicial */
     height: 30px;
-    border: 2px solid #ccc;
+    border: 2px solid #cecece;
     border-radius: 5px;
     padding: 5px;
     font-size: 16px;
@@ -263,7 +263,7 @@ body {
     /* Cor da borda ao ganhar foco */
     box-shadow: 0 0 10px rgba(82, 114, 182, 0.5);
     /* Sombra ao redor */
-    background-color: #f9f9f9;
+    background-color: #fcf7f7;
     /* Cor de fundo ao ganhar foco */
 }
 
@@ -272,7 +272,7 @@ body {
     height: 30px;
     position: relative;
     display: block;
-    background: #ebebeb;
+    background: #cecece;
     border-radius: 200px;
 
 
@@ -365,7 +365,7 @@ body {
     height: 100px;
     width: 150px;
     max-width: 150px;
-    background-color: #fff;
+    background-color: #fcf7f7;
     border: solid 1px #2a3e52;
     font-weight: bold;
     word-wrap: break-word;
@@ -534,7 +534,7 @@ body {
 }
 
 .cardapio-container {
-    background-color: #fff;
+    background-color: #fcf7f7;
     border: solid #2a3e52;
     border-radius: 9px;
     align-items: center;
@@ -547,7 +547,7 @@ body {
     justify-self: center;
     padding: 20px;
     margin: 20px;
-    background: #c2c2c2;
+    background: #cecece;
     border-radius: 30px;
 }
 
@@ -563,27 +563,27 @@ body {
 }
 
 .lanche {
-    background: #ffffff;
+    background: #fcf7f7;
 }
 
 .almoco {
-    background: #ffffff;
+    background: #fcf7f7;
 }
 
 .diasSemana-cardapio {
-    color: white;
+    color: #fcf7f7;
     background: linear-gradient(to right, rgb(13, 12, 31), rgb(58, 58, 95));
 }
 
 .lanche-title {
-    color: white;
+    color: #fcf7f7;
     background: linear-gradient(to right, rgb(13, 12, 31), rgb(58, 58, 95));
     height: 20px;
     width: 120px;
 }
 
 .almoco-title {
-    color: white;
+    color: #fcf7f7;
     background: linear-gradient(to right, rgb(13, 12, 31), rgb(58, 58, 95));
 }
 
@@ -598,7 +598,7 @@ body {
 .fila-container {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #fcf7f7;
     border: solid #2a3e52;
     border-radius: 9px;
     align-items: center;
@@ -622,7 +622,7 @@ body {
     border: solid 1px #2a3e52;
     padding: 10px;
     border-radius: 20px;
-    color: white;
+    color: #fcf7f7;
 }
 
 .fila-tabela td {
@@ -664,7 +664,7 @@ body {
 
 /* Tema escuro */
 body.dark-theme {
-    background: linear-gradient(to right, #121212, #333);
+    background: linear-gradient(to right, #0f0f0f, #333);
     background-size: 200% 100%;
     animation: theme-transition 0.5s ease forwards;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -672,7 +672,7 @@ body.dark-theme {
 
 /* Tema escuro para nav */
 nav.dark-theme {
-    background-color: #121212;
+    background-color: #0f0f0f;
     /* Cor escura */
     border-bottom: groove #333;
     /* Borda escura */
@@ -680,15 +680,15 @@ nav.dark-theme {
 
 nav.dark-theme .logotext {
 
-    color: #ffffff !important;
+    color: #fcf7f7 !important;
 
 }
 
 /* Tema escuro para o menu */
 .menu.dark-theme {
-    background-color: #121212;
+    background-color: #0f0f0f;
     /* Cor escura */
-    color: #ffffff;
+    color: #fcf7f7;
     /* Texto claro */
 }
 
@@ -696,7 +696,7 @@ nav.dark-theme .logotext {
 .menu.dark-theme .nav-list li {
     background-color: #1e1e1e;
     /* Cor escura para os itens */
-    color: #ffffff;
+    color: #fcf7f7;
     /* Texto claro */
 }
 
@@ -708,14 +708,14 @@ nav.dark-theme .logotext {
 .menu-close.dark-theme {
     background-color: #333;
     /* Botão de fechar escuro */
-    color: #ffffff;
+    color: #fcf7f7;
     /* Texto claro */
 }
 
 header.dark-theme {
-    background-color: #121212;
+    background-color: #0f0f0f;
     /* Cor escura */
-    color: #ffffff;
+    color: #fcf7f7;
     /* Texto claro */
 
     /* Borda escura */
@@ -773,7 +773,7 @@ header.dark-theme {
 
 .moon .star {
     position: absolute;
-    background-color: white;
+    background-color: #fcf7f7;
     border-radius: 50%;
     width: 5px;
     height: 5px;
@@ -820,13 +820,13 @@ header.dark-theme {
 
 /* Links no tema escuro */
 body.dark-theme a {
-    color: #f7f7f7;
+    color: #fcf7f7;
     /* Cor clara para tema escuro */
 }
 
 /* theme-text no tema escuro */
 body.dark-theme .theme-text {
-    color: #f7f7f7;
+    color: #fcf7f7;
     /* Cor clara para tema escuro */
 }
 
@@ -838,11 +838,11 @@ nav.dark-theme {
     flex-direction: row;
     height: 8d;
     position: relative;
-    background-color: #121212 !important;
+    background-color: #0f0f0f !important;
     /* Cor escura */
     border-bottom: groove #333;
     /* Borda escura */
-    color: #ffffff;
+    color: #fcf7f7;
     /* Texto claro */
     box-shadow: 0px 4px 10px 0px #a80909, 0px -4px 10px 0px rgba(255, 0, 0, 0.5);
     /* Efeito de luz */
@@ -850,8 +850,8 @@ nav.dark-theme {
 }
 
 .menu.dark-theme .nav-list li:hover {
-    color: #ffffff;
-    background: linear-gradient(to right, #121212, #333);
+    color: #fcf7f7;
+    background: linear-gradient(to right, #0f0f0f, #333);
     background-size: 200% 100%;
     animation: theme-transition 0.5s ease forwards;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -873,8 +873,8 @@ nav.dark-theme {
     top: 60px;
     left: 15%;
     width: 300px;
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: #fcf7f7;
+    border: 1px solid #cecece;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -883,11 +883,11 @@ nav.dark-theme {
 .sugestao-item {
     padding: 10px;
     cursor: pointer;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #fcf7f7;
 }
 
 .sugestao-item:hover {
-    background-color: #f0f0f0;
+    background-color: #fcf7f7;
 }
 
 .errotexto {
@@ -911,7 +911,7 @@ nav.dark-theme {
 
 .errotexto h2 {
     font-size: 17px;
-    color: #490b0b;
+    color: #B80f10;
 }
 
 #sugestaoContainer {
@@ -920,8 +920,8 @@ nav.dark-theme {
 
     width: 300px;
     /* Faz com que as sugestões tenham a mesma largura do input */
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: #fcf7f7;
+    border: 1px solid #cecece;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -933,8 +933,8 @@ body.dark-theme #sugestaoContainer {
 
     left: 1324px;
     width: 300px;
-    background-color: #444444 !important;
-    border: 1px solid #ccc;
+    background-color: #3b414f !important;
+    border: 1px solid #cecece;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
     z-index: 1000;
@@ -962,7 +962,7 @@ body.dark-theme .selectors-conteiner {
 
 .slogan h1 {
     font-size: 70px;
-    color: #c90202;
+    color: #B80f10;
     text-align: center;
     margin-top: 300px;
     font-weight: bold;
@@ -980,11 +980,11 @@ body.dark-theme .selectors-conteiner {
 }
 
 body.dark-theme .slogan h1 {
-    color: #c90202 !important;
+    color: #B80f10 !important;
 }
 
 body.dark-theme .slogan h2 {
-    color: #dbdbdb !important;
+    color: #cecece !important;
 }
 
 body.dark-theme .menu .sun {
@@ -1001,7 +1001,7 @@ body.dark-theme .tabela-horario {
 }
 
 body.dark-theme .tabela-horario td {
-    background-color: #ffffff;
+    background-color: #fcf7f7;
     color: #000000;
     border: solid 1px #cecece;
 }
@@ -1011,21 +1011,21 @@ body.dark-theme .table-conteiner {
 }
 
 body.dark-theme .titulo-area {
-    color: #ffffff !important;
+    color: #fcf7f7 !important;
 }
 
 #nav.dark-theme .burguer div {
-    color: #dbdbdb !important;
+    color: #fcf7f7 !important;
 
 
 }
 
 #nav.dark-theme .burguer .menutext {
-    color: #dbdbdb !important;
+    color: #fcf7f7 !important;
 }
 
 
-/*GEstao e professores*/
+/*Gestao e professores*/
 
 
 
@@ -1034,7 +1034,7 @@ body.dark-theme .titulo-area {
     margin: 30px;
     justify-self: center;
     border: solid #2a3e52;
-    background-color: white;
+    background-color: #e2e2e2;
     border-radius: 30px;
     width: 70%;
     display: flex;
@@ -1077,6 +1077,7 @@ body.dark-theme .titulo-area {
     font-weight: 500;
     place-self: center;
     margin: 10px;
+    text-align: center;
 }
 
 .professores-cards {
@@ -1099,7 +1100,7 @@ body.dark-theme .titulo-area {
 
 .professor-info {
 
-    background-color: #ddd8dc;
+    background-color: #c7c6c6;
     align-items: center;
     font-size: 20px;
     border-radius: 30px;
@@ -1136,7 +1137,7 @@ body.dark-theme .titulo-area {
 .professor-profile p {
     text-align: justify;
     font-size: 20px;
-    color: #3d3a3d;
+    color: #3b414f;
 }
 
 
@@ -1156,7 +1157,7 @@ body.dark-theme .titulo-area {
     border: solid 3px #3b414f;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: #fcf7f7;
     padding: 40px;
     border-radius: 30px;
 }
@@ -1186,7 +1187,7 @@ body.dark-theme .titulo-area {
     border-radius: 30px;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: #fcf7f7;
     padding: 30px;
     margin-top: 20px;
 }
@@ -1258,16 +1259,16 @@ body.dark-theme .titulo-area {
     width: 35%;
     height: 570px;
     border-radius: 30px;
-    background-color: #c6c6cc;
+    background-color: #cecece;
     overflow-y: auto;
 }
 .conteudos-list li {
-    color: #2c2d35;
+    color: #3b414f;
     margin: 10px;
 }
 .conteudos-list h2 {
     font-weight: 800;
-    color: #454655;
+    color: #3b414f;
 }
 
 .titulos-enem {
@@ -1289,7 +1290,7 @@ body.dark-theme .titulo-area {
 .conteudos-container {
     justify-content: center;
     border: solid 3px #3b414f;
-    background-color: white;
+    background-color: #fcf7f7;
     padding: 60px;
     border-radius: 30px;
     margin-top: 20px;
@@ -1327,7 +1328,7 @@ body.dark-theme .titulo-area {
 .conteudos-content p {
     text-align: justify;
     font-size: 23px;
-    color: #11283d;
+    color: #122333;
 }
 
 .conteudos-container > h2 {
@@ -1358,31 +1359,31 @@ body.dark-theme .titulo-area {
     width: 500px;
     height: 630px;
     border-radius: 30px;
-    background-color: #c6c6cc;
+    background-color: #cecece;
 }
 
 .redacao-list li {
-    color: #2c2d35;
+    color: #3b414f;
     margin: 5px;
 }
 /* tema escuro */
 
 body.dark-theme .enem-content {
     background-color: #3b414f;
-    color: #dbdbdb;
+    color: #fcf7f7;
 }
 body.dark-theme .sisu-content {
     background-color: #3b414f;
-    color: #dbdbdb;
+    color: #fcf7f7;
 }
 body.dark-theme .main-contents > p {
-    color: #dbdbdb;
+    color: #fcf7f7;
 }
 body.dark-theme .main-contents > h1 {
     color: #ff6262;
 }
 body.dark-theme .main-lists li {
-    color: #c3c7cc;
+    color: #cecece;
 }
 .main-lists > li {
     margin: 10px;
@@ -1396,11 +1397,11 @@ body.dark-theme .cardapio-container {
 }
 
 body.dark-theme .titulos-cardapio {
-    color: white !important;
+    color: #fcf7f7 !important;
 }
 
 body.dark-theme .table-cardapio {
-    background: #2c2c32 !important;
+    background: #3b414f !important;
 }
 
 body.dark-theme .fila-container {
@@ -1409,16 +1410,16 @@ body.dark-theme .fila-container {
 }
 
 body.dark-theme .fila-tabela th {
-    background: #ededed !important;
+    background: #cecece !important;
     color: rgb(0, 0, 0) !important;
 }
 
 body.dark-theme .titulo-cardapio {
-    color: white;
+    color: #fcf7f7;
 }
 
 body.dark-theme .titulo-fila {
-    color: white;
+    color: #fcf7f7;
 }
 
 /*ZOOM DA PAGINA GESTÃO*/
@@ -1450,7 +1451,7 @@ body.dark-theme .titulo-fila {
 #popup-caption {
     margin-top: 15px;
     text-align: center;
-    color: #ccc;
+    color: #cecece;
     font-size: 18px;
 }
 
@@ -1467,7 +1468,7 @@ body.dark-theme .titulo-fila {
 /*PAGINA DE EVENTOS*/
 
 .div-eventos {
-    background-color: #FFF;
+    background-color: #fcf7f7;
     border: none 20px transparent;
     border-radius: 30px;
     max-width: 800px;
@@ -1479,7 +1480,7 @@ body.dark-theme .titulo-fila {
     text-align: center;
     font-weight: bold;
     color: #000000;
-    background: #fff;
+    background: #fcf7f7;
     max-width: 800px;
     margin: 10px 10px 10px 10px;
     border-radius: 30px;
