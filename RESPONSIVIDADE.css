@@ -320,10 +320,7 @@
     }
 
     .professores-cards{
-    
-        
-      
-    
+        place-self: center;
         flex-direction: column;
        
     }
@@ -406,4 +403,5 @@
         z-index: 10;
         transform: translateX(-50%);
     }
+
 }
