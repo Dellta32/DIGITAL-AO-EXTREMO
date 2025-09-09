@@ -1090,14 +1090,6 @@ body.dark-theme .titulo-area {
     justify-content: space-around;
 }
 
-.professores-cards:not(:last-child)::after {
-    position: absolute;
-    content: "";
-    background-color: #224368;
-    width: 100%;
-    height: 4px;
-    border-radius: 10px;
-}
 
 .professor-info {
 
@@ -1606,4 +1598,5 @@ body.dark-theme .titulo-fila {
 }
 .sobre-lists li {
     margin: 5px 5px 5px 15px;
+
 }
