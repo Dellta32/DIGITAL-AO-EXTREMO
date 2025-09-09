@@ -1068,7 +1068,7 @@ body.dark-theme .titulo-area {
     font-size: 35px;
     color: #122333;
     font-weight: 750;
-    place-self: center;
+    text-align: center;
     margin: 10px;
 }
 
@@ -1600,3 +1600,4 @@ body.dark-theme .titulo-fila {
     margin: 5px 5px 5px 15px;
 
 }
+
