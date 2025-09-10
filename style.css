@@ -1523,7 +1523,7 @@ body.dark-theme .titulo-fila {
     flex-direction: row;
     width: 80%;
     max-width: 1100px;
-    height: 600px;
+    height: 500px;
     border-radius: 30px;
     background-color: #fcf7f7;
     border: solid 3px #3b414f;
@@ -1534,18 +1534,18 @@ body.dark-theme .titulo-fila {
     width: 45%;
     display: flex;
     flex-direction: column;
-    margin: 50px;
+    margin: 10px;
 }
 .sobre-titulo h1 {
     color: #1964b9;
     font-weight: 900;
     margin: 10px;
-    font-size: 45px;
+    font-size: 40px;
 }
 .sobre-titulo p {
     text-align: justify;
     font-size: 20px;
-    color: #224368;
+    color: #122333;
     margin: 10px;
 }
 .titulo-logo {
@@ -1561,43 +1561,47 @@ body.dark-theme .titulo-fila {
 }
 /*-------------*/
 
-.sobre-main {
-    border: solid 3px #3b414f;
-    background-color: #fcf7f7;
-    margin: 100px 0 50px 0;
-    border-radius: 30px;
-    padding: 30px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1000px;
-    justify-self: center;
-    background-color: #fcf7f7;
-}
 .sobre-content {
+    justify-content: space-around;
+    border: solid 3px #3b414f;
+    border-radius: 30px;
+    width: 80%;
+    max-width: 1100px;
+    background-color: #fcf7f7;
+    place-self: center;
     display: flex;
     flex-direction: row;
-    width: 70%;
+        flex-wrap: wrap;
 }
 .sobre-importancias {
+    margin: 20px;
     display: flex;
     flex-direction: column;
 }
-.sobre-lists {
+.sobre-importancias h3 {
+    font-weight: 900;
+    color: #b80f10;
+    font-size: 25px;
+    text-align: center;
+    margin: 10px;
+}
+.sobre-importancias p {
+    color: #122333;
+}
+.sobre-importancias ul {
+    padding: 5px;
     color: #3b414f;
     overflow-y: auto;
-    padding: 10px;
     background-color: #cecece;
     width: 100%;
-    max-width: 300px;
+    max-width: 500px;
     height: 260px;
     list-style-type: disc;
     font-size: 18px;
     border-radius: 20px;
+    place-self: center;
 }
-.sobre-lists li {
+.sobre-importancias ul li {
     margin: 5px 5px 5px 15px;
-
 }
 
