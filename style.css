@@ -1297,7 +1297,7 @@ body.dark-theme .titulo-area {
     margin: 10px 0 10px 0;
 }
 .conteudos-container > h2 {
-    color: #1964b9;;
+    color: #1964b9;
     font-weight: 900;
 }
 .conteudos-container > p {
@@ -1604,4 +1604,5 @@ body.dark-theme .titulo-fila {
 .sobre-importancias ul li {
     margin: 5px 5px 5px 15px;
 }
+
 
