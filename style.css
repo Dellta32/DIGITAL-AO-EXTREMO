@@ -1644,14 +1644,14 @@ body.dark-theme .itemEventos div {
 /*PAGINA SOBRE*/
 
 .sobre-header {
-    margin: 50px 0 50px 0;
+    margin: 100px 0 100px 0;
     justify-self: center;
     align-items: center;
     display: flex;
     flex-direction: row;
     width: 80%;
     max-width: 1100px;
-    height: 500px;
+    height: 600px;
     border-radius: 30px;
     background-color: #fcf7f7;
     border: solid 3px #3b414f;
@@ -1660,23 +1660,23 @@ body.dark-theme .itemEventos div {
 
 .sobre-titulo {
     flex: 1;
-    width: 45%;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 20px;
 }
 
 .sobre-titulo h1 {
     color: #1964b9;
     font-weight: 900;
     margin: 10px;
-    font-size: 40px;
+    font-size: 45px;
 }
 
 .sobre-titulo p {
     text-align: justify;
     font-size: 20px;
-    color: #122333;
+    color: #224368;
     margin: 10px;
 }
 
@@ -1690,7 +1690,11 @@ body.dark-theme .itemEventos div {
 }
 
 .slogan-sobrenos {
-    width: 100%;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #fcf7f7;
+    margin: 10px;
+    width: 90%;
     object-fit: cover;
 }
 
@@ -1710,6 +1714,7 @@ body.dark-theme .itemEventos div {
 }
 
 .sobre-importancias {
+    width: 43%;
     margin: 20px;
     display: flex;
     flex-direction: column;
@@ -1718,7 +1723,7 @@ body.dark-theme .itemEventos div {
 .sobre-importancias h3 {
     font-weight: 900;
     color: #b80f10;
-    font-size: 25px;
+    font-size: 21px;
     text-align: center;
     margin: 10px;
 }
@@ -1728,7 +1733,7 @@ body.dark-theme .itemEventos div {
 }
 
 .sobre-importancias ul {
-    padding: 5px;
+    padding: 20px;
     color: #3b414f;
     overflow-y: auto;
     background-color: #cecece;
@@ -1743,4 +1748,106 @@ body.dark-theme .itemEventos div {
 
 .sobre-importancias ul li {
     margin: 5px 5px 5px 15px;
+}
+
+
+.sobre-cursos {
+    margin: 20px 0 20px 0;
+    justify-content: space-around;
+    border: solid 3px #3b414f;
+    border-radius: 30px;
+    width: 80%;
+    max-width: 1100px;
+    background-color: #fcf7f7;
+    place-self: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sobre-cursos h2 {
+    color: #122333;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.sobre-cursos h3 {
+    color: #b80f10;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.cursos-informacoes {
+    border-radius: 30px;
+    padding: 20px;
+    background-color: #cecece;
+    width: 40%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cursos-informacoes h3 {
+    font-size: 20px;
+    font-weight: 750;
+    color: #122333;
+}
+
+.cursos-informacoes p {
+    font-size: 18px;
+    color: #3b414f;
+    font-weight: 500;
+}
+
+/*------------------------- tema escuro -------------------------*/
+body.dark-theme .sobre-header {
+    background-color: #3b414f;
+    border: solid 3px #cecece;
+}
+
+body.dark-theme .sobre-header h1 {
+    color: #fcf7f7;
+}
+
+body.dark-theme .sobre-header p {
+    color: #cecece;
+}
+
+body.dark-theme .slogan-sobrenos {
+    background-color: #fcf7f7;
+}
+
+body.dark-theme .sobre-content {
+    background-color: #3b414f;
+}
+
+body.dark-theme .sobre-content h3 {
+    color: #fcf7f7;
+}
+
+body.dark-theme .sobre-content ul {
+    background-color: #fcf7f7;
+}
+
+body.dark-theme .sobre-cursos {
+    background-color: #3b414f;
+}
+
+body.dark-theme .sobre-cursos h2 {
+    color: #fcf7f7;
+}
+
+body.dark-theme .sobre-cursos h3 {
+    color: #fcf7f7;
+    font-weight: 480;
+}
+
+body.dark-theme .cursos-informacoes {
+    background-color: #fcf7f7;
+}
+
+body.dark-theme .cursos-informacoes h3 {
+    color: #122333;
 }
