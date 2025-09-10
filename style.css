@@ -523,6 +523,7 @@ body {
     background-color: #f17c7c !important;
 }
 
+/*---------------- CARDAPIO --------------------*/
 
 .cardapio-main {
     display: flex;
@@ -539,7 +540,7 @@ body {
     border-radius: 9px;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 70%;
     margin: 20px;
 }
 
@@ -587,14 +588,19 @@ body {
     background: linear-gradient(to right, rgb(13, 12, 31), rgb(58, 58, 95));
 }
 
-.titulos-cardapio {
-    font-weight: bold;
-    font-size: 20px;
+.titulo-cardapio {
+    color: #122333;
+    font-weight: 700;
+    font-size: 30px;
     justify-self: center;
 }
 
 /*FILA DO LANCHE/*/
-
+.titulo-fila {
+    color: #122333;
+    font-weight: 700;
+    font-size: 30px;
+}
 .fila-container {
     display: flex;
     flex-direction: column;
@@ -603,7 +609,7 @@ body {
     border-radius: 9px;
     align-items: center;
     justify-self: center;
-    width: 100%;
+    width: 70%;
 }
 
 .fila-tabela {
@@ -1675,4 +1681,5 @@ body.dark-theme .div-eventos {
 
 .sobre-importancias ul li {
     margin: 5px 5px 5px 15px;
+
 }
