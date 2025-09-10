@@ -9,6 +9,25 @@
         width: 100%;
     }
 
+    /*Eventos*/
+    .div-eventos {
+        margin: 20px 5px 5px 5px;
+        max-height: 211px;
+    }
+
+    .div-eventos h1,h2 {
+        font-weight: 350;
+        font-size: 16px;
+    }
+    .itemEventos div {
+        max-width: 95%;
+        height: 99vh;
+    }
+    .itemEventos img {
+        height: 46%;
+        
+    }
+
     nav {
         display: flex;
         align-items: center;
@@ -17,23 +36,26 @@
         height: 8dvh;
         border-bottom: groove #490b2d;
     }
-.professor-info {
-    max-width: 300px;
-    min-width: fit-content;
-    min-height: 851px;
-    place-self: center;
-}
-.professor-image {
-    justify-self: center;
-    width: 100%;
-    max-width: 270px;
-    max-height: 272px;
-    min-height: 272px;
-    border-radius: 30px;
-    border: solid 0.3px;
-    margin: 5px;
-    object-fit: cover;
-}
+
+    .professor-info {
+        max-width: 300px;
+        min-width: fit-content;
+        min-height: 851px;
+        place-self: center;
+    }
+
+    .professor-image {
+        justify-self: center;
+        width: 100%;
+        max-width: 270px;
+        max-height: 272px;
+        min-height: 272px;
+        border-radius: 30px;
+        border: solid 0.3px;
+        margin: 5px;
+        object-fit: cover;
+    }
+
     .professor-container {
 
         align-self: center;
@@ -103,7 +125,7 @@
 
     .burguer div:nth-child(1) {
         background: #B80F10;
-            /* Cor 1 baseada na logo */
+        /* Cor 1 baseada na logo */
     }
 
     .burguer div:nth-child(2) {
@@ -456,19 +478,20 @@
         transform: translateX(-50%);
     }
 
-    .professor-info {  
+    .professor-info {
         max-width: 300px;
         min-height: 851px;
-        
+
         place-self: center;
-      
+
     }
 
-    .professores-cards{
-     place-self: center;
-     flex-direction: column;
-       
+    .professores-cards {
+        place-self: center;
+        flex-direction: column;
+
     }
+
     /*ZOOM DA PAGINA GESTÃO*/
 
     .popup-content {
@@ -579,7 +602,3 @@
         /* Centraliza horizontalmente */
     }
 }
-
-
-
-

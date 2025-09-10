@@ -1,4 +1,3 @@
-
 /* Torna todas as barras de rolagem invisíveis, mas funcionais (sem webkit) */
 * {
     scrollbar-width: none;
@@ -162,7 +161,7 @@ a {
 
 .burguer div:nth-child(1) {
     background: #B80f10;
-        /* Cor 1 baseada na logo */
+    /* Cor 1 baseada na logo */
 }
 
 .burguer div:nth-child(2) {
@@ -194,7 +193,7 @@ a {
 }
 
 body {
-    background-color: #cecece;
+    background-color: #d9d9d9
 }
 
 .menu-close {
@@ -523,7 +522,7 @@ body {
 .PROJETO-INTEGRADOR {
     background-color: #f17c7c !important;
 }
-/*---------------- CARDAPIO --------------------*/
+
 
 .cardapio-main {
     display: flex;
@@ -540,7 +539,7 @@ body {
     border-radius: 9px;
     align-items: center;
     justify-content: center;
-    width: 70%;
+    width: 100%;
     margin: 20px;
 }
 
@@ -588,7 +587,7 @@ body {
     background: linear-gradient(to right, rgb(13, 12, 31), rgb(58, 58, 95));
 }
 
-.titulo-cardapio {
+.titulos-cardapio {
     font-weight: bold;
     font-size: 20px;
     justify-self: center;
@@ -604,7 +603,7 @@ body {
     border-radius: 9px;
     align-items: center;
     justify-self: center;
-    width: 70%;
+    width: 100%;
 }
 
 .fila-tabela {
@@ -663,9 +662,7 @@ body {
     cursor: pointer;
 }
 
-/*---------------------------------------------------------------*/
-
-/*-------------------------- Tema escuro --------------------------*/
+/* Tema escuro */
 body.dark-theme {
     background: linear-gradient(to right, #0f0f0f, #333);
     background-size: 200% 100%;
@@ -1156,17 +1153,20 @@ body.dark-theme .titulo-area {
     padding: 40px;
     border-radius: 30px;
 }
+
 .content-header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 30px;
 }
+
 .enem-logo {
     object-fit: cover;
     align-self: center;
     width: 400px;
 }
+
 .link-enem {
     text-decoration: none;
     color: #001ea3;
@@ -1186,10 +1186,12 @@ body.dark-theme .titulo-area {
     padding: 30px;
     margin-top: 20px;
 }
+
 .sisu-logo {
     align-self: center;
     width: 250px;
 }
+
 /* -------------------------------------------------------------------------------------- */
 
 
@@ -1199,18 +1201,20 @@ body.dark-theme .titulo-area {
 .main-contents {
     margin: 30px;
 }
-.main-contents > p {
+
+.main-contents>p {
     text-align: justify;
     font-size: 23px;
     color: #11283d;
 }
 
-.main-contents > h1 {
+.main-contents>h1 {
     font-weight: 900;
     color: #1964b9;
     font-size: 30px;
 }
-.main-contents > h2 {
+
+.main-contents>h2 {
     font-weight: 900;
     color: #1964b9;
     font-size: 30px;
@@ -1225,23 +1229,28 @@ body.dark-theme .titulo-area {
     width: 500px;
     border-radius: 30px;
 }
-.main-lists > li {
+
+.main-lists>li {
     margin: 10px;
     color: #444d56;
 }
+
 .conteudos-list::-webkit-scrollbar {
     height: 8px;
     width: 8px;
 }
+
 .conteudos-list::-webkit-scrollbar-track {
     background-color: transparent;
 }
+
 .conteudos-list::-webkit-scrollbar-thumb {
     color: black;
-    background-color:#454655;
+    background-color: #454655;
     border-radius: 10px;
     border: 2px solid rgba(0, 0, 0, 0.1)
 }
+
 .conteudos-list::-webkit-scrollbar-button {
     background: transparent;
 }
@@ -1257,10 +1266,12 @@ body.dark-theme .titulo-area {
     background-color: #cecece;
     overflow-y: auto;
 }
+
 .conteudos-list li {
     color: #3b414f;
     margin: 10px;
 }
+
 .conteudos-list h2 {
     font-weight: 800;
     color: #3b414f;
@@ -1292,17 +1303,21 @@ body.dark-theme .titulo-area {
     display: flex;
     flex-direction: column;
 }
-.conteudos-container > h1 {
+
+.conteudos-container>h1 {
     color: #1964b9;
     font-size: 30px;
     font-weight: 1000;
     margin: 10px 0 10px 0;
 }
-.conteudos-container > h2 {
+
+.conteudos-container>h2 {
     color: #1964b9;
+    ;
     font-weight: 900;
 }
-.conteudos-container > p {
+
+.conteudos-container>p {
     text-align: justify;
     font-size: 23px;
     color: #11283d;
@@ -1312,6 +1327,7 @@ body.dark-theme .titulo-area {
     display: block;
     width: 100%;
 }
+
 .conteudos-content {
     margin: 20px 0 20px 0;
     display: flex;
@@ -1320,20 +1336,23 @@ body.dark-theme .titulo-area {
     justify-content: center;
     justify-content: space-around;
 }
+
 .conteudos-content p {
     text-align: justify;
     font-size: 23px;
     color: #122333;
 }
 
-.conteudos-container > h2 {
+.conteudos-container>h2 {
     color: #1964b9;
     font-size: 30px;
 }
-.conteudos-container > h3 {
+
+.conteudos-container>h3 {
     color: #224368;
     font-size: 27px;
 }
+
 /* ----------------------------------------------------------------------- */
 
 
@@ -1361,42 +1380,53 @@ body.dark-theme .titulo-area {
     color: #3b414f;
     margin: 5px;
 }
+
 /* tema escuro */
 
 body.dark-theme .enem-content {
     background-color: #3b414f;
     color: #fcf7f7;
 }
+
 body.dark-theme .sisu-content {
     background-color: #3b414f;
     color: #fcf7f7;
 }
-body.dark-theme .main-contents > p {
+
+body.dark-theme .main-contents>p {
     color: #fcf7f7;
 }
-body.dark-theme .main-contents > h1 {
+
+body.dark-theme .main-contents>h1 {
     color: #ff6262;
 }
+
 body.dark-theme .main-lists li {
     color: #cecece;
 }
-.main-lists > li {
+
+.main-lists>li {
     margin: 10px;
 }
 
-body.dark-theme .professor-container{
+body.dark-theme .professor-container {
     border: solid #fcf7f7 !important;
     background-color: #3b414f !important;
 }
+
 body.dark-theme .professor-info {
     background-color: #2b2b2b;
-}body.dark-theme .professor-info  h3{
+}
+
+body.dark-theme .professor-info h3 {
     color: #fcf7f7;
 }
-body.dark-theme .professor-info  p{
+
+body.dark-theme .professor-info p {
     color: #fcf7f7;
 }
-body.dark-theme .titulo-cargo{
+
+body.dark-theme .titulo-cargo {
     color: #fcf7f7;
 }
 
@@ -1479,12 +1509,19 @@ body.dark-theme .titulo-fila {
 /*PAGINA DE EVENTOS*/
 
 .div-eventos {
-    background-color: #fcf7f7;
+    background-image: url(imagens/BGcaderno.jpg);
+    background-size: cover;
     border: none 20px transparent;
-    border-radius: 30px;
-    max-width: 800px;
+    border-radius: 3px;
+    max-width: 810px;
     margin: 40px 40px 40px 500px;
     text-align: center;
+}
+
+.div-eventos h1,
+h2 {
+    font-weight: 350;
+
 }
 
 .itemEventos div {
@@ -1496,6 +1533,7 @@ body.dark-theme .titulo-fila {
     margin: 10px 10px 10px 10px;
     border-radius: 30px;
     text-align: center;
+    border: #122333 4px solid;
 
 
 }
@@ -1509,11 +1547,31 @@ body.dark-theme .titulo-fila {
 }
 
 .itemEventos img {
-    height: 250px;
-
-
+    height: 500px;
+    border: solid 2px;
+    border-radius: 30px;
 }
 
+.itemEventos div>p {
+    font-size: 20px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.itemEventos div>p>a {
+    color: #B80f10;
+}
+
+
+/*Dark-theme Eventos*/
+body.dark-theme .itemEventos div {
+    color: #fcf7f7;
+    background: #2b2b2b;
+    border: #cecece 4px solid;
+}
+body.dark-theme .div-eventos {
+   
+}
 
 /*PAGINA SOBRE*/
 
@@ -1531,6 +1589,7 @@ body.dark-theme .titulo-fila {
     border: solid 3px #3b414f;
     overflow: hidden;
 }
+
 .sobre-titulo {
     flex: 1;
     width: 45%;
@@ -1538,29 +1597,35 @@ body.dark-theme .titulo-fila {
     flex-direction: column;
     margin: 10px;
 }
+
 .sobre-titulo h1 {
     color: #1964b9;
     font-weight: 900;
     margin: 10px;
     font-size: 40px;
 }
+
 .sobre-titulo p {
     text-align: justify;
     font-size: 20px;
     color: #122333;
     margin: 10px;
 }
+
 .titulo-logo {
     width: 200px;
 }
+
 .sobre-slogan {
     overflow: hidden;
     flex: 1;
 }
+
 .slogan-sobrenos {
     width: 100%;
     object-fit: cover;
 }
+
 /*-------------*/
 
 .sobre-content {
@@ -1573,13 +1638,15 @@ body.dark-theme .titulo-fila {
     place-self: center;
     display: flex;
     flex-direction: row;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
+
 .sobre-importancias {
     margin: 20px;
     display: flex;
     flex-direction: column;
 }
+
 .sobre-importancias h3 {
     font-weight: 900;
     color: #b80f10;
@@ -1587,9 +1654,11 @@ body.dark-theme .titulo-fila {
     text-align: center;
     margin: 10px;
 }
+
 .sobre-importancias p {
     color: #122333;
 }
+
 .sobre-importancias ul {
     padding: 5px;
     color: #3b414f;
@@ -1603,9 +1672,7 @@ body.dark-theme .titulo-fila {
     border-radius: 20px;
     place-self: center;
 }
+
 .sobre-importancias ul li {
     margin: 5px 5px 5px 15px;
 }
-
-
-
