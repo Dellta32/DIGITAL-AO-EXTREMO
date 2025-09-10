@@ -312,7 +312,7 @@ body {
 
 .theme-toggle-container {
     position: absolute !important;
-    bottom: 40px !important;
+    bottom: 60px !important;
     left: 10px !important;
 }
 
@@ -654,4 +654,5 @@ body {
         align-self: center;
         /* Centraliza horizontalmente */
     }
+
 }
