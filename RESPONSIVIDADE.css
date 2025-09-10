@@ -312,7 +312,7 @@ body {
 
 .theme-toggle-container {
     position: absolute !important;
-    bottom: 60px !important;
+    bottom: 40px !important;
     left: 10px !important;
 }
 
@@ -413,37 +413,79 @@ body {
 }
 
 /*PAGINA DO ENEM*/
-
 .enem-main {
     margin: 10px;
     padding: 10px;
+    width: 400px;
 }
-
 .enem-logo {
-    width: 200px;
+    width: 160px;
 }
-
+.enem-content {
+    padding: 3px;
+}
+.titulos-enem {
+    font-size: 25px;
+}
+.content-header {
+    margin: 20px 30px 5px 30px;
+}
 .sisu-content {
-    padding: 20px;
+    padding: 3px;
 }
-
 .sisu-logo {
-    width: 200px;
+    width: 100px;
     margin: 15px;
 }
-
-.main-contents>p {
+.main-contents > p {
     font-size: 16px;
 }
-
-.main-contents>h1 {
-    font-size: 24px;
+.main-contents > h2 {
+    font-size: 22px;
+    margin: 3px;
 }
-
 .main-lists {
     font-size: 16px;
     margin: 2vh 0 2vh 2vh;
 }
+.conteudos-container {
+    padding: 10px;
+}
+.conteudos-container h2 {
+    font-size: 25px;
+}
+.conteudos-container h3 {
+    margin: 20px 0 20px 0;
+    font-size: 27px;
+}
+.conteudos-container p {
+    font-size: 18px;
+}
+.conteudos-content {
+    margin: 0px;
+}
+.conteudos-list {
+    margin: 5px;
+    border-radius: 15px;
+    list-style-type: disc;
+    padding: 5px 5px 5px 20px;
+    font-size: 20px;
+    width: 280px;
+    height: 400px;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+.redacao-list {
+    place-self: center;
+    height: 780px;
+    width: 320px;
+}
+.conteudos-list li {
+    word-wrap: normal;
+}
+
+}
+    
 
 /*Cardápio*/
 
@@ -552,7 +594,6 @@ body {
     max-height: 70vh;
 }
 
-}
 @media (max-height: 600px) {
     #nav {
         height: 12dvh;
@@ -654,5 +695,4 @@ body {
         align-self: center;
         /* Centraliza horizontalmente */
     }
-
 }
