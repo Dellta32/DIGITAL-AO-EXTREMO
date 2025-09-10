@@ -1323,6 +1323,13 @@ body.dark-theme .titulo-area {
     font-weight: 900;
 }
 
+.conteudos-container>h3 {
+    color: #1964b9;
+    ;
+    font-weight: 900;
+    text-align: center;
+}
+
 .conteudos-container>p {
     text-align: justify;
     font-size: 23px;
@@ -1397,6 +1404,37 @@ body.dark-theme .enem-content {
 body.dark-theme .sisu-content {
     background-color: #3b414f;
     color: #fcf7f7;
+}
+
+body.dark-theme .conteudos-container {
+    background-color: #3b414f;
+    color: #fcf7f7;
+}
+
+body.dark-theme .conteudos-list {
+    background-color: #fcf7f7;
+    color: #2b2b2b;
+}
+
+body.dark-theme .Obsevações {
+    background-color: #fcf7f7;
+    color: #2b2b2b;
+    border-radius: 1%;
+}
+
+body.dark-theme .enem-main h3 {
+    color: #fcf7f7;
+}
+
+body.dark-theme .enem-main h2 {
+    color: #fcf7f7;
+    text-align: center;
+    font-weight: 700;
+}
+
+body.dark-theme .titulos-enem {
+    color: #fcf7f7;
+
 }
 
 body.dark-theme .main-contents>p {
@@ -1540,8 +1578,6 @@ h2 {
     border-radius: 30px;
     text-align: center;
     border: #122333 4px solid;
-
-
 }
 
 .itemEventos {
@@ -1575,9 +1611,7 @@ body.dark-theme .itemEventos div {
     background: #2b2b2b;
     border: #cecece 4px solid;
 }
-body.dark-theme .div-eventos {
-   
-}
+
 
 /*PAGINA SOBRE*/
 
@@ -1681,5 +1715,4 @@ body.dark-theme .div-eventos {
 
 .sobre-importancias ul li {
     margin: 5px 5px 5px 15px;
-
 }

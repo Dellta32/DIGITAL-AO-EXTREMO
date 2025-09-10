@@ -482,6 +482,8 @@
         transform: translateX(-50%);
     }
 
+    /*PAGINA DOS PROFESSORES*/
+
     .professor-info {
         max-width: 300px;
         min-height: 851px;
@@ -605,5 +607,4 @@
         align-self: center;
         /* Centraliza horizontalmente */
     }
-
 }
