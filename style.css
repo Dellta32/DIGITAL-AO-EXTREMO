@@ -72,7 +72,7 @@ a {
 .flexbrasao {
     display: flex;
     align-items: center; /* Alinha verticalmente os itens */
-  
+    justify-content: space-between;
     gap: 20px; /* Espaço entre o slogan e o brasão */
     padding: 0 20px; /* Adiciona espaçamento lateral */
 }
@@ -85,7 +85,7 @@ a {
 .slogan h1 {
     font-size: 70px;
     color: #B80f10;
-    margin-top: 300px;
+    margin: 80px 30px 0px 30px;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -99,9 +99,9 @@ a {
 }
 
 .brasao {
+    margin: 50px;
     max-width: 490px;
     height: auto;
-    margin: 150px 1px 1px 500px;
 }
 
 .logotext {
@@ -181,7 +181,7 @@ a {
 
     cursor: pointer;
     position: absolute;
-    top: 15px;
+    top: 10px;
     left: 15px;
 
 }
@@ -575,7 +575,7 @@ body {
     border-radius: 9px;
     align-items: center;
     justify-content: center;
-    width: 70%;
+    width: 100%;
     margin: 20px;
 }
 
@@ -634,10 +634,10 @@ body {
 .titulo-fila {
     color: #122333;
     font-weight: 700;
-    z-index: 1;
     font-size: 30px;
 }
 .fila-container {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     background-color: #fcf7f7;
@@ -645,34 +645,35 @@ body {
     border-radius: 9px;
     align-items: center;
     justify-self: center;
-    width: 70%;
+    width: 100%;
 }
 
 .fila-tabela {
+    font-size: 15px;
     padding: 10px;
     margin: 20px;
     height: 440px;
-    width: 100%;
-    border-spacing: 3px;
+    width: 80%;
+    max-width: 1100px;
+    border-spacing: 5px;
     border-radius: 30px;
 }
 
 .fila-tabela th {
     background: linear-gradient(to right, rgb(13, 12, 31), rgb(58, 58, 95));
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border: solid 1px #2a3e52;
-    padding: 10px;
+    padding: 5px;
     border-radius: 20px;
     color: #fcf7f7;
 }
 
 .fila-tabela td {
     text-align: center;
-    height: 40px;
-    width: 40px;
+    width: 35px;
+    height: 35px;
     border: solid 1px #2a3e52;
-    font-weight: bold;
     text-size-adjust: 30px;
     table-layout: fixed;
     border-radius: 20px;
@@ -1055,7 +1056,7 @@ body.dark-theme .titulo-area {
     border: solid #2a3e52;
     background-color: #e2e2e2;
     border-radius: 30px;
-    width: 70%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1115,13 +1116,13 @@ body.dark-theme .titulo-area {
     align-items: center;
     font-size: 20px;
     border-radius: 30px;
-    width: 45%;
-    max-width: 300px;
-    min-height: 851px;
+    width: 50%;
+    max-width: 350px;
+    min-height: 700px;
     display: flex;
     flex-direction: column;
     gap: 5px;
-    margin: 10px 5px 10px 5px;
+    margin: 10px 2px 10px 2px;
 }
 
 .professor-profile {
@@ -1140,14 +1141,14 @@ body.dark-theme .titulo-area {
 .professor-profile h3 {
     text-align: center;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 24px;
     margin-bottom: 10px;
     color: #2a3e52;
 }
 
 .professor-profile p {
     text-align: justify;
-    font-size: 20px;
+    font-size: 17px;
     color: #3b414f;
 }
 
@@ -1183,16 +1184,16 @@ body.dark-theme .titulo-area {
 .enem-logo {
     object-fit: cover;
     align-self: center;
-    width: 400px;
+    width: 350px;
     border-radius: 60px;
-    padding: 40px;
+    padding: 10px;
     background-color: #fcf7f7;
 
 }
 
 .link-enem {
     text-decoration: none;
-    color: #001ea3;
+    color: #b80f10;
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -1211,8 +1212,9 @@ body.dark-theme .titulo-area {
 }
 
 .sisu-logo {
+    margin: 10px 20px 10px 20px;
     border-radius: 60px;
-    padding: 40px;
+    padding: 10px;
     background-color: #fcf7f7;
     align-self: center;
     width: 300px;
@@ -1229,24 +1231,19 @@ body.dark-theme .titulo-area {
     margin: 30px;
 }
 
-.main-contents>p {
+.main-contents p {
     text-align: justify;
     font-size: 23px;
-    color: #11283d;
+    color: #122333;
 }
 
-.main-contents>h1 {
+.main-contents h2 {
     font-weight: 900;
-    color: #1964b9;
+    color: #122333;
     font-size: 30px;
+        margin: 20px;
 }
 
-.main-contents>h2 {
-    font-weight: 900;
-    color: #1964b9;
-    font-size: 30px;
-    margin: 20px;
-}
 
 .main-lists {
     list-style-type: disc;
@@ -1257,7 +1254,7 @@ body.dark-theme .titulo-area {
     border-radius: 30px;
 }
 
-.main-lists>li {
+.main-lists li {
     margin: 10px;
     color: #444d56;
 }
@@ -1287,7 +1284,7 @@ body.dark-theme .titulo-area {
     padding: 10px 10px 10px 40px;
     margin: 10px;
     font-size: 25px;
-    width: 35%;
+    width: 40%;
     height: 570px;
     border-radius: 30px;
     background-color: #cecece;
@@ -1308,7 +1305,7 @@ body.dark-theme .titulo-area {
     justify-self: center;
     align-self: center;
     font-weight: 900;
-    color: #1964b9;
+    color: #0171BE;
     font-size: 45px;
 }
 
@@ -1324,48 +1321,40 @@ body.dark-theme .titulo-area {
     justify-content: center;
     border: solid 3px #3b414f;
     background-color: #fcf7f7;
-    padding: 60px;
+    padding: 30px;
     border-radius: 30px;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
 }
 
-.conteudos-container>h1 {
-    color: #1964b9;
+
+.conteudos-container h2 {
+    color: #122333;
     font-size: 30px;
     font-weight: 1000;
-    margin: 10px 0 10px 0;
+    margin: 20px;
 }
 
-.conteudos-container>h2 {
-    color: #1964b9;
-    ;
-    font-weight: 900;
-}
-
-.conteudos-container>h3 {
-    color: #1964b9;
-    ;
+.conteudos-container h3 {
+    color: #b80f10;
     font-weight: 900;
     text-align: center;
+    margin: 20px;
+    font-size: 30px;
 }
 
-.conteudos-container>p {
+.conteudos-container p {
     text-align: justify;
     font-size: 23px;
     color: #11283d;
-}
-
-.conteudos-container h1 {
-    display: block;
-    width: 100%;
 }
 
 .conteudos-content {
     margin: 20px 0 20px 0;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: first baseline;
     justify-content: center;
     justify-content: space-around;
@@ -1375,16 +1364,6 @@ body.dark-theme .titulo-area {
     text-align: justify;
     font-size: 23px;
     color: #122333;
-}
-
-.conteudos-container>h2 {
-    color: #1964b9;
-    font-size: 30px;
-}
-
-.conteudos-container>h3 {
-    color: #224368;
-    font-size: 27px;
 }
 
 /* ----------------------------------------------------------------------- */
@@ -1414,7 +1393,6 @@ body.dark-theme .titulo-area {
     color: #3b414f;
     margin: 5px;
 }
-
 /* tema escuro */
 
 body.dark-theme .enem-content {
@@ -1457,7 +1435,6 @@ body.dark-theme .enem-main h3 {
 
 body.dark-theme .enem-main h2 {
     color: #fcf7f7;
-    text-align: center;
     font-weight: 700;
 }
 
@@ -1587,26 +1564,28 @@ body.dark-theme .titulo-fila {
     border: none 20px transparent;
     border-radius: 3px;
     max-width: 810px;
-    margin: 40px 40px 40px 500px;
+    margin: 40px 40px 40px 40px;
+    place-self: center;
     text-align: center;
 }
 
-.div-eventos h1,
-h2 {
+.div-eventos h1 {
     font-weight: 350;
-
+}
+.div-eventos h2 {
+    font-weight: 350;
 }
 
 .itemEventos div {
     text-align: center;
-    font-weight: bold;
+    font-weight: 600;
     color: #000000;
     background: #fcf7f7;
     max-width: 800px;
     margin: 10px 10px 10px 10px;
     border-radius: 30px;
     text-align: center;
-    border: #122333 4px solid;
+    border: #122333 3px solid;
 }
 
 .itemEventos {
@@ -1618,12 +1597,12 @@ h2 {
 }
 
 .itemEventos img {
-    height: 500px;
+    height: 450px;
     border: solid 2px;
     border-radius: 30px;
 }
 
-.itemEventos div>p {
+.itemEventos div> p {
     font-size: 20px;
     padding: 10px;
     text-align: justify;
@@ -1822,6 +1801,7 @@ body.dark-theme .slogan-sobrenos {
 
 body.dark-theme .sobre-content {
     background-color: #3b414f;
+    border: solid 3px #cecece;
 }
 
 body.dark-theme .sobre-content h3 {
@@ -1834,6 +1814,7 @@ body.dark-theme .sobre-content ul {
 
 body.dark-theme .sobre-cursos {
     background-color: #3b414f;
+    border: solid 3px #cecece;
 }
 
 body.dark-theme .sobre-cursos h2 {
@@ -1851,4 +1832,41 @@ body.dark-theme .cursos-informacoes {
 
 body.dark-theme .cursos-informacoes h3 {
     color: #122333;
+}
+
+.diretorio {
+    bottom: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #122333;
+    width: 100%;
+    height: 100px;
+}
+.diretorio a {
+    text-align: center;
+    margin: 10px 0 10px 0;
+    justify-content: center;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.diretorio p {
+    font-weight: 500;
+    width: 300px;
+    color: #B80f10;
+}
+.diretorio img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+
+}
+.diretorio span {
+    text-align: center;
+    margin: 10px 0 10px 0;
+    font-size: 20px;
+    color: #fcf7f7;
 }

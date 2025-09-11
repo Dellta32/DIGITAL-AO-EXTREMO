@@ -33,565 +33,594 @@
     }
 
 
-.slogan h2 {
-    margin-left: 0px;
-    font-size: 20px;
-    color: #11283d;
-    text-align: center;
+    .slogan h2 {
+        margin-left: 0px;
+        font-size: 20px;
+        color: #11283d;
+        text-align: center;
 
-    font-weight: bold;
+        font-weight: bold;
+    }
+
+    .brasao {
+        max-width: 300px;
+        height: auto;
+        margin: 50px 1px 1px;
+    }
+
+
+
+
+    /*Eventos*/
+    .div-eventos {
+        margin: 20px 5px 5px 5px;
+        max-height: 211px;
+    }
+
+    .div-eventos h1 {
+        font-weight: 350;
+        font-size: 16px;
+    }
+    .div-eventos h2 {
+        font-weight: 350;
+        font-size: 16px;
+    }
+
+    .itemEventos div {
+        max-width: 95%;
+        height: 99vh;
+    }
+
+    .itemEventos img {
+        height: 46%;
+
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #122333;
+        height: 8dvh;
+        border-bottom: groove #490b2d;
+    }
+
+    .professor-info {
+        max-width: 300px;
+        min-width: fit-content;
+        min-height: 851px;
+        place-self: center;
+    }
+
+    .professor-image {
+        justify-self: center;
+        width: 100%;
+        max-width: 270px;
+        max-height: 272px;
+        min-height: 272px;
+        border-radius: 30px;
+        border: solid 0.3px;
+        margin: 5px;
+        object-fit: cover;
+    }
+
+    .professor-container {
+
+        align-self: center;
+        font-size: 20px !important;
+        border-radius: 24px;
+        margin: 80px 15px 85px 15px !important;
+        width: 335px;
+    }
+
+
+
+    .titulo-area {
+        text-transform: uppercase;
+        place-self: center;
+        margin-top: 50px;
+    }
+
+
+
+
+
+    .nav-list li {
+        width: 100%;
+
+    }
+
+
+
+    .nav-list li>a {
+        border-radius: 10px;
+        font-size: 20px;
+        color: #122333;
+        padding: 20px 4%;
+        display: flex;
+        line-height: 20px;
+        transition: 1s;
+    }
+
+    .menu-list li>a:hover {
+        transition: 0.5s;
+        background-color: #3c5b79;
+        font-size: 22px;
+    }
+
+    .nav-list li:hover a {
+        font-size: 22px;
+        border-radius: 10px;
+        color: #f7f7f7;
+        text-decoration: none;
+        background-color: #122333;
+        transition: 0.5s ease;
+    }
+
+
+    .burguer {
+
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+
+    }
+
+    .burguer div {
+        width: 28px !important;
+    }
+
+    .burguer div:nth-child(1) {
+        background: #B80F10;
+        /* Cor 1 baseada na logo */
+    }
+
+    .burguer div:nth-child(2) {
+        background: #B80F10;
+        /* Cor 2 baseada na logo */
+    }
+
+    .burguer div:nth-child(3) {
+        background: #B80F10;
+        /* Cor 3 baseada na logo */
+    }
+
+    .menu {
+        background-color: #fCf7f7;
+        width: 300px;
+        height: 100vh;
+        /* Garante que o menu ocupe toda a altura da tela */
+        position: fixed;
+        /* Mantém o menu fixo na tela */
+        top: 0;
+        left: 0;
+        z-index: 10;
+        animation: slide-in 0.5s ease forwards;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+
+
+    .menu li:hover {
+        color: #fCf7f7;
+        background-color: #122333;
+    }
+
+    body {
+        background-color: #CECECE;
+    }
+
+    .menu-close {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        font-size: 24px;
+        color: #fCf7f7;
+        cursor: pointer;
+        background-color: #B80F10;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        font-weight: bold;
+
+
+    }
+
+
+    .menutext {
+        display: none;
+    }
+
+    .close-conteiner {
+        width: 300px;
+        height: 8d;
+
+    }
+
+    .pesquisa {
+
+        align-self: center;
+        margin-left: 10px;
+        /* Espaço entre a logo e o campo de pesquisa */
+        height: 30px;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 16px;
+        flex-shrink: 0;
+        /* Impede que o campo de pesquisa encolha */
+        position: absolute;
+        right: 15%;
+        /* Ajuste para posicionar ao lado da logo */
+        width: 80px;
+        /* Largura inicial */
+        height: 30px;
+        border: 2px solid #CECECE;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 16px;
+        outline: none;
+        transition: all 0.3s ease;
+        /* Transição suave para todas as propriedades */
+
+    }
+
+    .pesquisa:focus {
+        width: 300px;
+        /* Largura ao ganhar foco */
+        border-color: #5272b6;
+        /* Cor da borda ao ganhar foco */
+        box-shadow: 0 0 10px rgba(82, 114, 182, 0.5);
+        /* Sombra ao redor */
+        background-color: #fCf7f7;
+        /* Cor de fundo ao ganhar foco */
+    }
+
+    .pesquisa:focus+#sugestaoContainer {
+        position: absolute;
+        top: calc(100% + 5px);
+        /* Posiciona logo abaixo do campo de pesquisa */
+        left: 25px;
+        width: 300px;
+        /* Ajuste conforme necessário */
+        background-color: #fCf7f7;
+        border: 1px solid #cecece;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        display: block;
+        /* Certifique-se de que está visível */
+    }
+
+
+
+    .blacktheme-label {
+        width: 100px;
+        height: 30px;
+        position: relative;
+        display: block;
+        background: #cecece;
+        border-radius: 200px;
+    }
+
+    .menu.dark-theme .nav-list a {
+        background-color: #3b414f;
+        color: #fcf7f7;
+
+    }
+
+    .theme-toggle-container {
+        position: absolute !important;
+        bottom: 40px !important;
+        left: 10px !important;
+    }
+
+    .logo {
+        display: none
+    }
+
+
+
+    .menu-close {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        font-size: 24px;
+        color: #fcf7f7;
+        cursor: pointer;
+        background-color: #B80F10;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .pesquisa {
+        right: 5%;
+        width: 100px;
+        height: 20px;
+    }
+
+    .close-conteiner {
+        width: 300px;
+        height: 8d;
+
+    }
+
+    .slogan h1 {
+        font-size: 45px !important;
+        margin-top: 3px !important;
+        margin-right: 1px !important;
+    }
+
+    .slogan h2 {
+        margin-right: 7px !important;
+        margin-top: 1px !important;
+    }
+
+    .logotext {
+
+        font-size: 30px !important;
+        color: #B80F10 !important;
+        margin-right: 40px !important;
+        margin-top: 15px !important;
+
+    }
+
+    .selectors-conteiner {
+        margin-right: 10px;
+        margin-left: 11px;
+        margin-top: 40px;
+        height: auto;
+        width: 92dvw;
+        animation: none !important;
+    }
+
+
+    .flexconteiner {
+        display: flex;
+
+        height: 93dvh;
+        flex-direction: column;
+        /* align-items: flex-start; */
+        transition: 0.7;
+        text-transform: uppercase;
+    }
+
+    .table-conteiner {
+        width: 92dvw;
+        margin-top: 20px;
+        margin-left: 11px;
+        height: auto;
+        background-color: #122333;
+        border: solid #2a3e52;
+        border-radius: 9px;
+    }
+
+    .tabela-horario {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px 0px 0px !important;
+        background-color: #fff;
+        border: solid #2a3e52;
+        border-radius: 9px;
+        align-items: center;
+
+    }
+
+    /*PAGINA DO ENEM*/
+    .enem-main {
+        margin: 10px;
+        padding: 10px;
+        width: 400px;
+    }
+
+    .enem-logo {
+        width: 160px;
+    }
+
+    .enem-content {
+        padding: 3px;
+    }
+
+    .titulos-enem {
+        font-size: 25px;
+    }
+
+    .content-header {
+        margin: 20px 30px 5px 30px;
+    }
+
+    .sisu-content {
+        padding: 3px;
+    }
+
+    .sisu-logo {
+        width: 100px;
+        margin: 15px 10px 15px 10px;
+    }
+
+    .main-contents>p {
+        font-size: 16px;
+    }
+
+    .main-contents>h2 {
+        font-size: 22px;
+        margin: 3px;
+    }
+
+    .main-lists {
+        font-size: 16px;
+        margin: 2vh 0 2vh 2vh;
+    }
+
+    .conteudos-container {
+        padding: 10px;
+    }
+
+    .conteudos-container h2 {
+        text-align: justify;
+        font-size: 22px;
+        margin: 20px;
+    }
+
+    .conteudos-container h3 {
+        text-align: left;
+        margin: 20px;
+        font-size: 20px;
+    }
+
+    .conteudos-container p {
+        font-size: 19px;
+    }
+
+    .conteudos-content {
+        margin: 0px;
+    }
+
+    .conteudos-list {
+        margin: 5px;
+        border-radius: 15px;
+        list-style-type: disc;
+        padding: 5px 5px 5px 20px;
+        font-size: 20px;
+        width: 280px;
+        height: 400px;
+        overflow-y: auto;
+        word-wrap: break-word;
+    }
+
+    .redacao-list {
+        place-self: center;
+        height: 780px;
+        width: 320px;
+    }
+    .conteudos-list h2 {
+        font-size: 22px;
+    }
+    .conteudos-list li {
+        word-wrap: normal;
+    }
+
 }
 
-.brasao {
-    max-width: 300px;
-    height: auto;
-    margin: 50px 1px 1px;
-}
-
-
-
-
-/*Eventos*/
-.div-eventos {
-    margin: 20px 5px 5px 5px;
-    max-height: 211px;
-}
-
-.div-eventos h1,
-h2 {
-    font-weight: 350;
-    font-size: 16px;
-}
-
-.itemEventos div {
-    max-width: 95%;
-    height: 99vh;
-}
-
-.itemEventos img {
-    height: 46%;
-
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #122333;
-    height: 8dvh;
-    border-bottom: groove #490b2d;
-}
-
-.professor-info {
-    max-width: 300px;
-    min-width: fit-content;
-    min-height: 851px;
-    place-self: center;
-}
-
-.professor-image {
-    justify-self: center;
-    width: 100%;
-    max-width: 270px;
-    max-height: 272px;
-    min-height: 272px;
-    border-radius: 30px;
-    border: solid 0.3px;
-    margin: 5px;
-    object-fit: cover;
-}
-
-.professor-container {
-
-    align-self: center;
-    font-size: 20px !important;
-    border-radius: 24px;
-    margin: 80px 15px 0px 15px !important;
-    width: 335px;
-}
-
-
-
-.titulo-area {
-    text-transform: uppercase;
-    place-self: center;
-    margin-top: 50px;
-}
-
-
-
-
-
-.nav-list li {
-    width: 100%;
-
-}
-
-
-
-.nav-list li>a {
-    border-radius: 10px;
-    font-size: 20px;
-    color: #122333;
-    padding: 20px 4%;
-    display: flex;
-    line-height: 20px;
-    transition: 1s;
-}
-
-.menu-list li>a:hover {
-    transition: 0.5s;
-    background-color: #3c5b79;
-    font-size: 22px;
-}
-
-.nav-list li:hover a {
-    font-size: 22px;
-    border-radius: 10px;
-    color: #f7f7f7;
-    text-decoration: none;
-    background-color: #122333;
-    transition: 0.5s ease;
-}
-
-
-.burguer {
-
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-
-}
-
-.burguer div {
-    width: 28px !important;
-}
-
-.burguer div:nth-child(1) {
-    background: #B80F10;
-    /* Cor 1 baseada na logo */
-}
-
-.burguer div:nth-child(2) {
-    background: #B80F10;
-    /* Cor 2 baseada na logo */
-}
-
-.burguer div:nth-child(3) {
-    background: #B80F10;
-    /* Cor 3 baseada na logo */
-}
-
-.menu {
-    background-color: #fCf7f7;
-    width: 300px;
-    height: 100vh;
-    /* Garante que o menu ocupe toda a altura da tela */
-    position: fixed;
-    /* Mantém o menu fixo na tela */
-    top: 0;
-    left: 0;
-    z-index: 10;
-    animation: slide-in 0.5s ease forwards;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
-
-
-.menu li:hover {
-    color: #fCf7f7;
-    background-color: #122333;
-}
-
-body {
-    background-color: #CECECE;
-}
-
-.menu-close {
-    position: absolute;
-    top: 10px;
-    left: 15px;
-    font-size: 24px;
-    color: #fCf7f7;
-    cursor: pointer;
-    background-color: #B80F10;
-    width: 36px;
-    height: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    font-weight: bold;
-
-
-}
-
-
-.menutext {
-    display: none;
-}
-
-.close-conteiner {
-    width: 300px;
-    height: 8d;
-
-}
-
-.pesquisa {
-
-    align-self: center;
-    margin-left: 10px;
-    /* Espaço entre a logo e o campo de pesquisa */
-    height: 30px;
-    border-radius: 5px;
-    padding: 5px;
-    font-size: 16px;
-    flex-shrink: 0;
-    /* Impede que o campo de pesquisa encolha */
-    position: absolute;
-    right: 15%;
-    /* Ajuste para posicionar ao lado da logo */
-    width: 80px;
-    /* Largura inicial */
-    height: 30px;
-    border: 2px solid #CECECE;
-    border-radius: 5px;
-    padding: 5px;
-    font-size: 16px;
-    outline: none;
-    transition: all 0.3s ease;
-    /* Transição suave para todas as propriedades */
-
-}
-
-.pesquisa:focus {
-    width: 300px;
-    /* Largura ao ganhar foco */
-    border-color: #5272b6;
-    /* Cor da borda ao ganhar foco */
-    box-shadow: 0 0 10px rgba(82, 114, 182, 0.5);
-    /* Sombra ao redor */
-    background-color: #fCf7f7;
-    /* Cor de fundo ao ganhar foco */
-}
-
-.pesquisa:focus+#sugestaoContainer {
-    position: absolute;
-    top: calc(100% + 5px);
-    /* Posiciona logo abaixo do campo de pesquisa */
-    left: 25px;
-    width: 300px;
-    /* Ajuste conforme necessário */
-    background-color: #fCf7f7;
-    border: 1px solid #cecece;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    display: block;
-    /* Certifique-se de que está visível */
-}
-
-
-
-.blacktheme-label {
-    width: 100px;
-    height: 30px;
-    position: relative;
-    display: block;
-    background: #cecece;
-    border-radius: 200px;
-}
-
-.menu.dark-theme .nav-list a {
-    background-color: #3b414f;
-    color: #fcf7f7;
-
-}
-
-.theme-toggle-container {
-    position: absolute !important;
-    bottom: 40px !important;
-    left: 10px !important;
-}
-
-.logo {
-    display: none
-}
-
-
-
-.menu-close {
-    position: absolute;
-    top: 10px;
-    left: 15px;
-    font-size: 24px;
-    color: #fcf7f7;
-    cursor: pointer;
-    background-color: #B80F10;
-    width: 36px;
-    height: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.pesquisa {
-    right: 5%;
-    width: 100px;
-    height: 20px;
-}
-
-.close-conteiner {
-    width: 300px;
-    height: 8d;
-
-}
-
-.slogan h1 {
-    font-size: 45px !important;
-    margin-top: 3px !important;
-    margin-right: 1px !important;
-}
-
-.slogan h2 {
-    margin-right: 7px !important;
-    margin-top: 1px !important;
-}
-
-.logotext {
-
-    font-size: 30px !important;
-    color: #B80F10 !important;
-    margin-right: 40px !important;
-    margin-top: 15px !important;
-
-}
-
-.selectors-conteiner {
-    margin-right: 10px;
-    margin-left: 11px;
-    margin-top: 40px;
-    height: auto;
-    width: 92dvw;
-    animation: none !important;
-}
-
-
-.flexconteiner {
-    display: flex;
-
-    height: 93dvh;
-    flex-direction: column;
-    /* align-items: flex-start; */
-    transition: 0.7;
-    text-transform: uppercase;
-}
-
-.table-conteiner {
-    width: 92dvw;
-    margin-top: 20px;
-    margin-left: 11px;
-    height: auto;
-    background-color: #122333;
-    border: solid #2a3e52;
-    border-radius: 9px;
-}
-
-.tabela-horario {
-    display: flex;
-    flex-direction: column;
-    margin: 0px 0px 0px 0px !important;
-    background-color: #fff;
-    border: solid #2a3e52;
-    border-radius: 9px;
-    align-items: center;
-
-}
-
-/*PAGINA DO ENEM*/
-.enem-main {
-    margin: 10px;
-    padding: 10px;
-    width: 400px;
-}
-.enem-logo {
-    width: 160px;
-}
-.enem-content {
-    padding: 3px;
-}
-.titulos-enem {
-    font-size: 25px;
-}
-.content-header {
-    margin: 20px 30px 5px 30px;
-}
-.sisu-content {
-    padding: 3px;
-}
-.sisu-logo {
-    width: 100px;
-    margin: 15px;
-}
-.main-contents > p {
-    font-size: 16px;
-}
-.main-contents > h2 {
-    font-size: 22px;
-    margin: 3px;
-}
-.main-lists {
-    font-size: 16px;
-    margin: 2vh 0 2vh 2vh;
-}
-.conteudos-container {
-    padding: 10px;
-}
-.conteudos-container h2 {
-    font-size: 25px;
-}
-.conteudos-container h3 {
-    margin: 20px 0 20px 0;
-    font-size: 27px;
-}
-.conteudos-container p {
-    font-size: 18px;
-}
-.conteudos-content {
-    margin: 0px;
-}
-.conteudos-list {
-    margin: 5px;
-    border-radius: 15px;
-    list-style-type: disc;
-    padding: 5px 5px 5px 20px;
-    font-size: 20px;
-    width: 280px;
-    height: 400px;
-    overflow-y: auto;
-    word-wrap: break-word;
-}
-.redacao-list {
-    place-self: center;
-    height: 780px;
-    width: 320px;
-}
-.conteudos-list li {
-    word-wrap: normal;
-}
-
-}
-    
 
 /*Cardápio*/
+@media (max-width: 1200px) {
+    .cardapio-main {
+        justify-self: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        width: 100%;
+        margin: 10px;
+    }
 
-.cardapio-main {
-    justify-self: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    width: 100%;
-    margin: 10px;
+    .cardapio-container {
+        width: 95%;
+        background-color: #fcf7f7;
+        border: solid #2a3e52;
+        border-radius: 9px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .table-cardapio {
+        border-radius: 20px;
+        padding: 5px;
+        width: 350px;
+        height: 200px;
+    }
+
+    .cardapio-container td {
+        text-align: center;
+        height: 30px;
+        width: 10px;
+        border-radius: 10px;
+        border: solid 1px #2a3e52;
+        border: none;
+        font-size: 10px;
+        padding: 0;
+    }
+
+    .fila-container {
+        font-size: 10px;
+        width: 95%;
+        height: 800px;
+        justify-self: center;
+        overflow-x: auto;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .fila-tabela {
+        width: 90%;
+        font-size: 13px;
+    }
+    .fila-tabela th {
+        font-weight: 640;
+        background: linear-gradient(to right, rgb(13, 12, 31), rgb(58, 58, 95));
+        width: 25px;
+        height: 25px;
+        border: solid 1px #2a3e52;
+        border-radius: 15px;
+        color: #fcf7f7;
+        padding: 5px;
+    }
+
+    .fila-tabela td {
+        border-radius: 15px;
+        font-weight: 640;
+        width: 25px;
+        height: 25px;
+        padding: 5px;
+    }
+
+    .titulo-cardapio {
+        font-size: 20px;
+        place-self: center;
+    }
+
+    .titulo-fila {
+        font-size: 20px;
+        position: sticky;
+        left: 50%;
+        z-index: 10;
+        transform: translateX(-50%);
+    }
 }
+@media (max-width: 999px) {
+    /*PAGINA DOS PROFESSORES*/
 
-.cardapio-container {
-    width: 360px;
-    background-color: #fcf7f7;
-    border: solid #2a3e52;
-    border-radius: 9px;
-    align-items: center;
-    justify-content: center;
-}
+    .professor-info {
+        max-width: 300px;
+        min-height: 851px;
 
-.table-cardapio {
-    border-radius: 20px;
-    padding: 5px;
-    width: 350px;
-    height: 200px;
-}
+        place-self: center;
 
-.cardapio-container td {
-    text-align: center;
-    height: 30px;
-    width: 10px;
-    border-radius: 10px;
-    border: solid 1px #2a3e52;
-    border: none;
-    font-size: 10px;
-    padding: 0;
-}
+    }
 
-.fila-container {
-    font-size: 10px;
-    width: 360px;
-    height: 650px;
-    justify-self: center;
-    overflow-x: auto;
-    justify-content: center;
-    align-items: flex-start;
-}
+    .professores-cards {
+        place-self: center;
+        flex-direction: column;
 
-.fila-tabela {
-    width: 90%
-}
+    }
 
-.fila-tabela th {
-    background: linear-gradient(to right, rgb(13, 12, 31), rgb(58, 58, 95));
-    width: 30px;
-    height: 25px;
-    border: solid 1px #2a3e52;
-    border-radius: 30px;
-    color: #fcf7f7;
-    padding: 5px;
-}
+    /*ZOOM DA PAGINA GESTÃO*/
 
-.fila-tabela td {
-    height: 25px;
-    width: 30px;
-    table-layout: fixed;
-    padding: 5px;
-}
-
-.titulo-cardapio {
-    font-size: 20px;
-    place-self: center;
-}
-
-.titulo-fila {
-    font-size: 20px;
-    position: sticky;
-    left: 50%;
-    z-index: 10;
-    transform: translateX(-50%);
-}
-
-/*PAGINA DOS PROFESSORES*/
-
-.professor-info {
-    max-width: 300px;
-    min-height: 851px;
-
-    place-self: center;
-
-}
-
-.professores-cards {
-    place-self: center;
-    flex-direction: column;
-
-}
-
-/*ZOOM DA PAGINA GESTÃO*/
-
-.popup-content {
-    max-width: 100%;
-    max-height: 70vh;
+    .popup-content {
+        max-width: 100%;
+        max-height: 70vh;
+    }
 }
 
 @media (max-height: 600px) {
@@ -695,4 +724,67 @@ body {
         align-self: center;
         /* Centraliza horizontalmente */
     }
+}
+
+/*---------------------- Pagina Sobre ----------------------*/
+@media (max-width: 999px) {
+    .sobre-header {
+        margin: 50px 0 50px 0;
+        width: 95%;
+        height: 400px;
+    }
+    .sobre-titulo {
+        margin: 5px;
+        width: 100%;
+    }
+    .sobre-titulo h1 {
+        font-size: 20px;
+    }
+    .sobre-titulo p {
+        font-size: 17px;
+    }
+    .sobre-slogan {
+        flex: 0.7;
+    }
+    .slogan-sobrenos {
+        margin: 0;
+        padding: 5px;
+        width: 90%;
+    }
+    .sobre-content {
+        width: 95%;
+    }
+    .sobre-importancias {
+        width: 85%;
+    }
+    .sobre-cursos {
+        width: 95%;
+    }
+    .sobre-cursos h2 {
+        font-weight: 700;
+        font-size: 20px;
+        margin: 5px;
+    }
+    .cursos-informacoes {
+        margin: 5px;
+
+    }
+}
+
+
+/*-------------------------- diretorio ----------------------*/
+.diretorio {
+    height: 100px;
+}
+.diretorio p {
+    line-height: 30px;
+    font-size: 15px;
+}
+.diretorio img {
+    margin: 0 0 0 10px;
+    width: 30px;
+    height: 30px;
+}
+.diretorio span {
+    font-size: 15px;
 }
