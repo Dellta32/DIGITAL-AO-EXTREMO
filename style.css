@@ -427,7 +427,7 @@ body {
     border: solid #2a3e52;
     border-radius: 9px;
     float: right;
-    margin-right: 400px;
+    margin-right: 350px;
 }
 
 
@@ -439,7 +439,7 @@ body {
     height: 500px;
     background-color: #122333;
     margin-right: 0;
-    margin-left: 600px;
+    margin-left: 450px;
     margin-top: 40px;
     border: solid #2a3e52;
     border-radius: 9px;
@@ -1564,7 +1564,7 @@ body.dark-theme .titulo-fila {
 /*PAGINA DE EVENTOS*/
 
 .div-eventos {
-    background-image: url(imagens/BGcaderno.jpeg);
+    background-image: url(imagens/BGcaderno.jpg);
     background-size: cover;
     border: none 20px transparent;
     border-radius: 3px;
@@ -1587,7 +1587,7 @@ body.dark-theme .titulo-fila {
     color: #000000;
     background: #fcf7f7;
     max-width: 800px;
-    margin: 10px 10px 10px 10px;
+    margin:  10px;
     border-radius: 30px;
     text-align: center;
     border: #122333 3px solid;
