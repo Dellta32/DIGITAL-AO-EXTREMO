@@ -634,6 +634,7 @@ body {
 .titulo-fila {
     color: #122333;
     font-weight: 700;
+    z-index: 1;
     font-size: 30px;
 }
 .fila-container {
