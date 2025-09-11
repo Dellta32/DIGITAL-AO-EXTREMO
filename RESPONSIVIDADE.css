@@ -1,6 +1,13 @@
 @media (max-width: 999px) {
 
-    html,
+    html {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        /* Impede a rolagem horizontal */
+        width: 100%;
+    }
+
     body {
         margin: 0;
         padding: 0;
@@ -773,8 +780,9 @@
 
 
 /*-------------------------- diretorio ----------------------*/
+@media (max-width: 999px) {
 .diretorio {
-    height: 100px;
+ height: 150px;
 }
 .diretorio p {
     line-height: 30px;
@@ -787,4 +795,10 @@
 }
 .diretorio span {
     font-size: 15px;
+}
+}
+@media (min-width: 1800px) {
+    .diretorio {
+        height: 150px;
+    }
 }
