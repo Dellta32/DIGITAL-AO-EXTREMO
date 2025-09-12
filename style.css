@@ -142,6 +142,8 @@ a {
     text-transform: uppercase;
     width: 300px;
     overflow: hidden;
+    position: sticky
+    ;
 }
 
 .nav-list li {
@@ -411,7 +413,7 @@ body {
 .flexconteiner {
     display: flex;
     gap: 0px;
-    height: 90dvh;
+    height: 93dvh;
     flex-direction: row;
     align-items: flex-start;
     transition: 0.7s;
@@ -427,7 +429,7 @@ body {
     border: solid #2a3e52;
     border-radius: 9px;
     float: right;
-    margin-right: 350px;
+    margin-right: 250px;
 }
 
 
@@ -439,7 +441,7 @@ body {
     height: 500px;
     background-color: #122333;
     margin-right: 0;
-    margin-left: 450px;
+    margin-left: 350px;
     margin-top: 40px;
     border: solid #2a3e52;
     border-radius: 9px;
@@ -1159,6 +1161,7 @@ body.dark-theme .titulo-area {
 
 /* parte com informações sobre o enem e inscrição*/
 .enem-main {
+    place-self: center;
     width: 65%;
     overflow: hidden;
     border-radius: 10px;
@@ -1491,7 +1494,18 @@ body.dark-theme .cardapio-container {
     background-color: #3b414f !important;
     border-color: #cecece !important;
 }
-
+body.dark-theme .diasSemana-cardapio {
+    background: #122333 !important;
+    color: #cecece !important;
+}
+body.dark-theme .lanche-title {
+    background: #122333 !important;
+    color: #cecece !important;
+}
+body.dark-theme .almoco-title {
+    background: #122333 !important;
+    color: #cecece !important;
+}
 body.dark-theme .titulos-cardapio {
     color: #fcf7f7 !important;
 }
@@ -1572,6 +1586,7 @@ body.dark-theme .titulo-fila {
     margin: 40px 40px 40px 40px;
     place-self: center;
     text-align: center;
+    
 }
 
 .div-eventos h1 {
@@ -1758,6 +1773,7 @@ body.dark-theme .itemEventos div {
 }
 
 .sobre-cursos h3 {
+    font-weight: 800;
     color: #b80f10;
     text-align: center;
     display: block;
@@ -1828,7 +1844,6 @@ body.dark-theme .sobre-cursos h2 {
 
 body.dark-theme .sobre-cursos h3 {
     color: #fcf7f7;
-    font-weight: 480;
 }
 
 body.dark-theme .cursos-informacoes {
@@ -1890,4 +1905,5 @@ body.dark-theme .diretorio a p {
 body.dark-theme .diretorio span {
     color: #cecece;
 }
+
 

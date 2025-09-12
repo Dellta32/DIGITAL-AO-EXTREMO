@@ -170,7 +170,7 @@
 
         cursor: pointer;
         position: absolute;
-        top: 10px;
+        top: 18px;
         left: 10px;
 
     }
@@ -323,7 +323,7 @@
 
     .theme-toggle-container {
         position: absolute !important;
-        bottom: 40px !important;
+        bottom: 60px !important;
         left: 10px !important;
     }
 
@@ -377,7 +377,7 @@
 
         font-size: 30px !important;
         color: #B80F10 !important;
-        margin-right: 40px !important;
+        margin-right: 80px !important;
         margin-top: 15px !important;
 
     }
@@ -468,6 +468,9 @@
         font-size: 16px;
         margin: 2vh 0 2vh 2vh;
     }
+    .main-lists p {
+        font-size: 15px;
+    }
 
     .conteudos-container {
         padding: 10px;
@@ -545,7 +548,7 @@
     .table-cardapio {
         border-radius: 20px;
         padding: 5px;
-        width: 350px;
+        width: 95%;
         height: 200px;
     }
 
@@ -785,6 +788,7 @@
 @media (max-width: 999px) {
 .diretorio {
  height: 150px;
+ 
 }
 .diretorio p {
     line-height: 30px;
